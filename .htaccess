@@ -1,0 +1,37 @@
+AddDefaultCharset UTF-8
+php_flag display_errors ON
+php_flag magic_quotes_gpc off
+php_flag magic_quotes_runtime off
+php_flag register_global off
+
+php_value memory_limit 128M
+php_value upload_max_filesize 50M
+php_value post_max_size 500M
+php_value max_input_time 3000
+
+RewriteEngine on
+
+RewriteCond %{REQUEST_URI} !^/img
+RewriteCond %{REQUEST_URI} !^/css
+RewriteCond %{REQUEST_URI} !^/js
+RewriteCond %{REQUEST_URI} !^/fonts
+RewriteCond %{REQUEST_URI} !-f
+RewriteCond %{REQUEST_URI} !-d
+
+RewriteRule ^(.*)$ index.php?route=$1 [L,QSA]
+
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www.todo.kh.ua$ [NC]
+RewriteRule ^(.*)$ http://todo.kh.ua/$1 [R=301,L]
+
+# Bad Request
+ErrorDocument 400  /errors/400
+
+# Forbidden
+ErrorDocument 403  /errors/403
+
+# Not found
+ErrorDocument 404  /errors/404
+
+# Internal Server Error
+ErrorDocument 500  /errors/500

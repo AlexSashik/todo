@@ -1,0 +1,87 @@
+﻿.main {
+	background-color: #fff;
+	padding: 20px;
+}
+h2 {
+	text-align: center;
+	color: #474747;
+	font-size: 2em;
+	margin-bottom: 20px;
+}
+
+p {
+	text-indent: 20px;
+	line-height: 1.5;
+	margin-bottom: 10px;
+}
+
+ul {
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+/*Всплывающий блок*/
+
+#info_back {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0.5;
+}
+
+#info_text {
+	position: fixed;
+	top: 200px;
+	left: 50%;
+	width: 500px;
+	transform: translateX(-50%);
+	box-shadow: 0 0 5px black;
+	background-color: white;
+}
+
+.info_header {
+	background-color: #149B49;
+	padding: 10px 20px 10px 20px;
+	color: white;
+	font-size: 18px;
+}
+
+.info_main {
+	text-align: center;
+	padding: 20px;
+}
+
+.info_main  img {
+	width: 75px;
+}
+
+.info_main p {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.info_main p a {
+	color: #383838;
+}
+
+.info_main p a:hover {
+	color: #57A7CE;
+}
+
+#info_close {
+	background-color: #01882E;
+	color: white;
+	padding: 10px 0 10px 0;
+	width: 100px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+#info_close:hover {
+	cursor: pointer;
+	background-color: #149B49;
+}
+
