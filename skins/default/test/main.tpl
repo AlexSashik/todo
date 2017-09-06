@@ -5,9 +5,3 @@
         <?php if (isset($err)) echo '<b>'.htmlspecialchars($err).'</b>'; ?>
     </form>
 </div>
-
-<div class="test_div">
-    <div>some div</div>  some text
-
-</div>
-<p>Текст</p>

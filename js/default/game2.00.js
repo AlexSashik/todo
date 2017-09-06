@@ -1,4 +1,7 @@
 var city_array = [''];
+var letter = false;
+
+//window.location.href = "/"; - переадресация
 
 function myAjax () {
     var check = true;
@@ -9,6 +12,11 @@ function myAjax () {
            check = false;
         } else if ($.inArray($('#city').val().trim(), city_array) != -1) {
             alert($('#city').val() + ' уже был назван');
+            $('#city').focus();
+            check = false;
+        } else if (letter !== false && $('#city').val()[0].toUpperCase() != letter.toUpperCase()) {
+            alert ('Вы называете город не с той буквы!');
+            $('#city').val(letter.toUpperCase());
             $('#city').focus();
             check = false;
         }
@@ -31,6 +39,7 @@ function myAjax () {
                 if (response.name !== undefined) {
                     city_array[city_array.length] = $('#city').val().trim();
                     city_array[city_array.length] = response.name.trim();
+                    letter = response.letter;
                     $('#user_cities').append('<p>' + $('#city').val() + '</p>');
                     $('#server_cities').append('<p>' + response.name + '</p>');
                     $('#user_cities').scrollTop('5000000');
@@ -52,5 +61,4 @@ function myAjax () {
             }
         });
     }
-    console.log(city_array);
 }

@@ -2,24 +2,24 @@
 CORE::$CSS[] = '<link href="/css/'.CORE::$STYLE.'/test.css" rel="stylesheet" type="text/css">';
 
 if (isset($_FILES['file'])) {
-    Uploader::$proportion['to'] = 2;
+    Uploader::$proportion['to'] = 5;
+    Uploader::$min_size = 4000;
     $info = Uploader::upload($_FILES['file']);
     if (!$info['error']) {
-        Uploader::resize(300,300, $info, 'width', 'width');
+        Uploader::resize(75,75, $info, 'height', 'width');
     } else {
         $err = $info['err_text'];
     }
 }
 
-function fo($a, $b) {
-    echo "Hello".$a;
-}
 
-fo('Alex');
 
-class A{} class B extends A{} $object = new B();echo ($object instanceof A);
-echo '<hr>';
 
+
+
+
+
+/*
 // ЗАДАЧА 9: НЕ ЛЮБЛЮ ДЛИННЫЕ СЛОВА
 $string = 'я купил бронетранспортер вчера';
 $string = explode(' ', $string);
@@ -43,7 +43,7 @@ foreach ($array as $v) {
     }
 }
 
-
+*/
 /**
  *	Задачник. После каждого $array мы ОБЯЗАНЫ написать прям тут нужный нам код. Прогнать массив $array через foreach и обработать по заданию из $q.
  *	$q - массивы, то есть могут содержать несколько заданий, каждый из которых будет работать с имеющимся массивом

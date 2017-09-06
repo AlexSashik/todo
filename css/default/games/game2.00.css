@@ -39,11 +39,29 @@
 	text-align: center;
 }
 
-.aside_div:first-line {
+.first_line {
 	font-size: 20px;
 }
 
-.aside_div div {
+.health {
+	margin: -50px 0 10px 0;
+}
+
+.health i {
+	color: #E02804;
+}
+
+#health_server {
+	text-align: left;
+	padding-left: 20px;
+}
+
+#health_user {
+	text-align: right;
+	padding-right: 20px;
+}
+
+#server_cities, #user_cities {
 	box-shadow: 0 0 10px #57d05c;
 	margin: 10px 20px 10px 20px;
 	padding: 10px;
