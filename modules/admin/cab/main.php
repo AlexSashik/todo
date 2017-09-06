@@ -13,9 +13,9 @@ if ( isset($_POST['login'], $_POST['pass']) ) {
 
     // Проверка логина и пароля
     if ($_POST['login'] == '') {
-        $errors['login_err'] = 'Вы не ввели логин';
+        $error = 'Вы не ввели логин';
     } elseif (mb_strlen(trim($_POST['login'])) > 50) {
-        $errors['login_err'] = 'Cлишком длинный логин';
+        $error = 'Cлишком длинный логин';
     } else {
         $res = q("
 				SELECT * FROM `users`

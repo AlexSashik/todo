@@ -1,877 +1,0 @@
-QUERY: 
-			INSERT INTO `comments` SET
-			`login` = 'x&*5!@#$%^*&?\",',
-			`email` = 'asd@asd.dsa',
-			`text``  = '\"inpost\",\"O\'Henr\'\'y\", \"Vo&quot;va\", \"Правда 1%\", \"ОбычныйUserId#1\",\"x&*5!@#$%^*&?\",\" \\ \\ YE / / \",\"%%%%\",\"\\\\\",\"////\".'
-		
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 4
-FILE: Z:\home\todo\www\modules\comments\main.php
-LINE: approximately 21
-DATE:2017-06-28 12:42:35
-========================================================================
-
-QUERY: 
-			SELECT * FROM `goods`
-			ORDER BY `price`
-			WHERE `cat` = 'Аминокислоты'
-		
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `cat` = 'Аминокислоты'' at line 3
-FILE: Z:\home\todo\www\modules\admin\goods\main.php
-LINE: approximately 22
-DATE:2017-07-02 23:00:07
-========================================================================
-
-QUERY: 
-			INSERT INYO `goods` SET
-			`cat`   	  = Аминокислоты,
-			`title` 	  = Товар,
-			`is_in_sight` = 1,
-			`price`       = 123,
-			`text`        = Описание
-		
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`goods` SET
-			`cat`   	  = Аминокислоты,
-			`title` 	  = Това' at line 1
-FILE: Z:\home\todo\www\modules\admin\goods\add.php
-LINE: approximately 54
-DATE:2017-07-06 22:06:51
-========================================================================
-
-QUERY: 
-			INSERT INYO `goods` SET
-			`cat`   	  = 'Аминокислоты',
-			`title` 	  = 'Товар',
-			`is_in_sight` = '1',
-			`price`       = '123',
-			`text`        = 'Описание'
-		
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`goods` SET
-			`cat`   	  = 'Аминокислоты',
-			`title` 	  = 'То' at line 1
-FILE: Z:\home\todo\www\modules\admin\goods\add.php
-LINE: approximately 54
-DATE:2017-07-06 22:38:37
-========================================================================
-
-QUERY: 
-			INSERT INYO `goods` SET
-			`cat`   	  = 'Аминокислоты',
-			`title` 	  = 'Товар',
-			`is_in_sight` = '1',
-			`price`       = '123',
-			`description` = 'Описание'
-		
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`goods` SET
-			`cat`   	  = 'Аминокислоты',
-			`title` 	  = 'То' at line 1
-FILE: Z:\home\todo\www\modules\admin\goods\add.php
-LINE: approximately 54
-DATE:2017-07-06 23:05:45
-========================================================================
-
-QUERY: 
-		DELETE FROM `goods`
-		WHERE `id` IN  ()
-	
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 2
-FILE: Z:\home\todo\www\modules\admin\goods\main.php
-LINE: approximately 13
-DATE:2017-07-07 18:57:14
-========================================================================
-
-QUERY: 
-		DELETE FROM `goods`
-		WHERE `id` IN  ()
-	
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 2
-FILE: Z:\home\todo\www\modules\admin\goods\main.php
-LINE: approximately 13
-DATE:2017-07-07 19:01:20
-========================================================================
-
-QUERY: INSERT INTO `users` SET
-			`login` 	= 'inpost\",\"O\'Henr',
-			`password` 	= 'inf8RA6T0iPSQ',
-			`email` 	= 'asdf@asd.dsa',
-			`age` = '32',
-			`hash`      = 'inRoE8AxsYr0s'
-		
- Unknown column 'password' in 'field list'
-FILE: Z:\home\todo\www\modules\cab\reg.php
-LINE: approximately 85
-DATE:2017-07-12 21:47:37
-========================================================================
-
-QUERY: INSERT INTO `users` SET
-			`login` 	= 'inx&*5!@#$%^*&',
-			`pass` 	= 'inf8RA6T0iPSQ',
-			`email` 	= 'abc@asd.dsa',
-			,
-			`hash`      = 'inzZyTNfDGs.2',
-			`active`    = '0'
-		
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '
-			`hash`      = 'inzZyTNfDGs.2',
-			`active`    = '0'' at line 5
-FILE: Z:\home\todo\www\modules\cab\reg.php
-LINE: approximately 86
-DATE:2017-07-13 23:26:52
-========================================================================
-
-QUERY: INSERT INTO `users` SET
-			`login` 	= 'Alex',
-			`pass` 	= 'inmEZNt9TLVKk',
-			`email` 	= 'asd@asd.dsa',
-			
-			`hash`      = 'infXZqyRNq8wM',
-			`active`    = '0'
-		
- Duplicate entry 'Alex' for key 'ixLogin'
-FILE: Z:\home\todo\www\modules\cab\reg.php
-LINE: approximately 71
-DATE:2017-07-16 22:29:49
-========================================================================
-
-QUERY: 
-		UPDATE FROM `users` SET
-		`last_active_date` = NOW()
-		WHERE `id` = 64 
-	
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `users` SET
-		`last_active_date` = NOW()
-		WHERE `id` = 64' at line 1
-FILE: Z:\home\todo\www\modules\allpages.php
-LINE: approximately 20
-DATE:2017-07-19 22:02:59
-========================================================================
-
-QUERY: 
-		UPDATE FROM `users` SET
-		`last_active_date` = NOW()
-		WHERE `id` = 64 
-	
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `users` SET
-		`last_active_date` = NOW()
-		WHERE `id` = 64' at line 1
-FILE: Z:\home\todo\www\modules\allpages.php
-LINE: approximately 20
-DATE:2017-07-19 22:03:00
-========================================================================
-
-QUERY: INSERT INTO `users` SET
-			`login` 	= 'abraham',
-			`pass` 	= 'inf8RA6T0iPSQ',
-			`email` 	= 'abraham@mail.ru',
-			`age` = '9',
-			`hash`      = 'inxhzyAQSV0RI',
-			`active`    = '0',
-			`create_date` = NOW()
-		
- Unknown column 'create_date' in 'field list'
-FILE: Z:\home\todo\www\modules\cab\reg.php
-LINE: approximately 66
-DATE:2017-07-20 19:07:47
-========================================================================
-
-QUERY: 
-				UPDATE `goods` SET
-				`login`   	  = 'inpost',
-				`email` 	  = 'inpost@list.ru',
-				`age` 		  = '25',
-				`active`      = '1',
-				`access`      = '1'
-				WHERE `id`    = 62
-			
- Unknown column 'login' in 'field list'
-FILE: Z:\home\todo\www\modules\admin\users\edit.php
-LINE: approximately 69
-DATE:2017-07-20 22:54:28
-========================================================================
-
-QUERY: 
-		SELECT * FROM `users`
-		WHERE `age_from` LIKE '%asdfasf%' AND `age` 
-
-QUERY: 
-				UPDATE `goods` SET
-				`cat`   	  = 'Гейнеры',
-				`name` 	      = 'Сандора',
-				`is_in_sight` = '1',
-				`price`       = '10',
-				`text`        = 'Классный сок!!!',
-				
-				WHERE `id`    = 15
-			
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id`    = 15' at line 8
-FILE: Z:\home\todo\www\modules\admin\goods\edit.php
-LINE: approximately 108
-DATE:2017-07-25 23:03:56
-========================================================================
-
-QUERY: 
-				UPDATE `goods` SET
-				`cat`   	  = 'Гейнеры',
-				`name` 	      = 'Сандора',
-				`is_in_sight` = '1',
-				`price`       = '10',
-				
-				`text`        = 'Классный сок!!!',
-				WHERE `id`    = 15
-			
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id`    = 15' at line 8
-FILE: Z:\home\todo\www\modules\admin\goods\edit.php
-LINE: approximately 108
-DATE:2017-07-25 23:04:44
-========================================================================
-
-QUERY: 
-				UPDATE `goods` SET
-				`cat`   	  = 'Гейнеры',
-				`name` 	      = 'Сандора',
-				`is_in_sight` = '1',
-				`price`       = '10',
-				
-				`text`        = 'Классный сок!!!',
-				WHERE `id`    = 15
-			
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id`    = 15' at line 8
-FILE: Z:\home\todo\www\modules\admin\goods\edit.php
-LINE: approximately 108
-DATE:2017-07-25 23:04:51
-========================================================================
-
-QUERY: 
-				UPDATE `users` SET
-				`age` = '20',
-				
-				`avatar` = '/img/default/users/20170725-231138img5755.jpg'
-				`login`   	  = 'Alex',
-				`email` 	  = 'alexander.konstantinov2010@yandex.ua'
-				WHERE `id`    = 57
-			
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`login`   	  = 'Alex',
-				`email` 	  = 'alexander.konstantinov2010@yandex.ua'' at line 5
-FILE: Z:\home\todo\www\modules\cab\main.php
-LINE: approximately 197
-DATE:2017-07-25 23:11:38
-========================================================================
-
-QUERY: 
-				UPDATE `users` SET
-				`age` = '20',
-				
-				
-				`login`   	  = 'admin',
-				`email` 	  = 'alexander.konstantinov2010@yandex.ua'
-				WHERE `id`    = 57
-			
- Duplicate entry 'admin' for key 'ixLogin'
-FILE: Z:\home\todo\www\modules\cab\main.php
-LINE: approximately 197
-DATE:2017-07-25 23:14:03
-========================================================================
-
-QUERY: 
-					UPDATE `comments` SET
-					`login`   = 'Alex (гость)',
-					WHERE `user_id` = '57'
-				
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `user_id` = '57'' at line 3
-FILE: Z:\home\todo\www\modules\cab\main.php
-LINE: approximately 201
-DATE:2017-07-26 18:09:11
-========================================================================
-
-QUERY: 
-				UPDATE `goods` SET
-				`cat`   	  = 'Гейнеры',
-				`name` 	      = 'Сандора',
-				`is_in_sight` = '1',
-				`price`       = '10',
-				`img_name`    = '/img/default/goods/20170726-202240img2288.jpg'
-				`text`        = 'Классный сок!!!'
-				WHERE `id`    = 15
-			
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`text`        = 'Классный сок!!!'
-				WHERE `id`    = 15' at line 7
-FILE: Z:\home\todo\www\modules\admin\goods\edit.php
-LINE: approximately 118
-DATE:2017-07-26 20:22:41
-========================================================================
-
-QUERY: 
-				UPDATE `comments` SET
-				
-				`login`   = 'Alex',
-				WHERE `user_id` = '70'
-			
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `user_id` = '70'' at line 4
-FILE: Z:\home\todo\www\modules\admin\users\edit.php
-LINE: approximately 159
-DATE:2017-07-26 22:22:17
-========================================================================
-
-QUERY: 
-			INSERT INTO `goods` SET
-			`cat`   	  = 'Аксессуары',
-			`name` 	      = 'sdf',
-			`is_in_sight` = '1',
-			`price`       = '12',
-			`text`        = 'sdsf',
-		
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 6
-FILE: Z:\home\todo\www\modules\admin\goods\add.php
-LINE: approximately 71
-DATE:2017-07-31 12:31:13
-========================================================================
-
-QUERY: 
-						INSERT INTO `goods_img` SET
-						`img_name` = ''
-						WHERE `id` = '0'
-					
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id` = '0'' at line 3
-FILE: Z:\home\todo\www\modules\admin\goods\edit.php
-LINE: approximately 116
-DATE:2017-07-31 19:53:57
-========================================================================
-
-QUERY: 
-						INSERT INTO `goods_img` SET
-						`img_name` = '20170731-203631img1003.png'
-						WHERE `id` = '0'
-					
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id` = '0'' at line 3
-FILE: Z:\home\todo\www\modules\admin\goods\edit.php
-LINE: approximately 126
-DATE:2017-07-31 20:36:32
-========================================================================
-
-QUERY: 
-						INSERT INTO `goods_img` SET
-						`img_name` = '20170731-203835img1017.png',
-						`user_id`  = '30'
-					
- Unknown column 'user_id' in 'field list'
-FILE: Z:\home\todo\www\modules\admin\goods\edit.php
-LINE: approximately 126
-DATE:2017-07-31 20:38:35
-========================================================================
-
-QUERY: 
-								UPDATE `goods` SET
-								`main_img` = '20170731-224413img6154.jpg',
-								WHERE `id` = '31'
-							
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id` = '31'' at line 3
-FILE: Z:\home\todo\www\modules\admin\goods\add.php
-LINE: approximately 71
-DATE:2017-07-31 22:44:13
-========================================================================
-
-QUERY: 
-		SELECT * FROM `authors`
-		WHERE `id` IN (, )
-	
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' )' at line 2
-FILE: Z:\home\todo\www\modules\books\main.php
-LINE: approximately 26
-DATE:2017-08-02 19:15:40
-========================================================================
-
-QUERY: 
-		SELECT * FROM `books`
-		ORDER BY `price`
-	
- Unknown column 'price' in 'order clause'
-FILE: Z:\home\todo\www\modules\admin\books\main.php
-LINE: approximately 126
-DATE:2017-08-02 22:13:35
-========================================================================
-
-QUERY: 
-			SELECT * FROM `books2authors`
-			WHERE `name` LIKE '%стр%'
-		
- Unknown column 'name' in 'where clause'
-FILE: Z:\home\todo\www\modules\admin\books\main.php
-LINE: approximately 66
-DATE:2017-08-02 22:53:10
-========================================================================
-
-QUERY: 
-				UPDATE `users` SET
-				`login`   	  	   = 'admin',
-				`email` 	  	   = 'espiritudelnumero@gmail.com',
-				`age` 		  	   = '24',
-				`active`      	   = '1',
-				`access`      	   = '1',
-				
-				`reg_date`    	   = '2017-07-26',
-				`last_active_date` = '2017-08-03 19:54:26'
-				WHERE `id`   	   = 70
-			
- Duplicate entry 'admin' for key 'ixLogin'
-FILE: Z:\home\todo\www\modules\admin\users\edit.php
-LINE: approximately 145
-DATE:2017-08-03 20:01:39
-========================================================================
-
-QUERY: 
-            SELECT FROM `books2authors`
-            WHERE `book_id` = 6
-        
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `books2authors`
-            WHERE `book_id` = 6' at line 1
-FILE: Z:\home\todo\www\modules\admin\books\main.php
-LINE: approximately 34
-DATE:2017-08-04 21:41:51
-========================================================================
-
-QUERY: 
-			DELETE FROM `authors`
-			WHERE `id` IN ()
-		
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 2
-FILE: Z:\home\todo\www\modules\admin\books\main.php
-LINE: approximately 49
-DATE:2017-08-04 22:26:50
-========================================================================
-
-QUERY: 
-                    UPDATE `books` SET
-                    `name`     = 'Аквариум',
-                    `year`     = '1994',
-                    `img_name` = '20170805-213734img7737.jpg','
-                    `text`     = 'Эта книга впервые приоткрыла секреты самой таинственной разведки мира – ГРУ. Книга выдержала более 70 изданий на 27 языках. «Аквариум» послужил основой для создания кинофильма, телесериала и многочисленных литературных подражаний.'
-                    WHERE `id` = 6
-			    
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''
-                    `text`     = 'Эта книга впервые приот' at line 4
-FILE: Z:\home\todo\www\modules\admin\books\edit.php
-LINE: approximately 115
-DATE:2017-08-05 21:37:34
-========================================================================
-
-QUERY: 
-				INSERT INTO `books` SET
-				`name`     = 'sdf',
-				`year`     = '1915',
-				`text`     = 'dscsd',
-				
-			
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 4
-FILE: Z:\home\todo\www\modules\admin\books\add.php
-LINE: approximately 59
-DATE:2017-08-11 11:36:57
-========================================================================
-
-QUERY: 
-				INSERT INTO `authors` SET
-				`name`     = 'Дима Данник',
-				`yob`     = '1992',
-				`img_name` = '20170811-202159img1646.png'
-				`yod`     = '0',
-			
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`yod`     = '0',' at line 5
-FILE: Z:\home\todo\www\modules\admin\authors\add.php
-LINE: approximately 65
-DATE:2017-08-11 20:21:59
-========================================================================
-
-QUERY: 
-				UPDATE `authors` SET
-				`name`     = 'Борис Стругацкий',
-				`yob`      = '0',
-				`yod`      = '0',
-				
-				WHERE `id` = 1
-			
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id` = 1' at line 6
-FILE: Z:\home\todo\www\modules\admin\authors\edit.php
-LINE: approximately 108
-DATE:2017-08-11 22:46:30
-========================================================================
-
-QUERY: 
-            SELECT * FROM `authors`
-            WHERE `id` IN ()
-        
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 2
-FILE: Z:\home\todo\www\modules\admin\books\add.php
-LINE: approximately 30
-DATE:2017-08-12 20:39:06
-========================================================================
-
-QUERY: 
-				INSERT INTO `books` SET
-				`name`     = 'Книга',
-				`year`     = '1917',
-				`img_name` = '20170812-215803img5496.png'
-				`text`     = 'test'
-			
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`text`     = 'test'' at line 5
-FILE: Z:\home\todo\www\modules\admin\books\add.php
-LINE: approximately 71
-DATE:2017-08-12 21:58:03
-========================================================================
-
-QUERY: 
-				INSERT INTO `authors` SET
-				`name`     = 'test',
-				`yob`     = '0',
-				`yod`     = '0',
-				
-			
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 4
-FILE: Z:\home\todo\www\modules\admin\authors\add.php
-LINE: approximately 63
-DATE:2017-08-13 19:55:06
-========================================================================
-
-QUERY: 
-				INSERT INTO `authors` SET
-				`name`     = '&lt;b&gt;test',
-				`yob`     = '0',
-				`yod`     = '0',
-				
-			
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 4
-FILE: Z:\home\todo\www\modules\admin\authors\add.php
-LINE: approximately 63
-DATE:2017-08-13 19:55:54
-========================================================================
-
-QUERY: 
-		SELECT * FROM `authors`
-		WHERE `id` IN ()
-	
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 2
-FILE: Z:\home\todo\www\modules\books\main.php
-LINE: approximately 74
-DATE:2017-08-13 20:24:59
-========================================================================
-
-QUERY: 
-		SELECT * FROM `authors`
-		WHERE `id` IN ()
-	
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 2
-FILE: Z:\home\todo\www\modules\admin\books\main.php
-LINE: approximately 121
-DATE:2017-08-13 20:26:11
-========================================================================
-
-QUERY: 
-			SELECT FROM `books2authors`
-			WHERE `author_id` = 19
-		
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM `books2authors`
-			WHERE `author_id` = 19' at line 1
-FILE: Z:\home\todo\www\modules\admin\authors\main.php
-LINE: approximately 37
-DATE:2017-08-13 20:33:57
-========================================================================
-
-QUERY: 
-                DELETE FROM `books`
-                WHERE `id` = IN(23)
-             
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IN(23)' at line 2
-FILE: Z:\home\todo\www\modules\admin\authors\main.php
-LINE: approximately 49
-DATE:2017-08-13 20:39:05
-========================================================================
-
-QUERY: 
-        SELECT * FROM `authors`
-        WHERE `id` IN ()
-    
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 2
-FILE: Z:\home\todo\www\modules\books\main.php
-LINE: approximately 79
-DATE:2017-08-21 19:52:53
-========================================================================
-
-QUERY: 
-				INSERT INTO `authors` SET
-				`name`     = 'Борис Стругацкий',
-				`yob`     = '0',
-				
-				`yod`     = '0'
-			
- Duplicate entry 'Борис Стругацкий' for key 'ixName'
-FILE: Z:\home\todo\www\modules\admin\authors\add.php
-LINE: approximately 63
-DATE:2017-08-28 12:38:16
-========================================================================
-
-QUERY: 
-            SELECT SQL_CALC_FOUND_ROWS * FROM `books`
-            
-            LIMIT , 2
-        
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ' 2' at line 3
-FILE: Z:\home\todo\www\libs\class_Paginator.php
-LINE: approximately 15
-DATE:2017-08-28 16:52:06
-========================================================================
-
-QUERY: 
-            SELECT SQL_CALC_FOUND_ROWS * FROM `books`
-            
-            LIMIT -2, 2
-        
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-2, 2' at line 3
-FILE: Z:\home\todo\www\libs\class_Paginator.php
-LINE: approximately 15
-DATE:2017-08-28 20:13:58
-========================================================================
-
-QUERY: 
-            SELECT SQL_CALC_FOUND_ROWS * FROM `books`
-            
-            LIMIT -12, 2
-        
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-12, 2' at line 3
-FILE: Z:\home\todo\www\libs\class_Paginator.php
-LINE: approximately 15
-DATE:2017-08-28 20:18:48
-========================================================================
-
-QUERY: 
-            SELECT SQL_CALC_FOUND_ROWS * FROM `books`
-            
-            LIMIT -2, 2
-        
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-2, 2' at line 3
-FILE: Z:\home\todo\www\libs\class_Paginator.php
-LINE: approximately 15
-DATE:2017-08-28 20:19:08
-========================================================================
-
-QUERY: 
-            SELECT SQL_CALC_FOUND_ROWS * FROM `books`
-            
-            LIMIT -2, 2
-        
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-2, 2' at line 3
-FILE: Z:\home\todo\www\libs\class_Paginator.php
-LINE: approximately 15
-DATE:2017-08-28 20:19:50
-========================================================================
-
-QUERY: 
-            SELECT SQL_CALC_FOUND_ROWS * FROM `books`
-            
-            LIMIT -2, 2
-        
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-2, 2' at line 3
-FILE: Z:\home\todo\www\libs\class_Paginator.php
-LINE: approximately 15
-DATE:2017-08-28 20:19:51
-========================================================================
-
-QUERY: 
-            SELECT SQL_CALC_FOUND_ROWS * FROM `books`
-            
-            LIMIT -2, 2
-        
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-2, 2' at line 3
-FILE: Z:\home\todo\www\libs\class_Paginator.php
-LINE: approximately 15
-DATE:2017-08-28 20:19:51
-========================================================================
-
-QUERY: 
-            SELECT SQL_CALC_FOUND_ROWS * FROM `books`
-            
-            LIMIT -2, 2
-        
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-2, 2' at line 3
-FILE: Z:\home\todo\www\libs\class_Paginator.php
-LINE: approximately 15
-DATE:2017-08-28 20:20:05
-========================================================================
-
-QUERY: 
-        SELECT * FROM `cities`
-        WHERE `name_ru` = 'Харьков' AND `name_ru` NOT IN (Харьков, Верхняя Пышма, Харьков, Вислох, Харьков, Воскресенское)
-    
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Пышма, Харьков, Вислох, Харьков, Воскресенск' at line 2
-FILE: D:\OSPanel\domains\todo\modules\games\ajax.php
-LINE: approximately 18
-DATE:2017-08-30 11:27:41
-========================================================================
-
-QUERY: 
-        SELECT * FROM `cities`
-        WHERE `name_ru` = 'Харьков' AND `name_ru` NOT IN (Харьков, Верхняя Пышма, Харьков, Вислох, Харьков, Воскресенское)
-    
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Пышма, Харьков, Вислох, Харьков, Воскресенск' at line 2
-FILE: D:\OSPanel\domains\todo\modules\games\ajax.php
-LINE: approximately 18
-DATE:2017-08-30 11:27:53
-========================================================================
-
-QUERY: 
-        SELECT * FROM `cities`
-        WHERE `name_ru` = 'Харьков' AND `name_ru` NOT IN (Харьков, Верхняя Пышма, Харьков, Вислох, Харьков, Воскресенское)
-    
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Пышма, Харьков, Вислох, Харьков, Воскресенск' at line 2
-FILE: D:\OSPanel\domains\todo\modules\games\ajax.php
-LINE: approximately 18
-DATE:2017-08-30 11:29:28
-========================================================================
-
-QUERY: 
-        SELECT * FROM `cities`
-        WHERE `name_ru` = 'Харьков' AND `name_ru` NOT IN ()
-    
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 2
-FILE: D:\OSPanel\domains\todo\modules\games\ajax.php
-LINE: approximately 18
-DATE:2017-08-30 11:30:08
-========================================================================
-
-QUERY: 
-        SELECT * FROM `cities`
-        WHERE `name_ru` = 'Харьков' AND `name_ru` NOT IN ()
-    
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 2
-FILE: D:\OSPanel\domains\todo\modules\games\ajax.php
-LINE: approximately 18
-DATE:2017-08-30 11:30:24
-========================================================================
-
-QUERY: 
-        SELECT * FROM `cities`
-        WHERE `name_ru` = 'Харьков' AND `name_ru` NOT IN ()
-    
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 2
-FILE: D:\OSPanel\domains\todo\modules\games\ajax.php
-LINE: approximately 18
-DATE:2017-08-30 11:34:09
-========================================================================
-
-QUERY: 
-        SELECT * FROM `cities`
-        WHERE `name_ru` = 'Харьков' AND `name_ru` NOT IN (\'Харьков\'\', \'Вальс\')
-    
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '\'Харьков\'\', \'Вальс\')' at line 2
-FILE: D:\OSPanel\domains\todo\modules\games\ajax.php
-LINE: approximately 20
-DATE:2017-08-30 11:35:03
-========================================================================
-
-QUERY: 
-        SELECT * FROM `cities`
-        WHERE `name_ru` = 'Харьков' AND `name_ru` NOT IN ('Харьков'', 'Витория-да-Конкиста')
-    
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Витория-да-Конкиста')' at line 2
-FILE: D:\OSPanel\domains\todo\modules\games\ajax.php
-LINE: approximately 20
-DATE:2017-08-30 11:36:29
-========================================================================
-
-QUERY: 
-            SELECT * FROM `cities`
-            WHERE `name_ru` = 'Харьков
-        
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Харьков' at line 2
-FILE: D:\OSPanel\domains\todo\modules\games\ajax.php
-LINE: approximately 21
-DATE:2017-08-30 11:51:22
-========================================================================
-
-QUERY: 
-            SELECT * FROM `cities`
-            WHERE `name_ru` = 'Харьков
-        
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Харьков' at line 2
-FILE: D:\OSPanel\domains\todo\modules\games\ajax.php
-LINE: approximately 21
-DATE:2017-08-30 11:51:30
-========================================================================
-
-QUERY: 
-            SELECT * FROM `cities`
-            WHERE `name_ru` = 'Харьков
-        
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''Харьков' at line 2
-FILE: D:\OSPanel\domains\todo\modules\games\ajax.php
-LINE: approximately 21
-DATE:2017-08-30 11:52:18
-========================================================================
-
-QUERY: 
-            SELECT * FROM `cities`
-            WHERE `name_ru` LIKE 'в%' AND NOT IN ('Харьков')
-            ORDER BY RAND()
-        
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'IN ('Харьков')
-            ORDER BY RAND()' at line 2
-FILE: D:\OSPanel\domains\todo\modules\games\ajax.php
-LINE: approximately 39
-DATE:2017-08-31 19:36:55
-========================================================================
-
-QUERY: 
-            SELECT * FROM `cities`
-            WHERE `name_ru` LIKE ' %' AND `name_ru` NOT IN ('Днепр')asd
-            ORDER BY RAND()
-        
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'asd
-            ORDER BY RAND()' at line 2
-FILE: D:\OSPanel\domains\todo\modules\games\ajax.php
-LINE: approximately 46
-DATE:2017-08-31 19:53:35
-========================================================================
-
-QUERY: 
-            SELECT * FROM `cities`
-            WHERE `name_ru` LIKE 'р%' AND `name_ru` NOT IN ('Днепр')asd
-            ORDER BY RAND()
-        
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'asd
-            ORDER BY RAND()' at line 2
-FILE: D:\OSPanel\domains\todo\modules\games\ajax.php
-LINE: approximately 46
-DATE:2017-08-31 19:55:23
-========================================================================
-
-QUERY: 
-            SELECT * FROM `cities`
-            WHERE `name_ru` LIKE 'ы%' AND `name_ru` NOT IN ('Алматы')123
-            ORDER BY RAND()
-        
- You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '123
-            ORDER BY RAND()' at line 2
-FILE: D:\OSPanel\domains\todo\modules\games\ajax.php
-LINE: approximately 46
-DATE:2017-08-31 19:56:16
-========================================================================
-
-QUERY: 
-            SELECT * FROM `cities`
-            WHERE `name_ru` LIKE 'в%' AND `name_ru` NOT IN ('Харьков') AND `name_ru` &lt;&gt; Харьков
-            ORDER BY RAND()
-        
- Unknown column 'Харьков' in 'where clause'
-FILE: D:\OSPanel\domains\todo\modules\games\ajax.php
-LINE: approximately 46
-DATE:2017-08-31 20:10:04
-========================================================================
-
-QUERY: 
-            SELECT * FROM `cities`
-            WHERE `name_ru` LIKE 'в%' AND `name_ru` NOT IN ('Харьков') AND `name_ru` &lt;&gt; Харьков
-            ORDER BY RAND()
-        
- Unknown column 'Харьков' in 'where clause'
-FILE: D:\OSPanel\domains\todo\modules\games\ajax.php
-LINE: approximately 46
-DATE:2017-08-31 20:10:12
-========================================================================
-
-
