@@ -1,0 +1,33 @@
+﻿@charset "utf-8";
+
+* {
+	margin: 0;
+	padding:0;
+	outline:none;
+}
+
+html, body {
+	width:100%;
+	height:100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*Шапка сайта*/
+
+
+/* Прикрепляем футер к низу */
+
+#wrapper {
+		display: flex;				/*Резиновый блок*/
+		flex-direction: column;		/*Контент располагается сверху вниз*/
+		height: 100%;				
+}
+
+#content {
+	flex: 1 0 auto;  /*1-й параметр - flex-grow- дает нам прикрипление*/
+}
+
+/* Футер */
