@@ -9,7 +9,9 @@
 	include_once "./variables.php";
 	
 	ob_start();
-		include "./".CORE::$CONTR."/allpages.php";
+	    if (file_exists("./".CORE::$CONTR."/allpages.php")) {
+            include "./".CORE::$CONTR."/allpages.php";
+        }
 		include_once "./".CORE::$CONTR."/".$_GET['module']."/".$_GET['page'].".php";
 		include_once "./skins/".CORE::$STYLE."/".$_GET['module']."/".$_GET['page'].".tpl";
 		$content = ob_get_contents();

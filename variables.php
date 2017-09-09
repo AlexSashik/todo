@@ -14,7 +14,14 @@ if(isset ($_GET['route'])) {
 		CORE::$META['keywords']    = '';
 		CORE::$META['title']       = 'TodoCMS';
 		array_shift($temp);
-	}
+	} elseif (!empty($temp) && $temp[0] == 'demo' ) {
+        CORE::$CONTR = CORE::$CONTR.'/demo';
+        CORE::$STYLE = 'demo';
+        CORE::$META['description'] = '';
+        CORE::$META['keywords']    = '';
+        CORE::$META['title']       = 'Todo-Demo';
+        array_shift($temp);
+    }
 	
 	foreach ($temp as $k => $v) {
 		switch ($k) {
@@ -50,6 +57,11 @@ if (CORE::$STYLE == 'admin') {
         'authors' => array ('main', 'add', 'edit'),
         'cab'     => array ('main')
 	);
+} elseif (CORE::$STYLE == 'demo') {
+    //Допустимые значения модулей и страниц демо адаптивного сайта
+    $modules_and_pages = array (
+        'static'  => array ('main')
+    );
 } else {
 	//Допустимые значения модулей и страниц главной части сайта
 	$modules_and_pages = array (
