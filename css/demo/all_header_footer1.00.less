@@ -55,6 +55,7 @@ header {
 	width: 955px;
 	padding: 58px 84px 0 84px;
 	nav {
+		position: relative;
 		&:extend(.clearfix all);
 		.nav_div {
 			float: left;
@@ -82,6 +83,39 @@ header {
 		padding-bottom: 10px;
 		.active {
 			.background-image(linear-gradient(to bottom, #FEC02D 0%,#FFAD19 100%));
+		}
+
+		#about_nav {
+			position: absolute;
+			background-color: #622201;
+			font-weight: 400;
+			text-align: center;
+			padding: 15px 0 20px 0;
+			z-index: 2;
+			text-transform: uppercase;
+			font-size: 12px;
+			width: 129px;
+			word-wrap: break-word;
+			overflow: hidden;
+			//border-top: 30px solid white;
+			//opacity: 0;
+			//display: none;
+			//height: 50px;
+			top: 171px;
+			left: 178px;
+			li {
+				list-style: none;
+				margin: 10px 0;
+			}
+
+			a {
+				color: white;
+				font-size: 10px;
+				margin: 10px 15px 10px 15px;
+				&:hover {
+					color: #D48101;
+				}
+			}
 		}
 	}
 }

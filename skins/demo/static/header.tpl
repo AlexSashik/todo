@@ -10,5 +10,12 @@
         <div id="navDiv4" class="nav_div"><div>&nbsp;</div><a href="#">SERVICES</a></div>
         <div id="navDiv5" class="nav_div"><div>&nbsp;</div><a href="#">BLOG</a></div>
         <div id="navDiv6" class="nav_div"><div>&nbsp;</div><a href="#">CONTACTS</a></div>
+        <div id="about_nav">
+            <ul>
+                <li><a href="#" class="animate">HISTORY</a></li>
+                <li><a href="#" class="animate">NEWS ></a></li>
+                <li><a href="#" class="animate">TESTIMONIALS</a></li>
+            </ul>
+        </div>
     </nav>
 </header>
