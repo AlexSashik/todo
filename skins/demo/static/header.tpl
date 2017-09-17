@@ -5,7 +5,7 @@
     </div>
     <nav>
         <div id="navDiv1" class="nav_div active"><a href="#">HOME</a></div>
-        <div id="navDiv2" class="nav_div"><div>&nbsp;</div><a href="#">ABOUT</a></div>
+        <div id="navDiv2" class="nav_div"><div>&nbsp;</div><a href="#">ABOUT <i class="fa fa-angle-down" aria-hidden="true"></i></a></div>
         <div id="navDiv3" class="nav_div"><div>&nbsp;</div><a href="#">PRODUCTS</a></div>
         <div id="navDiv4" class="nav_div"><div>&nbsp;</div><a href="#">SERVICES</a></div>
         <div id="navDiv5" class="nav_div"><div>&nbsp;</div><a href="#">BLOG</a></div>
