@@ -13,8 +13,14 @@
         <div id="about_nav">
             <ul>
                 <li><a href="#" class="animate">HISTORY</a></li>
-                <li><a href="#" class="animate">NEWS ></a></li>
+                <li><a href="#" class="animate" id="news">NEWS ></a></li>
                 <li><a href="#" class="animate">TESTIMONIALS</a></li>
+            </ul>
+        </div>
+        <div id="about_news_nav">
+            <ul>
+                <li><a href="#" class="animate">LATEST</a></li>
+                <li><a href="#" class="animate">ARCHIVE</a></li>
             </ul>
         </div>
     </nav>

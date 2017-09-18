@@ -91,32 +91,52 @@ header nav .active {
   background-image: -o-linear-gradient(top, #FEC02D 0%, #FFAD19 100%);
   background-image: linear-gradient(to bottom, #FEC02D 0%, #FFAD19 100%);
 }
-header nav #about_nav {
+header nav #about_nav,
+header nav #about_news_nav {
   position: absolute;
-  background-color: #622201;
   font-weight: 400;
   text-align: center;
-  padding: 15px 0 20px 0;
+  padding: 15px 0 15px 0;
   z-index: 2;
   text-transform: uppercase;
   font-size: 12px;
-  width: 129px;
   word-wrap: break-word;
   overflow: hidden;
-  top: 171px;
-  left: 178px;
+  display: none;
 }
-header nav #about_nav li {
+header nav #about_nav li,
+header nav #about_news_nav li {
   list-style: none;
   margin: 10px 0;
 }
-header nav #about_nav a {
+header nav #about_nav a,
+header nav #about_news_nav a {
   color: white;
   font-size: 10px;
-  margin: 10px 15px 10px 15px;
+  margin: 10px 15px;
+}
+header nav #about_nav #news,
+header nav #about_news_nav #news {
+  display: block;
+  margin: 10px 0;
+}
+header nav #about_nav {
+  top: 171px;
+  left: 178px;
+  width: 129px;
+  background-color: #622201;
 }
 header nav #about_nav a:hover {
   color: #D48101;
+}
+header nav #about_news_nav {
+  top: 215px;
+  left: 307px;
+  width: 100px;
+  background-color: #D48101;
+}
+header nav #about_news_nav a:hover {
+  color: #FFC543;
 }
 /* Прикрепляем футер к низу */
 #wrapper {
