@@ -32,13 +32,61 @@ header nav:before {
 header {
   background-color: #fff;
   margin: auto;
+  width: 1127px;
+  padding-top: 58px;
+}
+@media screen and (max-width: 1127px) {
+  header {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 995px) {
+  header {
+    width: 768px;
+  }
+}
+@media screen and (max-width: 767px) {
+  header {
+    width: 420px;
+    padding: 20px 0 10px 0;
+  }
+}
+@media screen and (max-width: 479px) {
+  header {
+    width: 300px;
+    padding: 20px 0 10px 0;
+  }
+}
+header .header_box {
+  margin: auto;
   width: 955px;
-  padding: 58px 84px 0 84px;
+}
+@media screen and (max-width: 995px) {
+  header .header_box {
+    width: 750px;
+  }
+}
+@media screen and (max-width: 767px) {
+  header .header_box {
+    width: 394px;
+  }
+}
+@media screen and (max-width: 479px) {
+  header .header_box {
+    width: 280px;
+  }
 }
 header img {
   display: block;
   float: left;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 767px) {
+  header img {
+    float: none;
+    margin: auto;
+    margin-bottom: 20px;
+  }
 }
 header .reg {
   float: right;
@@ -49,7 +97,20 @@ header .reg {
 header .reg a {
   color: #ffae19;
 }
+header .reg a:hover {
+  text-decoration: underline;
+  color: #6c2a01;
+}
+@media screen and (max-width: 767px) {
+  header .reg {
+    float: none;
+    text-align: center;
+    margin: 0 0 20px 0;
+  }
+}
 header nav {
+  clear: both;
+  display: block;
   position: relative;
   padding-bottom: 10px;
 }
@@ -121,22 +182,55 @@ header nav #about_news_nav #news {
   margin: 10px 0;
 }
 header nav #about_nav {
-  top: 171px;
-  left: 178px;
+  top: 91px;
+  left: 176px;
   width: 129px;
   background-color: #622201;
 }
 header nav #about_nav a:hover {
   color: #D48101;
 }
+@media screen and (max-width: 995px) {
+  header nav #about_nav {
+    left: 132px;
+    width: 110px;
+  }
+}
 header nav #about_news_nav {
-  top: 215px;
-  left: 307px;
+  top: 137px;
+  left: 305px;
   width: 100px;
   background-color: #D48101;
 }
 header nav #about_news_nav a:hover {
   color: #FFC543;
+}
+@media screen and (max-width: 995px) {
+  header nav #about_news_nav {
+    left: 242px;
+  }
+}
+@media screen and (max-width: 767px) {
+  header nav {
+    display: none;
+  }
+}
+header .mimi-nav {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  header .mimi-nav {
+    display: block;
+    width: 100%;
+    border: 2px solid #9e9e9e;
+    -webkit-border-radius: 4px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 4px;
+    -moz-background-clip: padding;
+    border-radius: 4px;
+    background-clip: padding-box;
+    color: #464646;
+  }
 }
 /* Прикрепляем футер к низу */
 #wrapper {

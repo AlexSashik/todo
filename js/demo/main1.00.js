@@ -32,7 +32,7 @@ function nav_hover(i) {
 
 // -----------------Анимация подменю--------------------------
 
-function anim_subnav (nav, sub_nav) {
+function anim_subnav (nav, sub_nav, subnavH) {
     var from_sub_nav = false;
 
     $(nav).mouseenter (function () {
@@ -71,56 +71,88 @@ function anim_subnav (nav, sub_nav) {
         setTimeout("$('" + nav + ">div').css(cssValuesBrown);", 200);
     });
 }
-// ------------Реализация анимации меню-------------------
-for (var i = 1; i <= 6; i++) {
-    nav_hover(i);
+
+// -----------------Анимация доп блока в подменю--------------------------
+
+function anim_subsubnav (nav, sub_nav, sub_subnav, href, subnavH, subnavnewsH) {
+    $(href).hover( function(){
+        if (window.timeoutId !== undefined) clearTimeout(timeoutId);
+        $(sub_subnav).css('display', 'block');
+        $(sub_subnav).animate({ "height": subnavnewsH}, 400);
+        $(href).css('color', '#D48101');
+    }, function () {
+        timeoutId = setTimeout("" +
+            "$('" + sub_subnav + "').css('display', 'none');" +
+            "$('" + sub_subnav + "').height(0.25 * subnavnewsH);" +
+            "", 500);
+        $(href).css('color', '#fff');
+    });
+
+    $(sub_subnav).mouseenter (function () {
+        $(sub_subnav).css('display', 'block');
+        $(href).css('color', '#D48101');
+        clearTimeout(timeoutId);
+        $(nav + '>div').stop(true);
+        setTimeout("$('" + nav + ">div').css(cssValuesYellow);", 200);
+        $(nav + '>div').css( 'width', '100%');
+        $(sub_nav).css('display', 'block');
+        $(sub_nav).height(subnavH);
+    });
+
+    $(sub_subnav).mouseleave (function () {
+        $(href).css('color', '#fff');
+        $(sub_nav).stop(true);
+        $(sub_nav).height(0.25 * subnavH);
+        $(sub_nav).css('display', 'none');
+        $(nav + '>div').stop();
+        $(nav + '>div').animate({ width: '1.5%'}, 200);
+        setTimeout("$('" + nav + ">div').css(cssValuesBrown);", 200);
+        $(this).css('display', 'none');
+    });
+
+    $(sub_nav).mouseleave (function () {
+        $(sub_subnav).css('display', 'none');
+    });
 }
 
-// ------------Реализация анимации подменю----------------
-var subnavH = $('#about_nav').height();
-$('#about_nav').height(0.25 * subnavH);
 
-anim_subnav('#navDiv2', '#about_nav');
+//-------------------------------------------- Реализации ---------------------------------------------------
 
-// ------------Реализация анимации новостного блока подменю----------------
-var subnavnewsH = $('#about_news_nav').height();
-$('#about_news_nav').height(0.25 * subnavH);
 
-$('#news').hover( function(){
-    if (window.timeoutId !== undefined) clearTimeout(timeoutId);
-    $('#about_news_nav').css('display', 'block');
-    $('#about_news_nav').animate({ "height": subnavnewsH}, 400);
-    $('#news').css('color', '#D48101');
-}, function () {
-    timeoutId = setTimeout("" +
-        "$('#about_news_nav').css('display', 'none');" +
-        "$('#about_news_nav').height(0.25 * subnavnewsH);" +
-    "", 500);
-    $('#news').css('color', '#fff');
-});
+if ($(document).width() >= 768) {
+    // ------------Реализация анимации меню-------------------
+    for (var i = 1; i <= 6; i++) {
+        nav_hover(i);
+    }
 
-$('#about_news_nav').mouseenter (function () {
-    $('#about_news_nav').css('display', 'block');
-    $('#news').css('color', '#D48101');
-    clearTimeout(timeoutId);
-    $('#navDiv2' + '>div').stop(true);
-    setTimeout("$('#navDiv2>div').css(cssValuesYellow);", 200);
-    $('#navDiv2' + '>div').css( 'width', '100%');
-    $('#about_nav').css('display', 'block');
-    $('#about_nav').height(subnavH);
-});
-
-$('#about_news_nav').mouseleave (function () {
-    $('#news').css('color', '#fff');
-    $('#about_nav').stop(true);
+    // ------------Реализация анимации подменю----------------
+    var subnavH = $('#about_nav').height();
     $('#about_nav').height(0.25 * subnavH);
-    $('#about_nav').css('display', 'none');
-    $('#navDiv2' + '>div').stop();
-    $('#navDiv2' + '>div').animate({ width: '1.5%'}, 200);
-    setTimeout("$('" + "#navDiv2" + ">div').css(cssValuesBrown);", 200);
-    $(this).css('display', 'none');
-});
+    anim_subnav('#navDiv2', '#about_nav', subnavH);
 
-$('#about_nav').mouseleave (function () {
-    $('#about_news_nav').css('display', 'none');
-});
+    // ------------Реализация анимации новостного блока подменю----------------
+    var subnavnewsH = $('#about_news_nav').height();
+    $('#about_news_nav').height(0.25 * subnavnewsH);
+    anim_subsubnav('#navDiv2', '#about_nav','#about_news_nav', '#news', subnavH, subnavnewsH);
+} else {
+    first = true;
+    $( window ).resize(function() {
+        if ($(document).width() >= 768 && first === true) {
+            first = false;
+            // ------------Реализация анимации меню-------------------
+            for (var i = 1; i <= 6; i++) {
+                nav_hover(i);
+            }
+
+            // ------------Реализация анимации подменю----------------
+            var subnavH = $('#about_nav').height();
+            $('#about_nav').height(0.25 * subnavH);
+            anim_subnav('#navDiv2', '#about_nav', subnavH);
+
+            // ------------Реализация анимации новостного блока подменю----------------
+            var subnavnewsH = $('#about_news_nav').height();
+            $('#about_news_nav').height(0.25 * subnavnewsH);
+            anim_subsubnav('#navDiv2', '#about_nav','#about_news_nav', '#news', subnavH, subnavnewsH);
+        }
+    });
+}

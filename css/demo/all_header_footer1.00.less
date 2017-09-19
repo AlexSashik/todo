@@ -37,10 +37,45 @@ a {
 header {
 	&:extend(.clearfix all);
 	background-color: #fff;
+    margin: auto;
+    width: 1127px;
+    padding-top: 58px;
+    @media screen and (max-width: 1127px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 995px) {
+      width: 768px;
+    }
+    @media screen and (max-width: 767px) {
+      width: 420px;
+      padding: 20px 0 10px 0;
+    }
+    @media screen and (max-width: 479px) {
+      width: 300px;
+      padding: 20px 0 10px 0;
+    }
+    .header_box {
+      margin: auto;
+      width: 955px;
+      @media screen and (max-width: 995px) {
+        width: 750px;
+      }
+      @media screen and (max-width: 767px) {
+        width: 394px;
+      }
+      @media screen and (max-width: 479px) {
+        width: 280px;
+      }
+    }
 	img {
 		display: block;
 		float: left;
 		margin-bottom: 30px;
+        @media screen and (max-width: 767px) {
+          float: none;
+          margin: auto;
+          margin-bottom: 20px;
+        }
 	}
 	.reg {
 		float: right;
@@ -49,12 +84,20 @@ header {
 		margin-top: 35px;
 		a {
 			color: #ffae19;
+            &:hover {
+              text-decoration: underline;
+              color: #6c2a01;
+            }
 		}
+        @media screen and (max-width: 767px) {
+          float: none;
+          text-align: center;
+          margin: 0 0 20px 0;
+        }
 	}
-	margin: auto;
-	width: 955px;
-	padding: 58px 84px 0 84px;
 	nav {
+        clear: both;
+        display: block;
 		position: relative;
 		&:extend(.clearfix all);
 		.nav_div {
@@ -112,24 +155,44 @@ header {
 			}
 		}
 		#about_nav {
-			top: 171px;
-			left: 178px;
+			top: 91px;
+			left: 176px;
 			width: 129px;
 			background-color: #622201;
 			a:hover {
 				color: #D48101;
 			}
+            @media screen and (max-width: 995px) {
+              left: 132px;
+              width: 110px;
+            }
 		}
 		#about_news_nav {
-			top: 215px;
-			left: 307px;
+			top: 137px;
+			left: 305px;
 			width: 100px;
 			background-color: #D48101;
 			a:hover {
 				color: #FFC543;
 			}
+            @media screen and (max-width: 995px) {
+              left: 242px;
+            }
 		}
+        @media screen and (max-width: 767px) {
+          display: none;
+        }
 	}
+    .mimi-nav {
+      display: none;
+      @media screen and (max-width: 767px) {
+        display: block;
+        width: 100%;
+        border: 2px solid #9e9e9e;
+        .border-radius(4px);
+        color: #464646
+      }
+    }
 }
 
 
