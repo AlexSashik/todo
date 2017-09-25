@@ -17,12 +17,12 @@ if(isset ($_GET['route'])) {
 	} elseif (!empty($temp) && $temp[0] == 'demo' ) {
         CORE::$CONTR = CORE::$CONTR.'/demo';
         CORE::$STYLE = 'demo';
-        CORE::$META['description'] = '';
-        CORE::$META['keywords']    = '';
+        CORE::$META['description'] = 'Agrolux - современная сельскохозяйственная компания по продаже злаковых культур и агро оборудования';
+        CORE::$META['keywords']    = 'агрокультура, сельское хозяйство, злаковые культуры, агро товары, agrolux';
         CORE::$META['title']       = 'Todo-Demo';
         array_shift($temp);
     }
-	
+
 	foreach ($temp as $k => $v) {
 		switch ($k) {
 			case 0:

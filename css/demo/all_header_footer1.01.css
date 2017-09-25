@@ -21,12 +21,18 @@ a {
 .clearfix:before,
 header:after,
 header:before,
-header nav:after,
-header nav:before {
+header .nav:after,
+header .nav:before {
   clear: both;
   content: '';
   display: block;
   height: 0;
+}
+header,
+footer,
+nav,
+main {
+  display: block;
 }
 /*Шапка сайта*/
 header {
@@ -59,7 +65,7 @@ header {
 }
 header .header_box {
   margin: auto;
-  width: 955px;
+  width: 939px;
 }
 @media screen and (max-width: 995px) {
   header .header_box {
@@ -111,10 +117,13 @@ header .reg a:hover {
 header nav {
   clear: both;
   display: block;
+}
+header .nav {
+  display: block;
   position: relative;
   padding-bottom: 10px;
 }
-header nav .nav_div {
+header .nav .nav_div {
   float: left;
   position: relative;
   width: 16.66666667%;
@@ -126,7 +135,7 @@ header nav .nav_div {
   font-family: 'Anton', sans-serif;
   font-size: 20px;
 }
-header nav .nav_div a {
+header .nav .nav_div a {
   display: block;
   position: relative;
   width: 100%;
@@ -135,7 +144,7 @@ header nav .nav_div a {
   text-align: center;
   z-index: 2;
 }
-header nav .nav_div div {
+header .nav .nav_div div {
   position: absolute;
   width: 1.5%;
   padding: 30px 0 30px 0;
@@ -145,15 +154,15 @@ header nav .nav_div div {
   background-image: -o-linear-gradient(left, #6D3119 50%, #391500 100%);
   background-image: linear-gradient(to right, #6D3119 50%, #391500 100%);
 }
-header nav .active {
+header .nav .active {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9Imxlc3NoYXQtZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRUMwMkQiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI0ZGQUQxOSIgc3RvcC1vcGFjaXR5PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2xlc3NoYXQtZ2VuZXJhdGVkKSIgLz48L3N2Zz4=);
   background-image: -webkit-linear-gradient(top, #FEC02D 0%, #FFAD19 100%);
   background-image: -moz-linear-gradient(top, #FEC02D 0%, #FFAD19 100%);
   background-image: -o-linear-gradient(top, #FEC02D 0%, #FFAD19 100%);
   background-image: linear-gradient(to bottom, #FEC02D 0%, #FFAD19 100%);
 }
-header nav #about_nav,
-header nav #about_news_nav {
+header .nav #about_nav,
+header .nav #about_news_nav {
   position: absolute;
   font-weight: 400;
   text-align: center;
@@ -165,53 +174,53 @@ header nav #about_news_nav {
   overflow: hidden;
   display: none;
 }
-header nav #about_nav li,
-header nav #about_news_nav li {
+header .nav #about_nav li,
+header .nav #about_news_nav li {
   list-style: none;
   margin: 10px 0;
 }
-header nav #about_nav a,
-header nav #about_news_nav a {
+header .nav #about_nav a,
+header .nav #about_news_nav a {
   color: white;
   font-size: 10px;
   margin: 10px 15px;
 }
-header nav #about_nav #news,
-header nav #about_news_nav #news {
+header .nav #about_nav #news,
+header .nav #about_news_nav #news {
   display: block;
   margin: 10px 0;
 }
-header nav #about_nav {
+header .nav #about_nav {
   top: 91px;
   left: 176px;
   width: 129px;
   background-color: #622201;
 }
-header nav #about_nav a:hover {
+header .nav #about_nav a:hover {
   color: #D48101;
 }
 @media screen and (max-width: 995px) {
-  header nav #about_nav {
+  header .nav #about_nav {
     left: 132px;
     width: 110px;
   }
 }
-header nav #about_news_nav {
+header .nav #about_news_nav {
   top: 137px;
   left: 305px;
   width: 100px;
   background-color: #D48101;
 }
-header nav #about_news_nav a:hover {
+header .nav #about_news_nav a:hover {
   color: #FFC543;
 }
 @media screen and (max-width: 995px) {
-  header nav #about_news_nav {
+  header .nav #about_news_nav {
     left: 242px;
   }
 }
 @media screen and (max-width: 767px) {
-  header nav {
+  header .nav {
     display: none;
   }
 }
@@ -231,17 +240,5 @@ header .mimi-nav {
     background-clip: padding-box;
     color: #464646;
   }
-}
-/* Прикрепляем футер к низу */
-#wrapper {
-  display: flex;
-  /*Резиновый блок*/
-  flex-direction: column;
-  /*Контент располагается сверху вниз*/
-  height: 100%;
-}
-#content {
-  flex: 1 0 auto;
-  /*1-й параметр - flex-grow- дает нам прикрипление*/
 }
 /* Футер */

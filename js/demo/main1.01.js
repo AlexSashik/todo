@@ -22,6 +22,7 @@ function nav_hover(i) {
         $(elem).stop();
         $(elem).css(cssValuesYellow);
         $(elem).animate({ width: '100%'}, 200);
+        setTimeout("$('" + elem + "').css(cssValuesYellow);", 200);
     }, function () {
         var elem = '#navDiv' + i +'>div';
         $(elem).stop();

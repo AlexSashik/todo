@@ -10,26 +10,38 @@
 		
 		<link href="/img/default/ico.png" rel="shortcut icon" type="image/x-icon">
 		<link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="/css/<?php echo CORE::$STYLE?>/all_header_footer1.00.css" rel="stylesheet" type="text/css">
+        <link href="/css/<?php echo CORE::$STYLE?>/all_header_footer1.01.css" rel="stylesheet" type="text/css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<?php
         if(isset(CORE::$CSS) ) echo implode("\n", CORE::$CSS);
         if(isset(CORE::$JS) ) echo implode("\n		", CORE::$JS);?>
+
 	</head>
 
 	<body>
-		
-		<div id="wrapper">
-				
-			<div id="content">
-				<?php
-				require_once "./skins/".CORE::$STYLE."/static/header.tpl";
-				echo $content;
-				?>
-			</div>
-			
-			<?php require_once "./skins/".CORE::$STYLE."/static/footer.tpl";?>
-		</div>
+        <!--[if lt IE 9]>
+        <script>
+            document.createElement("header" );
+            document.createElement("footer" );
+            document.createElement("nav"    );
+            document.createElement("main"   );
+            document.createElement("section");
+            document.createElement("aside"  );
+            document.createElement("article");
+            document.createElement("hgroup" );
+            document.createElement("time"   );
+        </script>
+        <noscript>
+            <strong>Warning !</strong>
+            Because your browser does not support HTML5, some elements are created using JavaScript.
+            Unfortunately your browser has disabled scripting. Please enable it in order to display this page.
+        </noscript>
+        <![endif]-->
+    	<?php
+		require_once "./skins/".CORE::$STYLE."/static/header.tpl";
+		echo $content;
+        require_once "./skins/".CORE::$STYLE."/static/footer.tpl";
+        ?>
 		
 	</body>
 
