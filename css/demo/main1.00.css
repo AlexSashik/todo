@@ -1,7 +1,7 @@
 .clearfix:after,
 .clearfix:before,
-main .galery:after,
-main .galery:before {
+main #galery:after,
+main #galery:before {
   clear: both;
   content: '';
   display: block;
@@ -33,7 +33,7 @@ main {
     width: 300px;
   }
 }
-main .galery {
+main #galery {
   margin: auto;
   width: 939px;
   height: 437px;
@@ -41,21 +41,21 @@ main .galery {
   position: relative;
 }
 @media screen and (max-width: 995px) {
-  main .galery {
+  main #galery {
     width: 750px;
     height: 349px;
     background-size: auto 349px;
   }
 }
 @media screen and (max-width: 767px) {
-  main .galery {
+  main #galery {
     width: 394px;
     height: 187px;
     background-size: auto 187px;
   }
 }
 @media screen and (max-width: 479px) {
-  main .galery {
+  main #galery {
     width: 280px;
     height: 130px;
     background-size: auto 130px;

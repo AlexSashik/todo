@@ -12,6 +12,7 @@
 		<link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="/css/<?php echo CORE::$STYLE?>/all_header_footer1.01.css" rel="stylesheet" type="text/css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script defer src="/js/demo/all_header_footer1.00.js"></script>
 		<?php
         if(isset(CORE::$CSS) ) echo implode("\n", CORE::$CSS);
         if(isset(CORE::$JS) ) echo implode("\n		", CORE::$JS);?>

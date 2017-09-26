@@ -1,6 +1,6 @@
 <?php
 CORE::$CSS[] = '<link href="/css/'.CORE::$STYLE.'/goods/goods_list1.02.css" rel="stylesheet" type="text/css">';
-CORE::$JS[]  = '<script defer src="/js/'.CORE::$STYLE.'/goods/main1.01.js"></script>';
+CORE::$JS[]  = '<script defer src="/js/'.CORE::$STYLE.'/goods/all_header_footer1.00.js"></script>';
 CORE::$META['title']  = 'TodoCMS - goods';
 
 if (isset($_SESSION['info'])) {
