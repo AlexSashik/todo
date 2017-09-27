@@ -37,7 +37,7 @@ main #galery {
   margin: auto;
   width: 939px;
   height: 437px;
-  background: url(/img/demo/main/main.jpg) 0 0;
+  background: url(/img/demo/main/main2.jpg) 0 0;
   position: relative;
 }
 @media screen and (max-width: 995px) {
@@ -56,7 +56,7 @@ main #galery {
 }
 @media screen and (max-width: 479px) {
   main #galery {
-    width: 280px;
+    width: 279px;
     height: 130px;
     background-size: auto 130px;
   }
@@ -110,4 +110,164 @@ main #next:hover {
   main #next:hover {
     background-position: 38px 0;
   }
+}
+main article {
+  margin: auto;
+  padding: 40px 0;
+  width: 939px;
+}
+@media screen and (max-width: 995px) {
+  main article {
+    width: 750px;
+  }
+}
+@media screen and (max-width: 767px) {
+  main article {
+    width: 394px;
+  }
+}
+@media screen and (max-width: 479px) {
+  main article {
+    width: 279px;
+  }
+}
+main article section {
+  float: left;
+  width: 299px;
+  margin: 0 7px 50px 7px;
+  text-align: center;
+}
+@media screen and (max-width: 995px) {
+  main article section {
+    width: 236px;
+  }
+}
+@media screen and (max-width: 767px) {
+  main article section {
+    float: none;
+    margin: 0 auto 30px auto;
+    width: 394px;
+  }
+}
+@media screen and (max-width: 479px) {
+  main article section {
+    width: 279px;
+  }
+}
+main article section .img-leg {
+  margin: auto;
+  height: 299px;
+  -webkit-border-radius: 100%;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 100%;
+  -moz-background-clip: padding;
+  border-radius: 100%;
+  background-clip: padding-box;
+  -webkit-box-shadow: 1px 0 2px #D5D5D5;
+  -moz-box-shadow: 1px 0 2px #D5D5D5;
+  box-shadow: 1px 0 2px #D5D5D5;
+  background: url(/img/demo/main/legumbres.png);
+}
+@media screen and (max-width: 995px) {
+  main article section .img-leg {
+    height: 236px;
+    background-size: auto 236px;
+  }
+}
+@media screen and (max-width: 767px) {
+  main article section .img-leg {
+    width: 299px;
+    height: 299px;
+    background-size: auto 299px;
+  }
+}
+@media screen and (max-width: 479px) {
+  main article section .img-leg {
+    width: 270px;
+    height: 270px;
+    background-size: auto 270px;
+  }
+}
+main article section .second-leg {
+  background-position-x: 598px;
+}
+@media screen and (max-width: 995px) {
+  main article section .second-leg {
+    background-position-x: 472px;
+  }
+}
+@media screen and (max-width: 767px) {
+  main article section .second-leg {
+    background-position-x: 598px;
+  }
+}
+@media screen and (max-width: 479px) {
+  main article section .second-leg {
+    background-position-x: 540px;
+  }
+}
+main article section .third-leg {
+  background-position-x: 299px;
+}
+@media screen and (max-width: 995px) {
+  main article section .third-leg {
+    background-position-x: 236px;
+  }
+}
+@media screen and (max-width: 767px) {
+  main article section .third-leg {
+    background-position-x: 299px;
+  }
+}
+@media screen and (max-width: 479px) {
+  main article section .third-leg {
+    background-position-x: 270px;
+  }
+}
+main article section h2 {
+  font-family: 'Anton', sans-serif;
+  color: #d29858;
+  font-size: 35px;
+  word-wrap: break-word;
+  line-height: 40px;
+  font-weight: 100;
+  margin-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  main article section h2 span {
+    display: block;
+  }
+}
+main article section p {
+  padding-bottom: 15px;
+  margin: 0 5px;
+  color: #C7BCA5;
+  line-height: 20px;
+  font-size: 14px;
+}
+main article section a {
+  display: inline-block;
+  padding: 8px 20px;
+  color: white;
+  background: #ff9f11 url(/img/demo/main/bg-button.jpg) repeat-x;
+  -webkit-border-radius: 6px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 6px;
+  -moz-background-clip: padding;
+  border-radius: 6px;
+  background-clip: padding-box;
+  font-family: 'Anton', sans-serif;
+  font-size: 20px;
+}
+main article section a:hover {
+  -webkit-transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  background: #642503;
+}
+main article .divirers {
+  clear: both;
+  height: 4px;
+  background: url(/img/demo/main/divider.png) repeat-x;
 }

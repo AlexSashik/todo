@@ -7,7 +7,7 @@ if (document.documentElement.clientWidth > 995) {
 } else if (document.documentElement.clientWidth > 479) {
     delta = 402;
 } else {
-    delta = 280;
+    delta = 279.5;
 }
 
 $(window).resize(function() {
@@ -19,17 +19,17 @@ $(window).resize(function() {
     } else if (document.documentElement.clientWidth > 479) {
         delta = 402;
     } else {
-        delta = 280;
+        delta = 279.5;
     }
     $('#galery').css('backgroundPositionX', -id*delta);
 });
 
 var intervalID = setInterval(function () {
     animation = true;
-    $('#galery').animate({ backgroundPosition: parseInt($('#galery').css('backgroundPositionX')) - delta}, 500);
+    $('#galery').animate({ backgroundPosition: parseFloat($('#galery').css('backgroundPositionX')) - delta}, 500);
     setTimeout("animation = false", 500);
     id = (id + 4)%3;
-    if (Math.abs(parseInt($('#galery').css('backgroundPositionX'))) >= delta*12) {
+    if (Math.abs(parseFloat($('#galery').css('backgroundPositionX'))) >= delta*3) {
         $('#galery').stop();
         setTimeout("$('#galery').css('backgroundPositionX', '0')", 500);
     }
@@ -39,11 +39,11 @@ var intervalID = setInterval(function () {
 $("#prev").on('click', function () {
     clearInterval(intervalID);
     if (!animation) {
-        if (Math.abs(parseInt($('#galery').css('backgroundPositionX'))) >= delta*12) {
+        if (Math.abs(parseFloat($('#galery').css('backgroundPositionX'))) >= delta*3) {
             $('#galery').css('backgroundPositionX', '0');
         }
         animation = true;
-        $('#galery').animate({ backgroundPosition: parseInt($("#galery").css('backgroundPositionX')) + delta}, 500);
+        $('#galery').animate({ backgroundPosition: parseFloat($("#galery").css('backgroundPositionX')) + delta}, 500);
         setTimeout("animation = false", 500);
         id = (id + 5)%3;
     }
@@ -53,11 +53,11 @@ $("#prev").on('click', function () {
 $("#next").on('click', function () {
     clearInterval(intervalID);
     if (!animation) {
-        if (Math.abs(parseInt($('#galery').css('backgroundPositionX'))) >= delta*12) {
+        if (Math.abs(parseFloat($('#galery').css('backgroundPositionX'))) >= delta*3) {
             $('#galery').css('backgroundPositionX', '0');
         }
         animation = true;
-        $('#galery').animate({ backgroundPosition: parseInt($("#galery").css('backgroundPositionX')) - delta}, 500);
+        $('#galery').animate({ backgroundPosition: parseFloat($("#galery").css('backgroundPositionX')) - delta}, 500);
         setTimeout("animation = false", 500);
         id = (id + 4)%3;
     }
