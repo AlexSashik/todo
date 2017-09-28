@@ -7,16 +7,14 @@
 		<meta name="description" content="<?php echo CORE::$META['description'];?>">
 		<meta name="keywords" content="<?php echo CORE::$META['keywords'];?>">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-		<link href="/img/default/ico.png" rel="shortcut icon" type="image/x-icon">
-		<link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="/img/default/ico.png" rel="shortcut icon" type="image/x-icon">
+        <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="/css/<?php echo CORE::$STYLE?>/all_header_footer1.01.css" rel="stylesheet" type="text/css">
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script defer src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script defer src="/js/demo/all_header_footer1.00.js"></script>
-		<?php
+        <?php
         if(isset(CORE::$CSS) ) echo implode("\n", CORE::$CSS);
         if(isset(CORE::$JS) ) echo implode("\n		", CORE::$JS);?>
-
 	</head>
 
 	<body>
@@ -41,7 +39,5 @@
 		echo $content;
         require_once "./skins/".CORE::$STYLE."/static/footer.tpl";
         ?>
-		
 	</body>
-
 </html>
