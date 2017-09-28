@@ -33,7 +33,7 @@ a {
 	text-decoration: none;
 }
 
-header, footer, nav, main, article, section {
+header, footer, nav, main, article, section, address {
 	display: block;
 }
 
@@ -205,3 +205,111 @@ header {
 
 
 /* Футер */
+
+footer {
+	&:extend(.clearfix all);
+	margin: auto;
+	width: 1127px;
+	background: #632204 url(/img/demo/main/footer.jpg);
+	padding: 40px 0;
+	@media screen and (max-width: 1127px) {
+		width: 100%;
+	}
+	@media screen and (max-width: 995px) {
+		width: 768px;
+	}
+	@media screen and (max-width: 767px) {
+		width: 420px;
+		padding: 25px 0;
+	}
+	@media screen and (max-width: 479px) {
+		width: 300px;
+	}
+
+	.footer-box {
+		margin: auto;
+		width: 939px;
+		@media screen and (max-width: 995px) {
+			width: 750px;
+		}
+		@media screen and (max-width: 767px) {
+			width: 394px;
+		}
+		@media screen and (max-width: 479px) {
+			width: 279px;
+		}
+		.copy {
+			float: right;
+			width: 299px;
+			color: #E0BD8A;
+			font-size: 10px;
+			margin-right: 10px;
+			@media screen and (max-width: 995px) {
+				width: 236px;
+			}
+			@media screen and (max-width: 767px) {
+				float: none;
+				width: 394px;
+				margin-bottom: 15px;
+			}
+			@media screen and (max-width: 479px) {
+				width: 279px;
+			}
+			span {
+				font-family: 'Anton',sans-serif;
+				font-size: 26px;
+				color: #efdcc5;
+			}
+			.href {
+				color: #E0BD8A;
+				&:hover {
+					color: white;
+					text-decoration: underline;
+				}
+			}
+			address {
+				font-style: normal;
+			}
+			.soc-block {
+				float: right;
+				margin-top: 2px;
+				@media screen and (max-width: 995px) {
+					float: left;
+					margin-top: 10px;
+				}
+				@media screen and (max-width: 767px) {
+					float: none;
+				}
+			}
+			.soc {
+				display: inline-block;
+				width: 34px;
+				height: 34px;
+			}
+			.soc1 {
+				background: url(/img/demo/main/icon.png) 0 0;
+				&:hover {
+					background: url(/img/demo/main/icon.png) 0 34px;
+				}
+			}
+			.soc2 {
+				background: url(/img/demo/main/icon.png) 34px 0;
+				&:hover {
+					background: url(/img/demo/main/icon.png) 34px 34px;
+				}
+			}
+			.soc3 {
+				background: url(/img/demo/main/icon.png) 68px 0;
+				&:hover {
+					background: url(/img/demo/main/icon.png) 68px 34px;
+				}
+			}
+			.soc4 {
+				background: url(/img/demo/main/icon.png) 102px 0;
+				&:hover {
+					background: url(/img/demo/main/icon.png) 102px 34px;
+				}
+			}
+		}
+	}
+}

@@ -27,10 +27,8 @@
             document.createElement("nav"    );
             document.createElement("main"   );
             document.createElement("section");
-            document.createElement("aside"  );
             document.createElement("article");
-            document.createElement("hgroup" );
-            document.createElement("time"   );
+            document.createElement("address" );
         </script>
         <noscript>
             <strong>Warning !</strong>

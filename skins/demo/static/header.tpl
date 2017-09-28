@@ -1,6 +1,6 @@
 <header>
     <div class="header_box">
-        <a href="/demo"><img src="/img/demo/main/logo.png" alt=""></a>
+        <h1><a href="/demo"><img src="/img/demo/main/logo.png" alt=""></a></h1>
         <div class="reg">
             HAVE AN ACCOUNT? <a href="#">SIGN IN</a> OR <a href="#">SIGN UP</a>
         </div>
