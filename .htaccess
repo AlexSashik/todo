@@ -36,14 +36,10 @@ ErrorDocument 404  /errors/404
 # Internal Server Error
 ErrorDocument 500  /errors/500
 
-<filesMatch "\.(css|js)$">
-    ExpiresActive On
-    ExpiresDefault "access plus 1 week"
-    Header append Cache-Control "public"
-</filesMatch>
+<FilesMatch "\.(gif|jpg|jpeg|png|ico)$">
+    Header set Cache-Control "max-age=28512000"
+</FilesMatch>
 
-<filesMatch "\.(ico|gif|jpg|png|woff)$">
-    ExpiresActive On
-    ExpiresDefault "access plus 11 month"
-    Header append Cache-Control "public"
-</filesMatch>
+<FilesMatch "\.(css|js)$">
+    Header set Cache-Control "max-age=604800"
+</FilesMatch>
