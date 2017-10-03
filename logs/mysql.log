@@ -1,0 +1,84 @@
+QUERY: INSERT INTO `users` SET
+			`login` 	= '`\'\&quot;&lt;b&gt;test',
+			`pass` 		= 'inf8RA6T0iPSQ',
+			`email` 	= 'espiritudelnumero@gmail.com',
+			
+			`hash`     = 'in8TexZtakCXI',
+			`active`   = '0',
+			`reg_date` = NOW(),
+			`access`   = '-1'
+		
+ Field 'avatar' doesn't have a default value
+FILE: D:\OSPanel\domains\todo\modules\cab\reg.php
+LINE: approximately 67
+DATE:2017-10-03 22:50:23
+========================================================================
+
+QUERY: INSERT INTO `users` SET
+			`login` 	= '`\'\&quot;&lt;b&gt;test',
+			`pass` 		= 'inf8RA6T0iPSQ',
+			`email` 	= 'espiritudelnumero@gmail.com',
+			
+			`hash`     = 'in8TexZtakCXI',
+			`active`   = '0',
+			`reg_date` = NOW(),
+			`access`   = '-1'
+		
+ Field 'avatar' doesn't have a default value
+FILE: D:\OSPanel\domains\todo\modules\cab\reg.php
+LINE: approximately 67
+DATE:2017-10-03 22:53:45
+========================================================================
+
+QUERY: INSERT INTO `users` SET
+			`login`     = '`\'\&quot;&lt;b&gt;test',
+			`pass` 		= 'inf8RA6T0iPSQ',
+			`email` 	= 'espiritudelnumero@gmail.com',
+			
+			`hash`      = 'in8TexZtakCXI',
+			`active`    = '0',
+			`reg_date`  = NOW(),
+			`access`    = '-1',
+			`avater`    = ''
+		
+ Unknown column 'avater' in 'field list'
+FILE: D:\OSPanel\domains\todo\modules\cab\reg.php
+LINE: approximately 68
+DATE:2017-10-03 22:54:31
+========================================================================
+
+QUERY: INSERT INTO `users` SET
+			`login`     = '`\'\&quot;&lt;b&gt;test',
+			`pass` 		= 'inf8RA6T0iPSQ',
+			`email` 	= 'espiritudelnumero@gmail.com',
+			
+			`hash`      = 'in8TexZtakCXI',
+			`active`    = '0',
+			`reg_date`  = NOW(),
+			`access`    = '-1',
+			`avatar`    = ''
+		
+ Field 'age' doesn't have a default value
+FILE: D:\OSPanel\domains\todo\modules\cab\reg.php
+LINE: approximately 68
+DATE:2017-10-03 22:54:58
+========================================================================
+
+QUERY: INSERT INTO `users` SET
+			`login`     = '`\'\&quot;&lt;b&gt;test',
+			`pass` 		= 'inf8RA6T0iPSQ',
+			`email` 	= 'espiritudelnumero@gmail.com',
+			
+			`hash`      = 'in8TexZtakCXI',
+			`active`    = '0',
+			`reg_date`  = NOW(),
+			`access`    = '-1',
+			`avatar`    = ''
+		
+ Field 'last_active_date' doesn't have a default value
+FILE: D:\OSPanel\domains\todo\modules\cab\reg.php
+LINE: approximately 68
+DATE:2017-10-03 22:56:45
+========================================================================
+
+
