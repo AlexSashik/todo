@@ -75,7 +75,8 @@ if ( isset($_POST['login'], $_POST['email'], $_POST['pass'], $_POST['age']) ) {
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Завершение регистрации</title>
 </head>
-<body style="max-width: 600px; text-align: center; color: #222222 !important; font-family: Verdana, Geneva, sans-serif; margin: auto; padding:0; line-height: 1.5; font-size: 16px; border: 1px solid #E6E6E6;">
+<body>
+<div style="max-width: 600px; text-align: center; color: #222222 !important; font-family: Verdana, Geneva, sans-serif; margin: auto; padding:0; line-height: 1.5; font-size: 16px; border: 1px solid #E6E6E6;">
 <div role="banner" style="padding: 20px 0; border-bottom: 5px solid #72A9D0;">
 <img src="http://todo.kh.ua/img/default/logo.png" alt="IT Ideas" border="0" width="317" height="81" style="display:inline-block;"/>
 </div>
@@ -102,7 +103,8 @@ if ( isset($_POST['login'], $_POST['email'], $_POST['pass'], $_POST['age']) ) {
 
 <div role="footer" style="background-color: #363535; color: #FFFFFF; font-size: 12px; padding: 10px 20px;">
 &copy; '.date('Y').' <a href="http://todo.kh.ua/" target="_blank" style="color: #FFFFFF !important; text-decoration: none;"><span style="color: #FFFFFF;">todo.kh.ua</span></a>
-</div>      
+</div>  
+</div>    
 </body>
 </html>';
 
