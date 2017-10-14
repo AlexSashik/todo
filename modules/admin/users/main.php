@@ -1,6 +1,6 @@
 <?php
-CORE::$CSS[] = '<link href="/css/'.CORE::$STYLE.'/users/users_list1.00.css" rel="stylesheet" type="text/css">';
-CORE::$JS[]  = '<script defer src="/js/'.CORE::$STYLE.'/users/all_header_footer1.00.js"></script>';
+CORE::$CSS[] = '<link href="/css/'.CORE::$STYLE.'/table_list1.03.css" rel="stylesheet" type="text/css">';
+CORE::$JS[]  = '<script defer src="/js/'.CORE::$STYLE.'/users/main1.02.js"></script>';
 CORE::$META['title']  = 'TodoCMS - users';
 
 if (isset($_SESSION['info'])) {

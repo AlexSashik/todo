@@ -1,6 +1,6 @@
 // Слайдер
 function button (elem1, elem2, time, addmargintop) {
-	if (addmargintop == undefined) {
+	if (addmargintop === undefined) {
 		addmargintop = 0;
 	}
 	elem1.on('click',	function() {
@@ -17,12 +17,4 @@ $(document).on('scroll',	function() {
 	} else {
 		$('#upward').css ("display", "none");
 	}
-});
-
-$('#auth_nav').mouseover (function() {
-    $('#auth').css ("backgroundPosition", "18px 0");
-});
-
-$('#auth_nav').mouseout (function () {
-    $('#auth').css ("backgroundPosition", "0 0");
 });

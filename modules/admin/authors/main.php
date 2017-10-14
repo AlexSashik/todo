@@ -1,6 +1,6 @@
 <?php
-CORE::$CSS[] = '<link href="/css/'.CORE::$STYLE.'/authors/authors_list1.00.css" rel="stylesheet" type="text/css">';
-CORE::$JS[]  = '<script defer src="/js/'.CORE::$STYLE.'/authors/all_header_footer1.00.js"></script>';
+CORE::$CSS[] = '<link href="/css/'.CORE::$STYLE.'/table_list1.03.css" rel="stylesheet" type="text/css">';
+CORE::$JS[]  = '<script defer src="/js/'.CORE::$STYLE.'/authors/mainplus2.00.js"></script>';
 CORE::$META['title']  = 'TodoCMS - authors';
 
 if (isset($_SESSION['info'])) {
@@ -79,11 +79,15 @@ if (isset($_POST['name'], $_POST['yod'], $_POST['yob'])) {
 	// Поиск по году рождения
 	if (is_numeric($_POST['yob'])) {
 		$where[] = "`yob` = '".(int)$_POST['yob']."'";
-	}
+	} else {
+	    $i = 1; // Идентификатор неудачного поиска, используемый в виде
+    }
 
     // Поиск по году смерти
     if (is_numeric($_POST['yod'])) {
         $where[] = "`yod` = '".(int)$_POST['yod']."'";
+    } else {
+        $i = 1; // Идентификатор неудачного поиска, используемый в виде
     }
 	
 }

@@ -1,5 +1,6 @@
 <?php
-CORE::$CSS[] = '<link href="/css/'.CORE::$STYLE.'/users/users_edit1.02.css" rel="stylesheet" type="text/css">';
+CORE::$CSS[] = '<link href="/css/'.CORE::$STYLE.'/add_edit1.00.css" rel="stylesheet" type="text/css">';
+CORE::$JS[]  = '<script defer src="/js/'.CORE::$STYLE.'/authors/mainplus2.00.js"></script>';
 CORE::$META['title']  = 'TodoCMS - author edit';
 
 if (isset($_GET['key1'])) {

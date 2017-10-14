@@ -1,7 +1,7 @@
-<div class="main">
+<main class="main container">
     <h2>АДМИНКА</h2>
     <p>
-        Добро пожаловать в админку сайта http://todo.kh.ua! В данном разделе Вы можете управлять контентом сайта.
+        Добро пожаловать в админку сайта <a href="/" target="_blank">http://todo.kh.ua</a>! В данном разделе Вы можете управлять контентом сайта.
         Среди прочего, имеется возможность добавления, редактирования и удаления соответствующих элементов таких
         разделов, как:
     </p>
@@ -24,21 +24,31 @@
        Покинуть админ панель можно нажав на кнопку "Exit" в правом верхнем углу станицы. При этом Вы останетесь
         авторизованным пользователем.
     </p>
-</div>
+</main>
 
 <?php if (isset($info['success_autoriz'])) { ?>
-    <div id="info_back"></div>
-    <div id="info_text">
-        <div class="info_header">Вход в админ панель выполнен</div>
-        <div class="info_main">
-            <img src="/img/admin/goods/check-icon.png" alt="">
-            <p>
-                Добро пожаловать, <?php echo htmlspecialchars($_SESSION['user']['login']);?>! Вам предоставлен доступ
-                к панели администратора сайта <a class="animate" href="/" target="_blank">todo.kh.ua</a>
-            </p>
-            <div id="info_close">OK</div>
+    <div id="modal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-success panel-heading">
+                    <button class="close" data-dismiss="modal">x</button>
+                    <h4 class="modal-title text-center">Вход в админ панель выполнен</h4>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Добро пожаловать, <?php echo htmlspecialchars($_SESSION['user']['login']);?>! Вам предоставлен доступ
+                        к панели администратора сайта <a class="animate" href="/" target="_blank">todo.kh.ua</a>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
         </div>
     </div>
+    <script>
+        $('#modal').modal();
+    </script>
     <?php
 }
 ?>

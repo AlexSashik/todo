@@ -5,7 +5,6 @@ class Uploader {
 	static $proportion = array('from' => 0.66, 'to' => 1.5 ); // чиcло - отношение ширины к высоте
 		
 	static function upload ($file_array, $to = '/img/upload', $save_as = false) {
-
 		if ($file_array['error'] == 0) {
             if ($file_array['size'] < self::$min_size || $file_array['size'] > self::$max_size) {
                 return array(

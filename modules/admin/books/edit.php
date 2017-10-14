@@ -1,6 +1,7 @@
 <?php
-CORE::$CSS[] = '<link href="/css/'.CORE::$STYLE.'/books/books_add1.02.css" rel="stylesheet" type="text/css">';
-CORE::$JS[]  = '<script defer src="/js/'.CORE::$STYLE.'/books/add1.00.js"></script>';
+CORE::$CSS[] = '<link href="/css/'.CORE::$STYLE.'/books/books_add1.03.css" rel="stylesheet" type="text/css">';
+CORE::$CSS[] = '<link href="/css/'.CORE::$STYLE.'/add_edit1.00.css" rel="stylesheet" type="text/css">';
+CORE::$JS[]  = '<script defer src="/js/'.CORE::$STYLE.'/books/add1.01.js"></script>';
 CORE::$META['title']  = 'TodoCMS - edit of books';
 
 if (isset($_GET['key1'])) {

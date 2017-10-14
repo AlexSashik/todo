@@ -1,6 +1,6 @@
 <?php
-CORE::$CSS[] = '<link href="/css/'.CORE::$STYLE.'/goods/goods_add1.03.css" rel="stylesheet" type="text/css">';
-CORE::$JS[]  = '<script defer src="/js/'.CORE::$STYLE.'/goods/edit1.01.js"></script>';
+CORE::$CSS[] = '<link href="/css/'.CORE::$STYLE.'/add_edit1.00.css" rel="stylesheet" type="text/css">';
+CORE::$JS[]  = '<script defer src="/js/'.CORE::$STYLE.'/goods/edit1.02.js"></script>';
 CORE::$META['title']  = 'TodoCMS - goods';
 
 if (isset($_SESSION['info'])) {
@@ -64,7 +64,7 @@ if (isset($_GET['key1'])) {
 		}
 	}
 	$res2->data_seek(0);
-	
+
 	if (isset($_POST['name'], $_POST['cat'][0], $_POST['is_in_sight'], $_POST['price'], $_POST['text']) && $flag) {
 		$_POST = trimAll($_POST);
 		
@@ -153,8 +153,7 @@ if (isset($_GET['key1'])) {
 				WHERE `good_id` = ".(int)$_GET['key1']."
 				ORDER BY `is_main` DESC
 			");
-			
-			// Добавление нового фотографий
+			// Добавление новых фотографий
 			if (isset($_FILES['new_photo'])) {
 				$upload_info = Uploader::upload($_FILES['new_photo'], '/img/default/goods/250x250');
 				if ($upload_info['error'] == 1 ) {

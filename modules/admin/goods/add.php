@@ -1,11 +1,12 @@
 <?php
-CORE::$CSS[] = '<link href="/css/'.CORE::$STYLE.'/goods/goods_add1.03.css" rel="stylesheet" type="text/css">';
+CORE::$CSS[] = '<link href="/css/'.CORE::$STYLE.'/add_edit1.00.css" rel="stylesheet" type="text/css">';
+CORE::$JS[]  = '<script defer src="/js/'.CORE::$STYLE.'/goods/edit1.02.js"></script>';
 CORE::$META['title']  = 'TodoCMS - goods add';
 
 if (isset($_POST['name'], $_POST['cat'][0], $_POST['is_in_sight'], $_POST['price'], $_POST['text'], $_FILES['picture'])) {
 	$_POST = trimAll($_POST);
 	
-	// провепка категории
+	// проверка категории
 	$res = q ("
 		SELECT * FROM `goods_cat`
 		WHERE `cat` = '".es($_POST['cat'][0])."'
@@ -40,15 +41,16 @@ if (isset($_POST['name'], $_POST['cat'][0], $_POST['is_in_sight'], $_POST['price
 	}
 		
 	if (!isset($err)) {
-	
+
 		//загрузка файлов (фото товара)
 		Uploader::$proportion['from'] = 0.55;
-		// изменение вида массива ;_АШДУЫ
+		// изменение вида массива $_FILES
         foreach ($_FILES['picture'] as $k => $array) {
             foreach ($array as $k2 => $v) {
                 $new_file_array[$k2][$k] = $v;
             }
         }
+
         // загрузка файлов
         $success_count = 0; // счетчик успешных загрузок
         $total = 0; 		// счетчик общего числа загружаемых файлов
@@ -60,21 +62,6 @@ if (isset($_POST['name'], $_POST['cat'][0], $_POST['is_in_sight'], $_POST['price
                 $success_count++;
             } elseif ($photos[$k]['err_text'] == 'Вы не загрузили файл!') {
                 $is_empty = true;
-                q ("
-                    INSERT INTO `goods` SET
-                    `cat`   	  = '".es($_POST['cat'][0])."',
-                    `name` 	      = '".es($_POST['name'])."',
-                    `is_in_sight` = '".(int)$_POST['is_in_sight']."',
-                    `price`       = '".(float)$_POST['price']."',
-                    `text`        = '".es($_POST['text'])."'
-                ");
-                $id = DB::_()->insert_id;
-                q ("
-                    INSERT INTO `goods_img` SET
-                    `good_id`     = '".$id."',
-                    `img_name` 	  = 'no-photo.jpg',
-                    `is_main`     = 1
-                ");
                 break;
             }
         }

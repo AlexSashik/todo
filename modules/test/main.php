@@ -4,9 +4,10 @@ CORE::$CSS[] = '<link href="/css/'.CORE::$STYLE.'/test.css" rel="stylesheet" typ
 if (isset($_FILES['file'])) {
     Uploader::$proportion['to'] = 5;
     Uploader::$min_size = 4000;
+    Uploader::$max_size = 4000000;
     $info = Uploader::upload($_FILES['file']);
     if (!$info['error']) {
-        Uploader::resize(75,75, $info, 'height', 'width');
+        Uploader::resize(500,500, $info, 'width', 'width');
     } else {
         $err = $info['err_text'];
     }

@@ -1,0 +1,122 @@
+@import "../../node_modules/lesshat/lesshat.less";
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color: #F1F0ED;
+  /* Margin bottom by footer height */
+  margin-bottom: 85px;
+  word-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  a {
+    color: #2F2F2F;
+    display: inline-block;
+    &:focus, &:hover {
+      color: #2F2F2F;
+      text-decoration: none;
+    }
+  }
+  img {
+    margin: 10px 0;
+    @media screen and (max-width: 450px) {
+      width: 100px;
+      height: auto;
+      margin: 17px 0;
+    }
+  }
+
+  .salut {
+    padding-top: 10px;
+    font-size: 18px;
+    font-style: italic;
+    div {
+      margin-bottom: 5px;
+    }
+    a {
+      margin-bottom: 10px;
+    }
+    @media screen and (max-width: 991px) {
+      font-size: 16px;
+    }
+    @media screen and (max-width: 450px) {
+      font-size: 14px;
+    }
+    .large {
+      display: inline;
+      @media screen and (max-width: 450px) {
+        display: none;
+      }
+    }
+    .small {
+      display: none;
+      @media screen and (max-width: 450px) {
+        display: inline;
+      }
+    }
+  }
+}
+
+.btn-adapt {
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  margin-bottom:5px;
+  @media screen and (max-width: 991px) {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+  }
+}
+
+.main {
+  .box-shadow(0 0 5px silver);
+  padding: 0;
+  margin-top: 20px;
+  background-color: white;
+}
+
+footer {
+  background-color: #4C4C4C;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  @media screen and (max-width: 450px) {
+    font-size: 12px;
+  }
+}
+
+// Слайдер
+#upward {
+  position: fixed;
+  bottom: 73px;
+  right: 37px;
+  background-color: #72AAD0;
+  width: 58px;
+  height: 58px;
+  border-radius: 100%;
+  z-index: 2;
+  background: url(/img/default/upward.jpg) no-repeat;
+  display: none;
+  &:hover {
+    cursor: pointer;
+    background: url(/img/default/upwardhover.jpg) no-repeat;
+  }
+  @media screen and (max-width: 767px) {
+    bottom: 45px;
+  }
+}

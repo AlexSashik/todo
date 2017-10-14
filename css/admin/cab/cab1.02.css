@@ -37,7 +37,7 @@
   background-clip: padding-box;
 }
 .main_cab form .logpas {
-  width: 375px;
+  width: 415px;
   padding: 15px 20px;
   background-color: #DAF4FE;
   border: none;
@@ -92,8 +92,8 @@
   border-radius: 0 0 5px 0;
   background-clip: padding-box;
   float: right;
-  width: 169px;
-  height: 77px;
+  width: 189px;
+  height: 97px;
   border: 10px solid #242328;
   -webkit-transition: 0.4s ease;
   -moz-transition: 0.4s ease;

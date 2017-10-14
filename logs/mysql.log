@@ -81,4 +81,30 @@ QUERY: INSERT INTO `users` SET
 DATE:2017-10-03 22:56:45
 ========================================================================
 
+QUERY: 
+				INSERT INTO `books` SET
+				`name`     = 'sadas',
+				`year`     = '1904',
+				
+				`text`     = 'asd'
+			
+ Field 'img_name' doesn't have a default value
+FILE: D:\OSPanel\domains\todo\modules\admin\books\add.php
+LINE: approximately 74
+DATE:2017-10-13 22:44:01
+========================================================================
+
+QUERY: 
+				INSERT INTO `authors` SET
+				`name`     = 'Остров мира',
+				`yob`     = '123',
+				
+				`yod`     = '0'
+			
+ Field 'img_name' doesn't have a default value
+FILE: D:\OSPanel\domains\todo\modules\admin\authors\add.php
+LINE: approximately 64
+DATE:2017-10-13 22:51:18
+========================================================================
+
 
