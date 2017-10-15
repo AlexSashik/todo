@@ -5,7 +5,7 @@ if (isset($_SESSION['user']) && $_SESSION['user']['access'] == 5) {
     exit();
 }
 
-CORE::$CSS[] = '<link href="/css/'.CORE::$STYLE.'/cab/cab1.02.css" rel="stylesheet" type="text/css">';
+CORE::$CSS[] = '<link href="/css/'.CORE::$STYLE.'/cab/cab1.03.css" rel="stylesheet" type="text/css">';
 CORE::$JS[]  = '<script defer src="/js/'.CORE::$STYLE.'/cab/cab1.01.js"></script>';
 
 if ( isset($_POST['login'], $_POST['pass']) ) {
