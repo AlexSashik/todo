@@ -21,6 +21,13 @@ if(isset ($_GET['route'])) {
         CORE::$META['keywords']    = '';
         CORE::$META['title']       = 'Todo-Demo';
         array_shift($temp);
+    } elseif (!empty($temp) && $temp[0] == 'vatel' ) {
+        CORE::$CONTR = CORE::$CONTR . '/vatel';
+        CORE::$STYLE = 'vatel';
+        CORE::$META['description'] = '';
+        CORE::$META['keywords'] = '';
+        CORE::$META['title'] = 'Vatel';
+        array_shift($temp);
     }
 
 	foreach ($temp as $k => $v) {
@@ -57,8 +64,8 @@ if (CORE::$STYLE == 'admin') {
         'authors' => array ('main', 'add', 'edit'),
         'cab'     => array ('main')
 	);
-} elseif (CORE::$STYLE == 'demo') {
-    //Допустимые значения модулей и страниц демо адаптивного сайта
+} elseif (CORE::$STYLE == 'demo' || CORE::$STYLE == 'vatel') {
+    //Допустимые значения модулей и страниц демо-страниц Agrolux и Vatel
     $modules_and_pages = array (
         'static'  => array ('main')
     );
