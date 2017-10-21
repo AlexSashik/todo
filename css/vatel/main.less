@@ -35,6 +35,32 @@ header {
   font-family: 'TrebuchetMS-Bold', 'Arial', sans-serif;
   background-color: #2F363E;
   color: #ffffff;
-  .box-shadow(0 5px 20px #8C8C8C);
-  padding: 20px 0;
+  .box-shadow(0 5px 4px #8C8C8C);
+  .left {
+    font-size: 25px;
+    a, div{
+      display: block;
+      float: left;
+    }
+    div {
+      width: 334px;
+      margin: 20px 0 0 10px;
+    }
+  }
+  .right {
+    .tel {
+      float: right;
+      font-size: 23px;
+      line-height: 1;
+      margin: 20px 15px 0 0;
+    }
+    button {
+      display: block;
+      float: right;
+      margin-top: 35px;
+      .background-image(linear-gradient(to bottom, #FE6AA1, #FF369A));
+      border: none;
+      padding: 5px 20px;
+    }
+  }
 }
