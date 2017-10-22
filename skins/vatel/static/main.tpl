@@ -1,3 +1,3 @@
 <main>
-    Тело
+    <div class="container">Тело</div>
 </main>

@@ -1,3 +1,5 @@
 <footer>
-    Футер
+    <div class="container">
+        Футер
+    </div>
 </footer>

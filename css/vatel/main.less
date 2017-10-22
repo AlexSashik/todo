@@ -29,6 +29,20 @@
   url('/fonts/vatel/TrebuchetMS-Italic/TrebuchetMS-Italic.svg#TrebuchetMS-Italic') format('svg');
 }
 
+.clearfix {
+  &:after, &:before {
+    clear: both;
+    content: '';
+    display: block;
+    height: 0;
+  }
+}
+//&:extend(.clearfix all);
+
+* {
+  word-wrap: break-word;
+}
+
 // Шапка сайта
 
 header {
@@ -37,30 +51,95 @@ header {
   color: #ffffff;
   .box-shadow(0 5px 4px #8C8C8C);
   .left {
-    font-size: 25px;
-    a, div{
+    float: left;
+    &:extend(.clearfix all);
+    a, h1{
       display: block;
       float: left;
+      @media screen and (max-width: 400px) {
+        float: none;
+        text-align: center;
+      }
     }
-    div {
+    h1 {
       width: 334px;
-      margin: 20px 0 0 10px;
+      font-size: 25px;
+      margin: 30px 0 0 10px;
+      @media screen and (max-width: 992px) {
+        width: 245px;
+        font-size: 18px;
+      }
+      @media screen and (max-width: 400px) {
+        width: 100%;
+        margin: -10px 0 10px 0;
+        font-size: 20px;
+      }
+    }
+    img {
+      @media screen and (max-width: 992px) {
+        width: 95px;
+        height: auto;
+      }
+      @media screen and (max-width: 400px) {
+        width: auto;
+        height: auto;
+      }
+    }
+    @media screen and (max-width: 400px) {
+      float: none;
     }
   }
   .right {
+    float: right;
+    &:extend(.clearfix all);
     .tel {
       float: right;
       font-size: 23px;
       line-height: 1;
-      margin: 20px 15px 0 0;
+      margin: 25px 15px 0 0;
+      @media screen and (max-width: 992px) {
+        font-size: 16px;
+      }
+      @media screen and (max-width: 720px) {
+        clear: both;
+        margin-top: 15px;
+      }
+      @media screen and (max-width: 554px) {
+        float: right;
+        clear: none;
+        margin-top: 0;
+      }
+      @media screen and (max-width: 400px) {
+        float: none;
+        text-align: center;
+      }
     }
     button {
       display: block;
       float: right;
-      margin-top: 35px;
-      .background-image(linear-gradient(to bottom, #FE6AA1, #FF369A));
+      margin-top: 40px;
+      background: url(/img/vatel/sprites.png) no-repeat;
+      background-position: -279px -7px;
       border: none;
-      padding: 5px 20px;
+      padding: 6px 25px;
+      &:hover {
+        background: url(/img/vatel/sprites.png) no-repeat;
+        background-position: -279px -43px;
+      }
+      i {display: none;}
+      @media screen and (max-width: 992px) {
+        margin-top: 30px;
+      }
+      @media screen and (max-width: 554px) {
+        margin-top: 6px;
+      }
+      @media screen and (max-width: 400px) {
+        float: none;
+        margin: 10px auto;
+      }
+    }
+    @media screen and (max-width: 400px) {
+      float: none;
     }
   }
 }
