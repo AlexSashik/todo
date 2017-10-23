@@ -41,6 +41,55 @@
 
 * {
   word-wrap: break-word;
+  outline: none;
+}
+
+// Модальное окно
+
+.modal-content {
+  .border-radius(0 0 0 0);
+  border: 1px solid #2FACE5;
+  background-color: #E0F3FB;
+}
+
+.modal-sm {
+  width: 300px;
+  margin: 30px auto;
+}
+
+.modal-body {
+  p {
+    font-weight: bold;
+    font-size: 15px;
+  }
+  label {
+    font-size: 12px;
+    display: inline-block;
+  }
+  input[type="text"] {
+    display: block;
+    float: right;
+  }
+  .name, .tel {
+    &:extend(.clearfix all);
+    margin-bottom: 10px;
+  }
+  input[type="button"] {
+    text-transform: uppercase;
+    width: 165px;
+    margin-top: 10px;
+    background: url(/img/vatel/sprites.png) no-repeat;
+    background-position: -281px -7px;
+    border: none;
+    padding: 9px 19px;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    &:hover {
+      background: url(/img/vatel/sprites.png) no-repeat;
+      background-position: -281px -43px;
+    }
+  }
 }
 
 // Шапка сайта
@@ -126,7 +175,6 @@ header {
         background: url(/img/vatel/sprites.png) no-repeat;
         background-position: -279px -43px;
       }
-      i {display: none;}
       @media screen and (max-width: 992px) {
         margin-top: 30px;
       }
