@@ -21,17 +21,28 @@
         <div class="modal-content">
             <div class="modal-body">
                 <p class="text-center">Отправьте заявку и мы обязательно Вам перезвоним</p>
-                <form action="" method="post" class="text-center">
+                <form action="" method="post" class="text-center"  onsubmit="return false;">
                     <div class="name text-left">
                         <label for="name">Ваше имя* </label>
-                        <input id="name" type="text">
+                        <input id="name" type="text" required>
                     </div>
                     <div class="tel text-left">
                         <label for="tel">Ваш телефон* </label>
-                        <input id="tel" type="text">
+                        <input id="tel" type="text" required>
                     </div>
-                    <input type="button" value="оставить заявку">
+                    <input type="submit" value="оставить заявку" id="application">
                 </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal-success" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="text-center thanks">СПАСИБО ЗА ЗАЯВКУ!</div>
+                <div class="text-center info">Наш менеджер перезвонит Вам в ближайшее время.</div>
             </div>
         </div>
     </div>
@@ -39,6 +50,6 @@
 
 <!--<script defer>-->
 <!--    $(document).ready(function() {-->
-<!--        $('#modal').modal();-->
+<!--        $('#modal-success').modal();-->
 <!--    });-->
 <!--</script>-->

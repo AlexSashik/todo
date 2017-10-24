@@ -50,44 +50,89 @@
   .border-radius(0 0 0 0);
   border: 1px solid #2FACE5;
   background-color: #E0F3FB;
+  font-family: TrebuchetMS-Bold;
 }
 
 .modal-sm {
-  width: 300px;
-  margin: 30px auto;
+  width: 400px;
+  margin: 60px auto;
+  @media screen and (max-width: 992px) {
+    width: 300px;
+  }
 }
 
 .modal-body {
+  padding: 20px;
+  @media screen and (max-width: 992px) {
+    padding: 15px;
+  }
   p {
     font-weight: bold;
-    font-size: 15px;
+    font-size: 22px;
+    @media screen and (max-width: 992px) {
+      font-size: 16px;
+    }
+  }
+  .thanks {
+    text-transform: uppercase;
+    font-size: 22px;
+    margin: 30px 0 10px 0;
+    @media screen and (max-width: 992px) {
+      font-size: 18px;
+    }
+  }
+  .info {
+    font-size: 17px;
+    margin-bottom: 40px;
+    @media screen and (max-width: 992px) {
+      font-size: 15px;
+    }
   }
   label {
-    font-size: 12px;
+    font-size: 14px;
     display: inline-block;
+    @media screen and (max-width: 992px) {
+      font-size: 12px;
+    }
   }
   input[type="text"] {
     display: block;
     float: right;
+    border: 1px solid silver;
+    width: 250px;
+    padding: 4px;
+    @media screen and (max-width: 992px) {
+      width: 170px;
+      padding: 2px;
+    }
   }
   .name, .tel {
     &:extend(.clearfix all);
     margin-bottom: 10px;
   }
-  input[type="button"] {
+  input[type="submit"] {
     text-transform: uppercase;
-    width: 165px;
+    width: 253px;
+    height: 42px;
     margin-top: 10px;
     background: url(/img/vatel/sprites.png) no-repeat;
-    background-position: -281px -7px;
+    background-position: 0 0;
     border: none;
     padding: 9px 19px;
     color: white;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: bold;
+    @media screen and (max-width: 992px) {
+      width: 165px;
+      background-position: -281px -7px;
+      height: 33px;
+    }
     &:hover {
       background: url(/img/vatel/sprites.png) no-repeat;
-      background-position: -281px -43px;
+        background-position: 0 -46px;
+      @media screen and (max-width: 992px) {
+        background-position: -281px -43px;
+      }
     }
   }
 }
