@@ -236,3 +236,55 @@ header {
     }
   }
 }
+
+// Тело сайта
+
+main {
+  .center {
+    font-family: 'TrebuchetMS-Bold', 'Arial', sans-serif;
+    float: left;
+    width: 66%;
+    color: #2F363E;
+    margin-top: 40px;
+    h2 {
+      font-size: 30px;
+      margin:0;
+    }
+    h3 {
+      font-size: 25px;
+      margin:0;
+    }
+    p {
+      color: #2FAFEE;
+      font-size: 19px;
+    }
+  }
+  #myCarousel {
+    width: 550px;
+    margin: auto;
+    img {
+      border: 1px solid #2F363E;
+    }
+  }
+  .prev, .next {
+    position: absolute;
+    top: 45%;
+    display: block;
+    background: url(/img/vatel/sprites.png) no-repeat;
+    width: 41px;
+    height: 38px;
+  }
+  .prev {
+    background-position: -444px 0;
+    left: -45px;
+  }
+  .next {
+    background-position: -489px 0;
+    left: 550px;
+  }
+
+  aside {
+    float: left;
+    margin-top: 40px;
+  }
+}
