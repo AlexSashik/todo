@@ -21,7 +21,26 @@
             </div>
         </div>
         <aside>
-
+            <div class="promotion">
+                <p class="text-center title">ОСТАВЬТЕ ЗАЯВКУ СЕЙЧАС И ПОЛУЧИТЕ СКИДКУ</p>
+                <p class="text-center percent">20%</p>
+                <p class="text-center finish">До конца акции:</p>
+                <div class="clock">
+                    <div class="numbers">00</div>
+                    <div class="dots">:</div>
+                    <div class="numbers">00</div>
+                    <div class="dots">:</div>
+                    <div class="numbers">00</div>
+                    <div class="dots">:</div>
+                    <div class="numbers">00</div>
+                </div>
+            </div>
+            <form action="" method="post" class="text-center" onsubmit="return false;">
+                <p><input id="aside-name" type="text" placeholder="Ваше имя*" required></p>
+                <p><input id="aside-tel" type="text" placeholder="Ваш телефон*" required></p>
+                <p><input id="aside-email" type="text" placeholder="Ваш email"></p>
+                <p><input id="aside-application" type="submit" value="оставить заявку"></p>
+            </form>
         </aside>
     </article>
 </main>

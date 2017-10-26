@@ -114,13 +114,13 @@
     text-transform: uppercase;
     width: 253px;
     height: 42px;
+    padding: 9px 19px;
+    font-size: 12px;
     margin-top: 10px;
     background: url(/img/vatel/sprites.png) no-repeat;
     background-position: 0 0;
     border: none;
-    padding: 9px 19px;
     color: white;
-    font-size: 12px;
     font-weight: bold;
     @media screen and (max-width: 992px) {
       width: 165px;
@@ -259,6 +259,9 @@ main {
       font-size: 19px;
     }
   }
+
+  // Карусель делается без вложенности !!!
+
   #myCarousel {
     width: 550px;
     margin: auto;
@@ -284,7 +287,82 @@ main {
   }
 
   aside {
+    font-family: 'TrebuchetMS', 'Arial', sans-serif;
     float: left;
     margin-top: 40px;
+    width: 33%;
+    .promotion {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      background-color: #FF4294;
+      p {
+        color: white;
+        margin-left: 25px;
+        margin-right: 25px;
+      }
+      .title {
+        font-size: 22px;
+        margin-bottom: 0;
+      }
+      .percent {
+        font-family: 'TrebuchetMS-Bold', 'Arial', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+      }
+      .finish {
+        font-size: 18px;
+      }
+    }
+    form {
+      display: block;
+      background-color: #E0F3FB;
+      border: 1px solid #2FACE5;
+      padding: 10px 0;
+      p {
+        margin: 15px 30px;
+      }
+      input[type="text"], input[type="email"] {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid silver;
+      }
+      input[type="submit"] {
+        text-transform: uppercase;
+        color: white;
+        border: none;
+        background: url(/img/vatel/sprites.png) no-repeat;
+        background-position: 0 -46px;
+        width: 253px;
+        height: 42px;
+        padding: 9px 19px;
+        font-size: 14px;
+        font-family: 'TrebuchetMS-Bold', 'Arial', sans-serif;
+        font-weight: bold;
+        &:hover {
+          background-position: 0 0;
+        }
+      }
+      ::-webkit-input-placeholder {color:#230023;}
+      ::-moz-placeholder          {color:#230023;}
+      :-moz-placeholder           {color:#230023;}
+      :-ms-input-placeholder      {color:#230023;}
+      ::placeholder               {color:#230023;}
+    }
+    .clock {
+      &:extend(.clearfix all);
+      width: 282px;
+      margin: 0 auto;
+      font-family: 'TrebuchetMS-Bold', 'Arial', sans-serif;
+      .numbers, .dots {
+        float: left;
+        font-size: 35px;
+        padding: 2px 5px;
+      }
+      .numbers {
+        color: #000000;
+        background: url(/img/vatel/sprites.png) no-repeat;
+        background-position: 0 -94px;
+      }
+    }
   }
 }

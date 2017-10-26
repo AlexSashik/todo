@@ -5,7 +5,7 @@
              <h1>Музыкальный коллектив на праздник в Москве и МО</h1>
          </div>
          <div class="right">
-             <button data-toggle="modal" data-target="#modal">
+             <button data-toggle="modal" data-target="#modal" id="modal-header">
                  Закажите звонок
              </button>
              <div class="tel">
