@@ -21,18 +21,19 @@
             </div>
         </div>
         <aside>
-            <div class="promotion">
-                <p class="text-center title">ОСТАВЬТЕ ЗАЯВКУ СЕЙЧАС И ПОЛУЧИТЕ СКИДКУ</p>
-                <p class="text-center percent">20%</p>
-                <p class="text-center finish">До конца акции:</p>
+            <div class="promotion text-center">
+                <p class="title">ОСТАВЬТЕ ЗАЯВКУ СЕЙЧАС И ПОЛУЧИТЕ СКИДКУ <span>20%</span></p>
+                <p class="percent">20%</p>
+                <p class="finish">До конца акции:</p>
                 <div class="clock">
-                    <div class="numbers">00</div>
+                    <span>До конца акции:</span>
+                    <div class="numbers" id="days">00</div>
                     <div class="dots">:</div>
-                    <div class="numbers">00</div>
+                    <div class="numbers" id="hours">00</div>
                     <div class="dots">:</div>
-                    <div class="numbers">00</div>
+                    <div class="numbers" id="minutes">00</div>
                     <div class="dots">:</div>
-                    <div class="numbers">00</div>
+                    <div class="numbers" id="seconds">00</div>
                 </div>
             </div>
             <form action="" method="post" class="text-center" onsubmit="return false;">

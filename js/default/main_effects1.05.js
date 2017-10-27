@@ -36,7 +36,7 @@ document.getElementById("title1").onclick = function () {
 	setTimeout("$('#main_first_block_content_layer2').css('top', '220px')", 500);
 	setTimeout("$('#main_first_block_content_layer3').css('top', '220px')", 500);
 	setTimeout("first_animation = true; second_animation = true; third_animation = true", 800);
-}
+};
 
 document.getElementById("title2").onclick = function () {
 	first_animation = false;
@@ -58,7 +58,7 @@ document.getElementById("title2").onclick = function () {
 	setTimeout("$('#main_first_block_content_layer1').css('top', '220px')", 500);
 	setTimeout("$('#main_first_block_content_layer3').css('top', '220px')", 500);
 	setTimeout("first_animation = true;  second_animation = true; third_animation = true", 800);
-}
+};
 
 document.getElementById("title3").onclick = function () {
 	first_animation = false;
@@ -80,7 +80,7 @@ document.getElementById("title3").onclick = function () {
 	setTimeout("$('#main_first_block_content_layer2').css('top', '220px')", 500);
 	setTimeout("$('#main_first_block_content_layer1').css('top', '220px')", 500);
 	setTimeout("first_animation = true; second_animation = true; third_animation = true", 800);
-}
+};
 
 // Скрытие блока оповещения
 $("#info_back").on("click", function () {
