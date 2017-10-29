@@ -1,5 +1,5 @@
 // таймер
-var to =  Date.parse('2017-11-28T21:10:10');
+var to =  Date.parse('2018-11-28T21:10:10');
 
 // функция добавления нуля к числу от 0 до 9
 function addZero (num, elem) {

@@ -50,7 +50,7 @@
   .border-radius(0 0 0 0);
   border: 1px solid #2FACE5;
   background-color: #E0F3FB;
-  font-family: TrebuchetMS-Bold;
+  font-family: TrebuchetMS-Bold, sans-serif;
 }
 
 .modal-sm {
@@ -241,6 +241,8 @@ header {
 // Тело сайта
 
 main {
+  // Галерея и таймер
+
   .center {
     font-family: 'TrebuchetMS-Bold', 'Arial', sans-serif;
     float: left;
@@ -251,24 +253,51 @@ main {
       float: none;
       width: 100%;
     }
-    h2 {
+    h2, .h2 {
       font-size: 30px;
-      margin:0;
+      margin:0 35px;
+      text-transform: uppercase;
       @media screen and (max-width: 1199px) {
         font-size: 27px;
       }
       @media screen and (max-width: 991px) {
         font-size: 30px;
+        margin: 0;
+      }
+      @media screen and (max-width: 640px) {
+        font-size: 27px;
+      }
+      @media screen and (max-width: 575px) {
+        font-size: 25px;
+      }
+      @media screen and (max-width: 535px) {
+        font-size: 23px;
+      }
+      @media screen and (max-width: 495px) {
+        font-size: 27px;
+      }
+      @media screen and (max-width: 400px) {
+        font-size: 25px;
       }
     }
-    h3 {
+    h3, .h3 {
       font-size: 25px;
-      margin:0;
+      margin:0 35px;
       @media screen and (max-width: 1199px) {
         font-size: 23px;
       }
       @media screen and (max-width: 991px) {
         font-size: 25px;
+        margin: 0;
+      }
+      @media screen and (max-width: 640px) {
+        font-size: 23px;
+      }
+      @media screen and (max-width: 575px) {
+        font-size: 21px;
+      }
+      @media screen and (max-width: 535px) {
+        font-size: 20px;
       }
     }
     p {
@@ -279,6 +308,15 @@ main {
       }
       @media screen and (max-width: 991px) {
         font-size: 19px;
+      }
+      @media screen and (max-width: 640px) {
+        font-size: 18px;
+      }
+      @media screen and (max-width: 575px) {
+        font-size: 17px;
+      }
+      @media screen and (max-width: 535px) {
+        font-size: 16px;
       }
     }
   }
@@ -372,6 +410,9 @@ main {
         @media screen and (max-width: 1199px) {
           font-size: 20px;
         }
+        @media screen and (max-width: 328px) {
+          font-size: 19px;
+        }
         span {
           display: none;
           @media screen and (max-width: 767px) {
@@ -394,8 +435,9 @@ main {
         font-size: 18px;
         @media screen and (max-width: 991px) {
           display: none;
-          //float: left;
-          //margin: 13px 15px;
+        }
+        @media screen and (max-width: 545px) {
+          display: block;
         }
       }
       .clock {
@@ -415,11 +457,17 @@ main {
             margin: 13px 15px;
             color: white;
           }
+          @media screen and (max-width: 545px) {
+            display: none;
+          }
         }
         .numbers, .dots {
           float: left;
           font-size: 35px;
           padding: 2px 5px;
+          @media screen and (max-width: 348px) {
+            font-size: 27px;
+          }
         }
         .numbers {
           color: #000000;
@@ -485,6 +533,13 @@ main {
           height: 42px;
           padding: 9px 19px;
         }
+        @media screen and (max-width: 355px) {
+          width: 163px;
+          background-position: -282px -6px;
+          padding: 0;
+          height: 34px;
+          font-size: 13px;
+        }
         &:hover {
           background-position: 0 0;
           @media screen and (max-width: 991px) {
@@ -493,6 +548,9 @@ main {
           @media screen and (max-width: 767px) {
             background-position: 0 0;
           }
+          @media screen and (max-width: 355px) {
+            background-position: -282px -42px;
+          }
         }
       }
       ::-webkit-input-placeholder {color:#230023;}
@@ -500,6 +558,55 @@ main {
       :-moz-placeholder           {color:#230023;}
       :-ms-input-placeholder      {color:#230023;}
       ::placeholder               {color:#230023;}
+    }
+  }
+
+  // Партнеры
+
+  .partners {
+    background: url('/img/vatel/bg_partner.jpg');
+    margin-top: 20px;
+    padding: 10px 0;
+    .container {
+      .h4 {
+        text-transform: uppercase;
+        font-family: TrebuchetMS-Bold, sans-serif;
+        color: #2F363E;
+        font-size: 25px;
+      }
+    }
+  }
+
+  .why {
+    .center {
+      margin-top: 0;
+    }
+    .h3 {
+      text-transform: uppercase;
+      margin: 0 70px 0 0;
+      margin-top: 40px;
+    }
+    ul {
+      padding: 0;
+      margin: 15px 15px 20px 0;
+    }
+    li {
+      list-style: none; /* Убираем исходные маркеры */
+      padding-left: 50px;
+      margin-bottom: 5px;
+      min-height: 37px;
+      p {
+        font-size: 22px;
+      }
+      div {
+        font-size: 16px;
+      }
+    }
+    .poor li {
+      background: url(/img/vatel/sprites.png) no-repeat 0 -151px;
+    }
+    .good li {
+      background: url(/img/vatel/sprites.png) no-repeat -532px 0;
     }
   }
 }
