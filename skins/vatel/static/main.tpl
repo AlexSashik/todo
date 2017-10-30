@@ -48,9 +48,15 @@
     <article class="partners">
         <div class="container">
             <div class="h4">С нами работают</div>
-            <div class="first"></div>
-            <div class="second"></div>
-            <div class="third"></div>
+            <div class="logo first"></div>
+            <div class="logo second"></div>
+            <div class="logo third"></div>
+            <div class="logo fourth"></div>
+            <div class="logo fifth"></div>
+            <div class="logo sixth"></div>
+            <div class="logo seventh"></div>
+            <div class="logo eighth"></div>
+            <div class="logo nineth"></div>
         </div>
     </article>
 
@@ -120,7 +126,44 @@
             </ul>
         </div>
         <aside>
-
+            <div class="h3">
+                Отзывы
+            </div>
+            <div class="response">
+                <div>
+                    <div class="photo photo1"></div>
+                    <div class="quote">«Очень понравилось музыкальное сопровождение...»</div>
+                </div>
+                <p class="response-text">
+                    Светлана! Спасибо за проведенный Юбилей 20.04.2013 г. в ресторане «Пироговский дворик»!
+                    Очень понравилось музыкальное сопровождение — все песни в Вашем исполнении и в исполнении
+                    Константина. Хорошо была организована программа вечера — поздравления, конкурсы,
+                    музыкальная гостиная. Никто не скучал. Праздник удался.
+                </p>
+                <p class="author text-right">
+                    Мамалыгина О.А.
+                </p>
+            </div>
+            <div class="response">
+                <div>
+                    <div class="photo photo2"></div>
+                    <div class="quote">«...получили огромное удовольствие и массу позитивных эмоций»</div>
+                </div>
+                <p class="response-text">
+                    Коллектив компании ООО «Гоу-Лайф» выражает благодарность агентству «Vatel» за отличную
+                    организацию и проведение новогоднего корпоративного праздника для сотрудников ООО «Гоу-Лайф».
+                    Нам хотелось бы отдельно поблагодарить ведущую и певицу Светлану Чумакову за
+                    профессионализм, креативность, отзывчивость и стремление сделать из любого мероприятия
+                    что-то особенное. Сотрудники нашей компании получили огромное удовольствие и массу позитивных
+                    эмоций от организованного Вами вечера.
+                </p>
+                <p class="author text-right">
+                    Ген. директор ООО «Гоу-Лайф»
+                </p>
+                <p class="author text-right">
+                    Полетаев В. А.
+                </p>
+            </div>
         </aside>
     </article>
 </main>

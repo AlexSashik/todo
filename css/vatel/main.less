@@ -242,6 +242,53 @@ header {
 
 main {
   // Галерея и таймер
+  h2, .h2 {
+    font-size: 30px;
+    margin:0 35px;
+    text-transform: uppercase;
+    @media screen and (max-width: 1199px) {
+      font-size: 27px;
+    }
+    @media screen and (max-width: 991px) {
+      font-size: 30px;
+      margin: 0;
+    }
+    @media screen and (max-width: 640px) {
+      font-size: 27px;
+    }
+    @media screen and (max-width: 575px) {
+      font-size: 25px;
+    }
+    @media screen and (max-width: 535px) {
+      font-size: 23px;
+    }
+    @media screen and (max-width: 495px) {
+      font-size: 27px;
+    }
+    @media screen and (max-width: 400px) {
+      font-size: 25px;
+    }
+  }
+  h3, .h3 {
+    font-size: 25px;
+    margin:0 35px;
+    @media screen and (max-width: 1199px) {
+      font-size: 23px;
+    }
+    @media screen and (max-width: 991px) {
+      font-size: 25px;
+      margin: 0;
+    }
+    @media screen and (max-width: 640px) {
+      font-size: 23px;
+    }
+    @media screen and (max-width: 575px) {
+      font-size: 21px;
+    }
+    @media screen and (max-width: 535px) {
+      font-size: 20px;
+    }
+  }
 
   .center {
     font-family: 'TrebuchetMS-Bold', 'Arial', sans-serif;
@@ -252,53 +299,6 @@ main {
     @media screen and (max-width: 991px) {
       float: none;
       width: 100%;
-    }
-    h2, .h2 {
-      font-size: 30px;
-      margin:0 35px;
-      text-transform: uppercase;
-      @media screen and (max-width: 1199px) {
-        font-size: 27px;
-      }
-      @media screen and (max-width: 991px) {
-        font-size: 30px;
-        margin: 0;
-      }
-      @media screen and (max-width: 640px) {
-        font-size: 27px;
-      }
-      @media screen and (max-width: 575px) {
-        font-size: 25px;
-      }
-      @media screen and (max-width: 535px) {
-        font-size: 23px;
-      }
-      @media screen and (max-width: 495px) {
-        font-size: 27px;
-      }
-      @media screen and (max-width: 400px) {
-        font-size: 25px;
-      }
-    }
-    h3, .h3 {
-      font-size: 25px;
-      margin:0 35px;
-      @media screen and (max-width: 1199px) {
-        font-size: 23px;
-      }
-      @media screen and (max-width: 991px) {
-        font-size: 25px;
-        margin: 0;
-      }
-      @media screen and (max-width: 640px) {
-        font-size: 23px;
-      }
-      @media screen and (max-width: 575px) {
-        font-size: 21px;
-      }
-      @media screen and (max-width: 535px) {
-        font-size: 20px;
-      }
     }
     p {
       color: #2FAFEE;
@@ -568,23 +568,101 @@ main {
     margin-top: 20px;
     padding: 10px 0;
     .container {
+      padding-bottom: 15px;
+      @media screen and (max-width: 767px) {
+        text-align: center;
+      }
       .h4 {
         text-transform: uppercase;
         font-family: TrebuchetMS-Bold, sans-serif;
         color: #2F363E;
         font-size: 25px;
       }
+      .logo {
+        display: inline-block;
+        width: 115px;
+        height: 115px;
+        background: url('/img/vatel/partners.png') no-repeat;
+        margin: 0 4px;
+        @media screen and (max-width: 1199px) {
+          background-size: 317px;
+          width: 94px;
+          height: 94px;
+          margin: 0 3px;
+        }
+        @media screen and (max-width: 991px) {
+          margin: 0 11px;
+        }
+        @media screen and (max-width: 767px) {
+          margin: 0 4px;
+        }
+        @media screen and (max-width: 343px) {
+          margin: 0 2px;
+        }
+        @media screen and (max-width: 331px) {
+          margin: 0;
+        }
+      }
+      .first {
+        background-position: 0 0;
+      }
+      .second {
+        background-position: -131px 0;
+        @media screen and (max-width: 1199px) {
+          background-position: -109px 0;
+        }
+      }
+      .third {
+        background-position: -250px 0;
+        @media screen and (max-width: 1199px) {
+          background-position: -208px 0;
+        }
+      }
+      .fourth {
+        background-position: -8px -113px;
+        @media screen and (max-width: 1199px) {
+          background-position: -8px -94px;
+        }
+      }
+      .fifth {
+        background-position: -136px -113px;
+        @media screen and (max-width: 1199px) {
+          background-position: -112px -94px;
+        }
+      }
+      .sixth {
+        background-position: -252px -113px;
+        @media screen and (max-width: 1199px) {
+          background-position: -209px -94px;
+        }
+      }
+      .seventh {
+        background-position: -7px -226px;
+        @media screen and (max-width: 1199px) {
+          background-position: -5px -185px;
+        }
+      }
+      .eighth {
+        background-position: -135px -226px;
+        @media screen and (max-width: 1199px) {
+          background-position: -112px -185px;
+        }
+      }
+      .nineth {
+        background-position: -259px -226px;
+        @media screen and (max-width: 1199px) {
+          background-position: -215px -185px;
+        }
+      }
     }
   }
 
   .why {
     .center {
-      margin-top: 0;
+      margin-top: 40px
     }
     .h3 {
       text-transform: uppercase;
-      margin: 0 70px 0 0;
-      margin-top: 40px;
     }
     ul {
       padding: 0;
@@ -603,10 +681,55 @@ main {
       }
     }
     .poor li {
-      background: url(/img/vatel/sprites.png) no-repeat 0 -151px;
+      background: url(/img/vatel/sprites.png) no-repeat 0 -146px;
     }
     .good li {
-      background: url(/img/vatel/sprites.png) no-repeat -532px 0;
+      background: url(/img/vatel/sprites.png) no-repeat -527px 0;
+    }
+    aside {
+      .h3 {
+        font-family: 'TrebuchetMS-Bold', 'Arial', sans-serif;
+      }
+      .response>div {
+        &:extend(.clearfix all);
+      }
+      .response {
+        margin: 25px 35px;
+        background-color: #E0F3FB;
+        border: 1px solid #2FACE5;
+        padding: 10px;
+        .photo, .quote {
+          float: left;
+        }
+        .photo {
+          width: 75px;
+          height: 75px;
+          background: url(/img/vatel/response.jpg) no-repeat;
+          .border-radius(100%);
+          background-size: 157px;
+        }
+        .photo1 {
+          background-position: 0 0;
+        }
+        .photo2 {
+          background-position: -78px 0;
+        }
+        .quote {
+          width: 200px;
+          font-size: 18px;
+          color: #FF4294;
+          font-weight: bold;
+          margin-left: 9px;
+        }
+        p {
+          font-weight: bold;
+        }
+        .response-text {
+          margin-top: 10px;
+          font-family: 'TrebuchetMS-Italic', 'Arial', sans-serif;
+          font-style: italic;
+        }
+      }
     }
   }
 }
