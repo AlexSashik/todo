@@ -352,7 +352,7 @@ main {
     left: -45px;
   }
   .next {
-    background-position: -489px 0;
+    background-position: -486px 0;
     left: 550px;
     @media screen and (max-width: 1199px) {
       left: 500px;
@@ -666,7 +666,7 @@ main {
     }
     ul {
       padding: 0;
-      margin: 15px 15px 20px 0;
+      margin: 15px 15px 40px 0;
     }
     li {
       list-style: none; /* Убираем исходные маркеры */
@@ -675,9 +675,15 @@ main {
       min-height: 37px;
       p {
         font-size: 22px;
+        @media screen  and (max-width: 429px) {
+          font-size: 18px;
+        }
       }
       div {
         font-size: 16px;
+        @media screen  and (max-width: 429px) {
+          font-size: 14px;
+        }
       }
     }
     .poor li {
@@ -694,10 +700,13 @@ main {
         &:extend(.clearfix all);
       }
       .response {
-        margin: 25px 35px;
+        margin: 25px 20px;
         background-color: #E0F3FB;
         border: 1px solid #2FACE5;
-        padding: 10px;
+        padding: 10px 10px 0 10px;
+        @media screen  and (max-width: 1199px) {
+          margin: 25px 0;
+        }
         .photo, .quote {
           float: left;
         }
@@ -707,6 +716,7 @@ main {
           background: url(/img/vatel/response.jpg) no-repeat;
           .border-radius(100%);
           background-size: 157px;
+          border: 1px solid #3489C0;
         }
         .photo1 {
           background-position: 0 0;
@@ -720,14 +730,134 @@ main {
           color: #FF4294;
           font-weight: bold;
           margin-left: 9px;
+          @media screen  and (max-width: 339px) {
+            width: 184px;
+          }
         }
         p {
           font-weight: bold;
+          font-size: 16px;
+          line-height: 1.7;
+          @media screen  and (max-width: 429px) {
+            font-size: 14px;
+          }
         }
         .response-text {
           margin-top: 10px;
           font-family: 'TrebuchetMS-Italic', 'Arial', sans-serif;
           font-style: italic;
+        }
+      }
+    }
+  }
+
+  .how {
+    background: url('/img/vatel/bg_partner.jpg');
+    margin-top: 20px;
+    padding: 10px 0;
+    .container {
+      .h4 {
+        text-transform: uppercase;
+        font-family: TrebuchetMS-Bold, sans-serif;
+        color: #2F363E;
+        font-size: 27px;
+      }
+      .content {
+        &:extend(.clearfix all);
+        @media screen and (max-width: 991px) {
+          width: 580px;
+          margin: auto;
+        }
+        .col {
+          float: left;
+          width: 148px;
+          margin-top: 15px;
+          @media screen and (max-width: 1199px) {
+            width: 122px;
+          }
+          @media screen and (max-width: 991px) {
+            width: 160px;
+          }
+          .logo {
+            display: inline-block;
+            width: 114px;
+            height: 114px;
+            background: url('/img/vatel/how-sprites.jpg') no-repeat;
+            margin: 0 12px;
+            .border-radius(100%);
+            border: 1px solid #3489C0;
+            @media screen and (max-width: 1199px) {
+              margin: 0 4px;
+            }
+            @media screen and (max-width: 991px) {
+              margin: 0 21px;
+            }
+            //@media screen and (max-width: 1199px) {
+            //  background-size: 317px;
+            //  width: 94px;
+            //  height: 94px;
+            //  margin: 0 3px;
+            //}
+            //@media screen and (max-width: 991px) {
+            //  margin: 0 11px;
+            //}
+            //@media screen and (max-width: 767px) {
+            //  margin: 0 4px;
+            //}
+            //@media screen and (max-width: 343px) {
+            //  margin: 0 2px;
+            //}
+            //@media screen and (max-width: 331px) {
+            //  margin: 0;
+            //}
+          }
+          .first {
+            background-position: 0 0;
+          }
+          .second {
+            background-position: -112px 0px;
+          }
+          .third {
+            background-position: -224px 0px;
+          }
+          .fourth {
+            background-position: 0 -112px;
+          }
+          .fifth {
+            background-position: -112px -112px;
+          }
+          .sixth {
+            background-position: -224px -112px;
+          }
+          p {
+            font-family: TrebuchetMS-Bold, Arial, sans-serif;
+            font-weight: bold;
+            font-size: 14px;
+            @media screen and (max-width: 1199px) {
+              font-size: 12px;
+            }
+            @media screen and (max-width: 991px) {
+              font-size: 14px;
+            }
+          }
+        }
+        .arrow {
+          float: left;
+          width: 30px;
+          height: 22px;
+          background: url('/img/vatel/sprites.png') no-repeat -137px -96px;
+          margin: 65px 8px;
+          @media screen and (max-width: 1199px) {
+            margin: 65px 5px;
+          }
+          @media screen and (max-width: 991px) {
+            margin: 65px 10px;
+          }
+        }
+        .arrow-hidden {
+          @media screen and (max-width: 991px) {
+            display: none;
+          }
         }
       }
     }

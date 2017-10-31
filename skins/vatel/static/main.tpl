@@ -166,4 +166,41 @@
             </div>
         </aside>
     </article>
+
+    <article class="how">
+        <div class="container">
+            <div class="h4">Как мы работаем? быстро и максимально удобно для вас!</div>
+            <div class="content">
+                <div class="col">
+                    <div class="logo first"></div>
+                    <p class="text-center">Звоните или оставляете заявку на сайте</p>
+                </div>
+                <div class="arrow"></div>
+                <div class="col">
+                    <div class="logo second"></div>
+                    <p class="text-center">Мы перезваниваем вам в течение 2-х часов</p>
+                </div>
+                <div class="arrow"></div>
+                <div class="col">
+                    <div class="logo third"></div>
+                    <p class="text-center">Встречаемся лично, что исключает многие неприятные ситуации</p>
+                </div>
+                <div class="arrow arrow-hidden"></div>
+                <div class="col">
+                    <div class="logo fourth"></div>
+                    <p class="text-center">Определяем репертуар по вашему личному заказу</p>
+                </div>
+                <div class="arrow"></div>
+                <div class="col">
+                    <div class="logo fifth"></div>
+                    <p class="text-center">Готовим праздник</p>
+                </div>
+                <div class="arrow"></div>
+                <div class="col">
+                    <div class="logo sixth"></div>
+                    <p class="text-center">Наше душевное выступление и ваши позитивные змоции</p>
+                </div>
+            </div>
+        </div>
+    </article>
 </main>
