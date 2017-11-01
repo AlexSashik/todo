@@ -10,11 +10,11 @@
     </p>
 
     <a href="/img/default/test/1.png" data-fancybox="group" data-caption="Caption #1">
-        <img src="/img/default/test/2.png" alt="" />
+        <span>Click1</span>
     </a>
 
     <a href="/img/default/test/2.png" data-fancybox="group" data-caption="Caption #2">
-        <img src="/img/default/test/2.png" alt="" />
+        <span>Click2</span>
     </a>
 
 </div>

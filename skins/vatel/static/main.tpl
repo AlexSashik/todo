@@ -180,7 +180,7 @@
                     <div class="logo second"></div>
                     <p class="text-center">Мы перезваниваем вам в течение 2-х часов</p>
                 </div>
-                <div class="arrow"></div>
+                <div class="arrow arrow-hidden-small"></div>
                 <div class="col">
                     <div class="logo third"></div>
                     <p class="text-center">Встречаемся лично, что исключает многие неприятные ситуации</p>
@@ -190,7 +190,7 @@
                     <div class="logo fourth"></div>
                     <p class="text-center">Определяем репертуар по вашему личному заказу</p>
                 </div>
-                <div class="arrow"></div>
+                <div class="arrow arrow-hidden-small"></div>
                 <div class="col">
                     <div class="logo fifth"></div>
                     <p class="text-center">Готовим праздник</p>
@@ -200,6 +200,22 @@
                     <div class="logo sixth"></div>
                     <p class="text-center">Наше душевное выступление и ваши позитивные змоции</p>
                 </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="container video">
+        <div class="h2">
+            мы провели более 300 частных и корпоративных мероприятий,
+            выступлений на городских площадках и концертах
+        </div>
+        <div class="content">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/2OiBX07ImA0?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NVitgDEh_tw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="gallery">
+                <div class="gallery-photo first"></div>
             </div>
         </div>
     </article>

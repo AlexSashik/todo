@@ -1,10 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: admin
- * Date: 20.10.2017
- * Time: 19:30
- */
 
 CORE::$CSS[] = '<link href="/css/'.CORE::$STYLE.'/main.css" rel="stylesheet" type="text/css">';
+CORE::$CSS[] = '<link rel="stylesheet" type="text/css" href="/bower/fancybox/jquery.fancybox.min.css">';
 CORE::$JS[]  = '<script defer src="/js/'.CORE::$STYLE.'/main.js"></script>';
+CORE::$JS[]  = '<script defer src="/bower/fancybox/jquery.fancybox.min.js"></script>';

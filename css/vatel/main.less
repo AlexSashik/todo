@@ -246,6 +246,8 @@ main {
     font-size: 30px;
     margin:0 35px;
     text-transform: uppercase;
+    font-family: TrebuchetMS-Bold, Arial, sans-serif;
+    font-weight: bold;
     @media screen and (max-width: 1199px) {
       font-size: 27px;
     }
@@ -270,6 +272,9 @@ main {
     }
   }
   h3, .h3 {
+    font-family: TrebuchetMS-Bold, Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
     font-size: 25px;
     margin:0 35px;
     @media screen and (max-width: 1199px) {
@@ -561,8 +566,6 @@ main {
     }
   }
 
-  // Партнеры
-
   .partners {
     background: url('/img/vatel/bg_partner.jpg');
     margin-top: 20px;
@@ -661,9 +664,6 @@ main {
     .center {
       margin-top: 40px
     }
-    .h3 {
-      text-transform: uppercase;
-    }
     ul {
       padding: 0;
       margin: 15px 15px 40px 0;
@@ -761,12 +761,30 @@ main {
         font-family: TrebuchetMS-Bold, sans-serif;
         color: #2F363E;
         font-size: 27px;
+        @media screen and (max-width: 991px) {
+          font-size: 25px;
+        }
+        @media screen and (max-width: 479px) {
+          font-size: 20px;
+        }
       }
       .content {
         &:extend(.clearfix all);
         @media screen and (max-width: 991px) {
           width: 580px;
           margin: auto;
+        }
+        @media screen and (max-width: 609px) {
+          width: 450px;
+        }
+        @media screen and (max-width: 479px) {
+          width: 380px;
+        }
+        @media screen and (max-width: 409px) {
+          width: 304px;
+        }
+        @media screen and (max-width: 334px) {
+          width: 100%;
         }
         .col {
           float: left;
@@ -776,6 +794,20 @@ main {
             width: 122px;
           }
           @media screen and (max-width: 991px) {
+            width: 160px;
+          }
+          @media screen and (max-width: 609px) {
+            width: 122px;
+          }
+          @media screen and (max-width: 479px) {
+            width: 160px;
+          }
+          @media screen and (max-width: 409px) {
+            width: 122px;
+          }
+          @media screen and (max-width: 334px) {
+            float: none;
+            margin: auto;
             width: 160px;
           }
           .logo {
@@ -792,33 +824,27 @@ main {
             @media screen and (max-width: 991px) {
               margin: 0 21px;
             }
-            //@media screen and (max-width: 1199px) {
-            //  background-size: 317px;
-            //  width: 94px;
-            //  height: 94px;
-            //  margin: 0 3px;
-            //}
-            //@media screen and (max-width: 991px) {
-            //  margin: 0 11px;
-            //}
-            //@media screen and (max-width: 767px) {
-            //  margin: 0 4px;
-            //}
-            //@media screen and (max-width: 343px) {
-            //  margin: 0 2px;
-            //}
-            //@media screen and (max-width: 331px) {
-            //  margin: 0;
-            //}
+            @media screen and (max-width: 609px) {
+              margin: 0 4px;
+            }
+            @media screen and (max-width: 479px) {
+              margin: 0 21px;
+            }
+            @media screen and (max-width: 409px) {
+              margin: 0 4px;
+            }
+            @media screen and (max-width: 334px) {
+              margin: 0 21px;
+            }
           }
           .first {
             background-position: 0 0;
           }
           .second {
-            background-position: -112px 0px;
+            background-position: -112px 0;
           }
           .third {
-            background-position: -224px 0px;
+            background-position: -224px 0;
           }
           .fourth {
             background-position: 0 -112px;
@@ -839,6 +865,18 @@ main {
             @media screen and (max-width: 991px) {
               font-size: 14px;
             }
+            @media screen and (max-width: 609px) {
+              font-size: 12px;
+            }
+            @media screen and (max-width: 479px) {
+              font-size: 13px;
+            }
+            @media screen and (max-width: 409px) {
+              font-size: 12px;
+            }
+            @media screen and (max-width: 334px) {
+              font-size: 14px;
+            }
           }
         }
         .arrow {
@@ -853,11 +891,63 @@ main {
           @media screen and (max-width: 991px) {
             margin: 65px 10px;
           }
+          @media screen and (max-width: 609px) {
+            margin: 65px 5px;
+          }
+          @media screen and (max-width: 479px) {
+            margin: 65px 10px;
+          }
+          @media screen and (max-width: 409px) {
+            margin: 65px 5px;
+          }
+          @media screen and (max-width: 334px) {
+            float: none;
+            margin: 10px auto;
+            background-position-x: -173px;
+            width: 23px;
+            height: 29px;
+          }
         }
         .arrow-hidden {
           @media screen and (max-width: 991px) {
             display: none;
           }
+          @media screen and (max-width: 479px) {
+            display: block;
+          }
+        }
+        .arrow-hidden-small {
+          @media screen and (max-width: 479px) {
+            display: none;
+          }
+          @media screen and (max-width: 334px) {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  .video {
+    .h2 {
+      margin: 20px 0;
+    }
+    .content {
+      &:extend(.clearfix all);
+      .video, .gallery {
+        float: left;
+        width: 50%;
+      }
+      .gallery {
+        .gallery-photo {
+          width: 154px;
+          height: 154px;
+          background: url('/img/vatel/how-sprites.jpg') no-repeat;
+          margin: 0 4px;
+          border: 1px solid #3489C0;
+        }
+        .first {
+          background-position: 0 0;
         }
       }
     }
