@@ -211,11 +211,22 @@
         </div>
         <div class="content">
             <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/2OiBX07ImA0?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/NVitgDEh_tw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/2OiBX07ImA0?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/NVitgDEh_tw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="gallery">
-                <div class="gallery-photo first"></div>
+                <a href="/img/vatel/piano.jpg" data-fancybox="group" class="gallery-photo first"></a>
+                <a href="/img/vatel/sax1.jpg" data-fancybox="group" class="gallery-photo second"></a>
+                <a href="/img/vatel/sing1.jpg" data-fancybox="group" class="gallery-photo third"></a>
+                <a href="/img/vatel/sing2.JPG" data-fancybox="group" class="gallery-photo fourth"></a>
+                <a href="/img/vatel/sing3.JPG" data-fancybox="group" class="gallery-photo fifth"></a>
+                <a href="/img/vatel/sing4.JPG" data-fancybox="group" class="gallery-photo sixth"></a>
+                <a href="/img/vatel/singers.jpg" data-fancybox="group" class="gallery-photo seventh"></a>
+                <a href="/img/vatel/sing5.JPG" data-fancybox="group" class="gallery-photo eighth"></a>
+                <a href="/img/vatel/sing6.JPG" data-fancybox="group" class="gallery-photo ninth"></a>
+                <a href="/img/vatel/sax2.jpg" data-fancybox="group" class="gallery-photo tenth"></a>
+                <a href="/img/vatel/todos.jpg" data-fancybox="group" class="gallery-photo eleventh"></a>
+                <a href="/img/vatel/violin2.jpg" data-fancybox="group" class="gallery-photo twelfth"></a>
             </div>
         </div>
     </article>
