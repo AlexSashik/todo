@@ -1,6 +1,12 @@
 <footer>
     <div class="container">
-        Футер
+        <p>Остались вопросы? Позвоните нам
+            <span class="tel">
+                +7&nbsp;(495)&nbsp;760&#8209;96&#8209;50<span>,</span> +7&nbsp;(926)&nbsp;586&#8209;80&#8209;03
+            </span>
+        </p>
+        <p>Или <span class="callback" data-toggle="modal" data-target="#modal" id="modal-footer">закажите обратный звонок</span></p>
+        <p class="copy">&copy; Праздничное агентство «Vatel» — музыкальный колектив на праздник в Москве и МО</p>
     </div>
 </footer>
 

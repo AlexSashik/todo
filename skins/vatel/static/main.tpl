@@ -210,10 +210,12 @@
             выступлений на городских площадках и концертах
         </div>
         <div class="content">
-<!--            <div class="video">-->
+            <div class="video">
+                <div class="youtube" id="bwthj9v5iko"></div>
+                <div class="youtube" id="NVitgDEh_tw"></div>
 <!--                <iframe src="https://www.youtube.com/embed/2OiBX07ImA0?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>-->
 <!--                <iframe src="https://www.youtube.com/embed/NVitgDEh_tw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>-->
-<!--            </div>-->
+            </div>
             <div class="gallery">
                 <a href="/img/vatel/piano.jpg" data-fancybox="group" class="gallery-photo first"></a>
                 <a href="/img/vatel/sax1.jpg" data-fancybox="group" class="gallery-photo second"></a>
@@ -230,7 +232,7 @@
             </div>
         </div>
         <div class="text-center footer">
-            <div class="arrow"><i class="glyphicon glyphicon-arrow-right"></i></div>
+            <div class="arrow"></div>
             <div class="promotion">
                 <p>отправьте заявку сейчас и получите скидку <span>20%</span> на заказ музыкантов</p>
                 <div class="clock">
