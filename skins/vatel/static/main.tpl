@@ -204,16 +204,16 @@
         </div>
     </article>
 
-    <article class="container video">
+    <article class="container video-aricle">
         <div class="h2">
             мы провели более 300 частных и корпоративных мероприятий,
             выступлений на городских площадках и концертах
         </div>
         <div class="content">
-            <div class="video">
-                <iframe src="https://www.youtube.com/embed/2OiBX07ImA0?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/NVitgDEh_tw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-            </div>
+<!--            <div class="video">-->
+<!--                <iframe src="https://www.youtube.com/embed/2OiBX07ImA0?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>-->
+<!--                <iframe src="https://www.youtube.com/embed/NVitgDEh_tw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>-->
+<!--            </div>-->
             <div class="gallery">
                 <a href="/img/vatel/piano.jpg" data-fancybox="group" class="gallery-photo first"></a>
                 <a href="/img/vatel/sax1.jpg" data-fancybox="group" class="gallery-photo second"></a>
@@ -228,6 +228,27 @@
                 <a href="/img/vatel/todos.jpg" data-fancybox="group" class="gallery-photo eleventh"></a>
                 <a href="/img/vatel/violin2.jpg" data-fancybox="group" class="gallery-photo twelfth"></a>
             </div>
+        </div>
+        <div class="text-center footer">
+            <div class="arrow"><i class="glyphicon glyphicon-arrow-right"></i></div>
+            <div class="promotion">
+                <p>отправьте заявку сейчас и получите скидку <span>20%</span> на заказ музыкантов</p>
+                <div class="clock">
+                    <span>До конца акции:</span>
+                    <div class="numbers" id="footer-days">00</div>
+                    <div class="dots">:</div>
+                    <div class="numbers" id="footer-hours">00</div>
+                    <div class="dots">:</div>
+                    <div class="numbers" id="footer-minutes">00</div>
+                    <div class="dots">:</div>
+                    <div class="numbers" id="footer-seconds">00</div>
+                </div>
+            </div>
+            <form action="" method="post" class="text-center" onsubmit="return false;">
+                <p><input id="footer-name" type="text" placeholder="Ваше имя*" required></p>
+                <p><input id="footer-tel" type="text" placeholder="Ваш телефон*" required></p>
+                <p><input id="footer-application" type="submit" value="оставить заявку"></p>
+            </form>
         </div>
     </article>
 </main>

@@ -1,4 +1,5 @@
 // таймер
+
 var to =  Date.parse('2018-11-28T21:10:10');
 
 // функция добавления нуля к числу от 0 до 9
@@ -10,7 +11,7 @@ function addZero (num, elem) {
     }
 }
 
-function clock (to) {
+function clock (to, days, hours, minutes, seconds) {
     var now = Date.now();
     var remaining = Math.round((to - now)/1000);
     if (remaining > 0) {
@@ -19,23 +20,27 @@ function clock (to) {
         var howMinutes = Math.floor((remaining % 3600) / 60);
         var howSec = (remaining % 3600) - howMinutes*60;
 
-        addZero(howDays, $('#days'));
-        addZero(howHours, $('#hours'));
-        addZero(howMinutes, $('#minutes'));
-        addZero(howSec, $('#seconds'));
+        addZero(howDays, $(days));
+        addZero(howHours, $(hours));
+        addZero(howMinutes, $(minutes));
+        addZero(howSec, $(seconds));
         return true;
     } else {
-        $('#days').html('00');
-        $('#hours').html('00');
-        $('#minutes').html('00');
-        $('#seconds').html('00');
+        $(days).html('00');
+        $(hours).html('00');
+        $(minutes).html('00');
+        $(seconds).html('00');
         return false;
     }
 }
 
-clock(to);
+clock(to, $('#days'), $('#hours'), $('#minutes'), $('#seconds'));
+clock(to, $('#footer-days'), $('#footer-hours'), $('#footer-minutes'), $('#footer-seconds'));
 var timerId = setInterval(function () {
-    if (!clock(to)) clearInterval(timerId);
+    if (!clock(to,$('#days'),$('#hours'),$('#minutes'),$('#seconds'))) clearInterval(timerId);
+}, 1000);
+var timerIdFooter = setInterval(function () {
+    if (!clock(to, $('#footer-days'), $('#footer-hours'), $('#footer-minutes'), $('#footer-seconds'))) clearInterval(timerIdFooter);
 }, 1000);
 
 
@@ -79,7 +84,7 @@ $('#application').on('click', function () {
 
 // функция "отправить заявку" не из модального окна
 
-function application(name, tel, email, submit) {
+function application(name, tel, submit, email) {
     $(submit).on('click', function () {
         $(name).css('border-color', 'silver');
         var flag = true;
@@ -97,27 +102,36 @@ function application(name, tel, email, submit) {
         } else {
             $(tel).css('border-color', 'silver');
         }
-
-        if ( $(email).val().trim() != '' && !($(email).val().match(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i))) {
-            $(email).css('border-color', 'red');
-            flag = false;
-        } else {
-            $(email).css('border-color', 'silver');
+        if (email !== undefined) {
+            if ( $(email).val().trim() != '' && !($(email).val().match(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i))) {
+                $(email).css('border-color', 'red');
+                flag = false;
+            } else {
+                $(email).css('border-color', 'silver');
+            }
         }
 
         if(flag) {
             $('#modal-success').modal();
             $(name).val('');
             $(tel).val('');
-            $(email).val('');
+            if (email !== undefined) {
+                $(email).val('');
+            }
         }
     });
 }
 
-application($('#aside-name'), $('#aside-tel'), $('#aside-email'), $('#aside-application'));
+application($('#aside-name'), $('#aside-tel'), $('#aside-application'), $('#aside-email'));
+application($('#footer-name'), $('#footer-tel'), $('#footer-application'));
 
 $('#aside-application').on('click', function () {
     setTimeout("$('#aside-name').css('border-color', 'silver')", 5000);
     setTimeout("$('#aside-tel').css('border-color', 'silver')", 5000);
     setTimeout("$('#aside-email').css('border-color', 'silver')", 5000);
+});
+
+$('#footer-application').on('click', function () {
+    setTimeout("$('#footer-name').css('border-color', 'silver')", 5000);
+    setTimeout("$('#footer-tel').css('border-color', 'silver')", 5000);
 });
