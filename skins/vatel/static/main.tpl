@@ -36,7 +36,7 @@
                     <div class="numbers" id="seconds">00</div>
                 </div>
             </div>
-            <form action="" method="post" class="text-center" onsubmit="return false;">
+            <form method="post" class="text-center" onsubmit="return false;">
                 <p><input id="aside-name" type="text" placeholder="Ваше имя*" required></p>
                 <p><input id="aside-tel" type="text" placeholder="Ваш телефон*" required></p>
                 <p><input id="aside-email" type="text" placeholder="Ваш email"></p>
@@ -47,7 +47,7 @@
 
     <article class="partners">
         <div class="container">
-            <div class="h4">С нами работают</div>
+            <h4 class="h4">С нами работают</h4>
             <div class="logo first"></div>
             <div class="logo second"></div>
             <div class="logo third"></div>
@@ -62,9 +62,9 @@
 
     <article class="container why">
         <div class="center">
-            <div class="h3">
+            <h4 class="h3">
                 Проблемы, с которыми сталкиваются 90% клиентов при заказе музыкального коллектива
-            </div>
+            </h4>
             <ul class="poor">
                 <li>
                     <p>Ценовая политика</p>
@@ -126,9 +126,9 @@
             </ul>
         </div>
         <aside>
-            <div class="h3">
+            <h3 class="h3">
                 Отзывы
-            </div>
+            </h3>
             <div class="response">
                 <div>
                     <div class="photo photo1"></div>
@@ -169,7 +169,7 @@
 
     <article class="how">
         <div class="container">
-            <div class="h4">Как мы работаем? быстро и максимально удобно для вас!</div>
+            <h4 class="h4">Как мы работаем? быстро и максимально удобно для вас!</h4>
             <div class="content">
                 <div class="col">
                     <div class="logo first"></div>
@@ -205,10 +205,10 @@
     </article>
 
     <article class="container video-aricle">
-        <div class="h2">
+        <h4 class="h2">
             мы провели более 300 частных и корпоративных мероприятий,
             выступлений на городских площадках и концертах
-        </div>
+        </h4>
         <div class="content">
             <div class="video">
                 <div class="youtube" id="bwthj9v5iko"></div>
@@ -246,7 +246,7 @@
                     <div class="numbers" id="footer-seconds">00</div>
                 </div>
             </div>
-            <form action="" method="post" class="text-center" onsubmit="return false;">
+            <form method="post" class="text-center" onsubmit="return false;">
                 <p><input id="footer-name" type="text" placeholder="Ваше имя*" required></p>
                 <p><input id="footer-tel" type="text" placeholder="Ваш телефон*" required></p>
                 <p><input id="footer-application" type="submit" value="оставить заявку"></p>
