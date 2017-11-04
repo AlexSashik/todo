@@ -1,6 +1,6 @@
 // таймер
 
-var to =  Date.parse('2018-02-01T00:00:00');
+var to =  Date.parse('2018-02-01T00:00:00'), timerId, timerIdFooter;
 
 // функция добавления нуля к числу от 0 до 9
 function addZero (num, elem) {
@@ -12,34 +12,33 @@ function addZero (num, elem) {
 }
 
 function clock (to, days, hours, minutes, seconds) {
-    var now = Date.now();
-    var remaining = Math.round((to - now)/1000);
+    var remaining = Math.round((to - Date.now())/1000), howDays, howHours, howMinutes, howSec;
     if (remaining > 0) {
-        var howDays = Math.floor(remaining / 86400);
-        var howHours = Math.floor((remaining % 86400) / 3600);
-        var howMinutes = Math.floor((remaining % 3600) / 60);
-        var howSec = (remaining % 3600) - howMinutes*60;
+        howDays = Math.floor(remaining / 86400),
+        howHours = Math.floor((remaining % 86400) / 3600),
+        howMinutes = Math.floor((remaining % 3600) / 60),
+        howSec = (remaining % 3600) - howMinutes*60;
 
-        addZero(howDays, $(days));
-        addZero(howHours, $(hours));
-        addZero(howMinutes, $(minutes));
-        addZero(howSec, $(seconds));
+        addZero(howDays, days);
+        addZero(howHours, hours);
+        addZero(howMinutes, minutes);
+        addZero(howSec, seconds);
         return true;
     } else {
-        $(days).html('00');
-        $(hours).html('00');
-        $(minutes).html('00');
-        $(seconds).html('00');
+        days.html('00');
+        hours.html('00');
+        minutes.html('00');
+        seconds.html('00');
         return false;
     }
 }
 
 clock(to, $('#days'), $('#hours'), $('#minutes'), $('#seconds'));
 clock(to, $('#footer-days'), $('#footer-hours'), $('#footer-minutes'), $('#footer-seconds'));
-var timerId = setInterval(function () {
+timerId = setInterval(function () {
     if (!clock(to,$('#days'),$('#hours'),$('#minutes'),$('#seconds'))) clearInterval(timerId);
 }, 1000);
-var timerIdFooter = setInterval(function () {
+timerIdFooter = setInterval(function () {
     if (!clock(to, $('#footer-days'), $('#footer-hours'), $('#footer-minutes'), $('#footer-seconds'))) clearInterval(timerIdFooter);
 }, 1000);
 
@@ -59,7 +58,7 @@ $('#modal-footer').on('click', function () {
 $('#application').on('click', function () {
     var flag = true;
 
-    if ($('#name').val().trim() == '') {
+    if ($('#name').val().trim() === '') {
         $('#name').css('border-color', 'red');
         setTimeout("$('#name').css('border-color', 'silver')", 5000);
         flag = false;
@@ -67,7 +66,7 @@ $('#application').on('click', function () {
         $('#name').css('border-color', 'silver');
     }
 
-    if ($('#tel').val().trim() == '') {
+    if ($('#tel').val().trim() === '') {
         $('#tel').css('border-color', 'red');
         setTimeout("$('#tel').css('border-color', 'silver')", 5000);
         flag = false;
@@ -93,34 +92,34 @@ function application(name, tel, submit, email) {
         $(name).css('border-color', 'silver');
         var flag = true;
 
-        if ($(name).val().trim() == '') {
-            $(name).css('border-color', 'red');
+        if (name.val().trim() === '') {
+            name.css('border-color', 'red');
             flag = false;
         } else {
-            $(name).css('border-color', 'silver');
+            name.css('border-color', 'silver');
         }
 
-        if ($(tel).val().trim() == '') {
-            $(tel).css('border-color', 'red');
+        if (tel.val().trim() === '') {
+            tel.css('border-color', 'red');
             flag = false;
         } else {
-            $(tel).css('border-color', 'silver');
+            tel.css('border-color', 'silver');
         }
         if (email !== undefined) {
-            if ( $(email).val().trim() != '' && !($(email).val().match(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i))) {
-                $(email).css('border-color', 'red');
+            if ( email.val().trim() !== '' && !(email.val().match(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i))) {
+                email.css('border-color', 'red');
                 flag = false;
             } else {
-                $(email).css('border-color', 'silver');
+                email.css('border-color', 'silver');
             }
         }
 
         if(flag) {
             $('#modal-success').modal();
-            $(name).val('');
-            $(tel).val('');
+            name.val('');
+            tel.val('');
             if (email !== undefined) {
-                $(email).val('');
+                email.val('');
             }
         }
     });
@@ -145,35 +144,36 @@ $('#footer-application').on('click', function () {
 
 function r(f){/in/.test(document.readyState)?setTimeout('r('+f+')',9):f()}
 r(function(){
+    var videos, nb_videos, i, play;
     if (!document.getElementsByClassName) {
         // Поддержка IE8
-        var getElementsByClassName = function(node, classname) {
-            var a = [];
-            var re = new RegExp('(^| )'+classname+'( |$)');
-            var els = node.getElementsByTagName("*");
+        var a, re, els, getElementsByClassName = function(node, classname) {
+            a = [];
+            re = new RegExp('(^| )'+classname+'( |$)');
+            els = node.getElementsByTagName("*");
             for(var i=0,j=els.length; i<j; i++)
                 if(re.test(els[i].className))a.push(els[i]);
             return a;
         };
-        var videos = getElementsByClassName(document.body,"youtube");
+        videos = getElementsByClassName(document.body,"youtube");
     } else {
-        var videos = document.getElementsByClassName("youtube");
+        videos = document.getElementsByClassName("youtube");
     }
 
-    var nb_videos = videos.length;
-    for (var i=0; i<nb_videos; i++) {
+    nb_videos = videos.length;
+    for (i=0; i<nb_videos; i++) {
         // Находим постер для видео, зная ID нашего видео
         videos[i].style.backgroundImage = 'url(http://i.ytimg.com/vi/' + videos[i].id + '/sddefault.jpg)';
 
         // Размещаем над постером кнопку Play, чтобы создать эффект плеера
-        var play = document.createElement("div");
+        play = document.createElement("div");
         play.setAttribute("class","play");
         videos[i].appendChild(play);
 
         videos[i].onclick = function() {
             // Создаем iFrame и сразу начинаем проигрывать видео, т.е. атрибут autoplay у видео в значении 1
-            var iframe = document.createElement("iframe");
-            var iframe_url = "https://www.youtube.com/embed/" + this.id + "?autoplay=1&autohide=1&rel=0&amp;showinfo=0";
+            var iframe = document.createElement("iframe"),
+            iframe_url = "https://www.youtube.com/embed/" + this.id + "?autoplay=1&autohide=1&rel=0&amp;showinfo=0";
             if (this.getAttribute("data-params")) iframe_url+='&'+this.getAttribute("data-params");
             iframe.setAttribute("src",iframe_url);
             iframe.setAttribute("frameborder",'0');
