@@ -37,7 +37,7 @@ ErrorDocument 404  /errors/404
 # Internal Server Error
 ErrorDocument 500  /errors/500
 
-<FilesMatch "\.(gif|jpg|jpeg|png|ico)$">
+<FilesMatch "\.(gif|jpg|jpeg|png|ico|woff)$">
     Header set Cache-Control "max-age=28512000"
 </FilesMatch>
 

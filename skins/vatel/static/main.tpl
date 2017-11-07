@@ -2,18 +2,18 @@
     <article class="container">
         <div class="center text-center">
             <h2>ПРОФЕССИОНАЛЬНЫЙ ВОКАЛЬНЫЙ ДУЭТ</h2>
-            <h3>Светлана Чумакова и Константин Бовсуновский</h3>
+            <h3 itemprop="member">Светлана Чумакова и Константин Бовсуновский</h3>
             <p>Наш дуэт дополняют скрипка, скаксофон, клавишные</p>
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
+                <div itemscope itemtype="http://schema.org/ImageGallery" class="carousel-inner">
                     <div class="item active">
-                        <img src="/img/vatel/singers.jpg" alt="">
+                        <img itemprop="primaryImageOfPage" src="/img/vatel/singers.jpg" alt="">
                     </div>
                     <div class="item">
-                        <img src="/img/vatel/violin.jpg" alt="">
+                        <img itemprop="image" src="/img/vatel/violin.jpg" alt="">
                     </div>
                     <div class="item">
-                        <img src="/img/vatel/piano.jpg" alt="">
+                        <img itemprop="image" src="/img/vatel/piano.jpg" alt="">
                     </div>
                 </div>
                 <a class="prev" href="#myCarousel" data-slide="prev"></a>
@@ -48,15 +48,31 @@
     <article class="partners">
         <div class="container">
             <h4 class="h4">С нами работают</h4>
-            <div class="logo first"></div>
-            <div class="logo second"></div>
-            <div class="logo third"></div>
-            <div class="logo fourth"></div>
-            <div class="logo fifth"></div>
-            <div class="logo sixth"></div>
+            <div class="logo first">
+                <meta itemprop="sponsor" content="Русский ресторан">
+            </div>
+            <div class="logo second">
+                <meta itemprop="sponsor" content="Ермак">
+            </div>
+            <div class="logo third">
+                <meta itemprop="sponsor" content="Глобал">
+            </div>
+            <div class="logo fourth">
+                <meta itemprop="sponsor" content="Линдерхоф">
+            </div>
+            <div class="logo fifth">
+                <meta itemprop="sponsor" content="ПневмоТехника">
+            </div>
+            <div class="logo sixth">
+                <meta itemprop="sponsor" content="Шантиль">
+            </div>
             <div class="logo seventh"></div>
-            <div class="logo eighth"></div>
-            <div class="logo nineth"></div>
+            <div class="logo eighth">
+                <meta itemprop="sponsor" content="Пироговский дворик">
+            </div>
+            <div class="logo nineth">
+                <meta itemprop="sponsor" content="United panel group">
+            </div>
         </div>
     </article>
 
@@ -216,7 +232,19 @@
 <!--                <iframe src="https://www.youtube.com/embed/2OiBX07ImA0?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>-->
 <!--                <iframe src="https://www.youtube.com/embed/NVitgDEh_tw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>-->
             </div>
-            <div class="gallery">
+            <div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                <meta itemprop="image" content="/img/vatel/piano.jpg">
+                <meta itemprop="image" content="/img/vatel/sax1.jpg">
+                <meta itemprop="image" content="/img/vatel/sing1.jpg">
+                <meta itemprop="image" content="/img/vatel/sing2.JPG">
+                <meta itemprop="image" content="/img/vatel/sing3.JPG">
+                <meta itemprop="image" content="/img/vatel/sing4.JPG">
+                <meta itemprop="image" content="/img/vatel/singers.jpg">
+                <meta itemprop="image" content="/img/vatel/sing5.JPG">
+                <meta itemprop="image" content="/img/vatel/sing6.JPG">
+                <meta itemprop="image" content="/img/vatel/sax2.jpg">
+                <meta itemprop="image" content="/img/vatel/todos.jpg">
+                <meta itemprop="image" content="/img/vatel/violin2.jpg">
                 <a href="/img/vatel/piano.jpg" data-fancybox="group" class="gallery-photo first"></a>
                 <a href="/img/vatel/sax1.jpg" data-fancybox="group" class="gallery-photo second"></a>
                 <a href="/img/vatel/sing1.jpg" data-fancybox="group" class="gallery-photo third"></a>
