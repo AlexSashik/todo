@@ -12,11 +12,15 @@ if (isset($_POST['city'], $_POST['named_cities']) && is_array($_POST['named_citi
     $res = q("
         SELECT * FROM `cities`
         WHERE `name_ru` = '".es($_POST['city'])."'
+        LIMIT 1 
     ");
+
+    // =================================  ??? почему LIMIT не ускоряет дела ==============================
+
     if ($res->num_rows) {
         $row = $res->fetch_assoc();
         $res->close();
-        $city_arr = mbStringToArray(trim($row['name_ru']));
+        $city_arr = mbStringToArray(trim($row['name_ru'])); // trim т.к. в БД бывают лишние пробелы
         $city_arr = array_reverse($city_arr);
         foreach ($city_arr as $v) {
             if ($v != 'ъ' && $v != 'ь' && $v != 'ы') {
@@ -34,48 +38,61 @@ if (isset($_POST['city'], $_POST['named_cities']) && is_array($_POST['named_citi
         }
 
         // ответ сервера
-        $row = array();
-        foreach ($_POST['named_cities'] as $k => $v) {
-            $_POST['named_cities'][$k] = "'".es($v)."'";
-        }
-        $for_res = "AND `name_ru` NOT IN (".implode(',', $_POST['named_cities']).") ";
+        $probability = rand(0,100);
 
-        $res = q("
-            SELECT * FROM `cities`
-            WHERE `name_ru` LIKE '".es($letter)."%' ".$for_res." AND `name_ru` <> '".es($_POST['city'])."'
-            ORDER BY RAND()
-        ");
-        if ($res->num_rows) {
-            $row = $res->fetch_assoc();
-            $res->close();
-            $city_arr = mbStringToArray(trim($row['name_ru']));
-            $city_arr = array_reverse($city_arr);
-            foreach ($city_arr as $v) {
-                if ($v != 'ъ' && $v != 'ь'  && $v != 'ы') {
-                    if ($v == 'й') {
-                        $letter = 'и';
-                        break;
-                    }  elseif ($v == 'ё') {
-                        $letter = 'е';
-                        break;
-                    } else {
-                        $letter = $v;
-                        break;
+        if ($probability > 2.6) {
+            $row = array();
+            foreach ($_POST['named_cities'] as $k => $v) {
+                $_POST['named_cities'][$k] = "'".es($v)."'";
+            }
+            $for_res = "AND `name_ru` NOT IN (".implode(',', $_POST['named_cities']).") ";
+
+            $res = q("
+                SELECT * FROM `cities`
+                WHERE `name_ru` LIKE '".es($letter)."%' ".$for_res." AND `name_ru` <> '".es($_POST['city'])."'
+                ORDER BY RAND()
+                LIMIT 1
+            ");
+
+            // =================================  ??? почему LIMIT не ускоряет дела ==============================
+
+            if ($res->num_rows) {
+                $row = $res->fetch_assoc();
+                $res->close();
+                $city_arr = mbStringToArray(trim($row['name_ru']));
+                $city_arr = array_reverse($city_arr);
+                foreach ($city_arr as $v) {
+                    if ($v != 'ъ' && $v != 'ь'  && $v != 'ы') {
+                        if ($v == 'й') {
+                            $letter = 'и';
+                            break;
+                        }  elseif ($v == 'ё') {
+                            $letter = 'е';
+                            break;
+                        } else {
+                            $letter = $v;
+                            break;
+                        }
                     }
                 }
+                $response = array(
+                    'name' => htmlspecialchars($row['name_ru']),
+                    'letter' => htmlspecialchars($letter)
+                );
+            } else {
+                $response = array (
+                    'status' => 'win',
+                    'cause'  => 'Компьютор в замешательстве',
+                    'letter'    => $letter
+                );
             }
-            $response = array(
-                'name' => htmlspecialchars($row['name_ru']),
-                'letter' => htmlspecialchars($letter)
-            );
         } else {
             $response = array (
                 'status' => 'win',
-                'cause'  => 'Сервер в замешательстве',
-                'dsf'    => $letter
+                'cause'  => 'Компьютор в замешательстве',
+                'letter'    => $letter
             );
         }
-
     } else {
         $response = array (
             'status' => 'lose',

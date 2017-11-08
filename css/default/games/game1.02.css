@@ -191,7 +191,7 @@
 }
 
 .win, .lose {
-	background: url(/img/default/game/win-lose.jpg) no-repeat;
+	background: url(/img/default/game/win-lose2.jpg) no-repeat;
 	width: 400px;
 	margin: 0 auto;
 }
@@ -202,7 +202,7 @@
 }
 
 .lose {
-	height: 300px;
+	height: 323px;
 }
 
 .buttons {
