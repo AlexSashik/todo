@@ -1,84 +1,109 @@
+function checkHP (hp, role) {
+    if (hp == 2) {
+        if (role == 'server') {
+            $("#first-heart-server").toggleClass("fa-heart fa-heart-o");
+        } else {
+            $("#first-heart-user").toggleClass("fa-heart fa-heart-o");
+        }
+        return 1;
+    } else if (hp == 1) {
+        if (role == 'server') {
+            $("#second-heart-server").toggleClass("fa-heart fa-heart-o");
+        } else {
+            $("#second-heart-user").toggleClass("fa-heart fa-heart-o");
+        }
+    } else if (hp == 0) {
+        if (role == 'server') {
+            $("#third-heart-server").toggleClass("fa-heart fa-heart-o");
+        } else {
+            $("#third-heart-user").toggleClass("fa-heart fa-heart-o");
+        }
+    }
+    if (hp < 0) {
+        if (role == 'server') {
+            window.location.href = "/games/gameover/win";  // переадресация
+            throw new Error();
+        } else {
+            window.location.href = "/games/gameover/lose"; // переадресация
+            throw new Error();
+        }
+    }
+}
+
 var city_array = [''],
     letter = false,
     hp_sever = 3,
     hp_user = 3;
 
-//window.location.href = "/"; - переадресация
+function myAjax (absence) {
 
-function myAjax () {
     var check = true;
-    if ($('#city').val() !== undefined) {
-        if ($('#city').val().trim() === '') {
-           alert('Вы не ввели название города!');
-           $('#city').focus();
-           check = false;
-        } else if ($.inArray($('#city').val().trim(), city_array) !== -1) {
-            alert($('#city').val() + ' уже был назван');
-            $('#city').focus();
-            check = false;
-        } else if (letter !== false && $('#city').val()[0].toUpperCase() !== letter.toUpperCase()) {
-            alert ('Вы называете город не с той буквы!');
-            $('#city').val(letter.toUpperCase());
-            $('#city').focus();
+    if (absence === undefined) {
+        if ($('#city').val() !== undefined) {
+            if ($('#city').val().trim() === '') {
+                alert('Вы не ввели название города!');
+                $('#city').focus();
+                check = false;
+            } else if ($.inArray($('#city').val().trim(), city_array) !== -1) {
+                alert($('#city').val() + ' уже был назван');
+                $('#city').focus();
+                check = false;
+            } else if (letter !== false && $('#city').val()[0].toUpperCase() !== letter.toUpperCase()) {
+                alert ('Вы называете город не с той буквы!');
+                $('#city').val(letter.toUpperCase());
+                $('#city').focus();
+                check = false;
+            }
+        } else {
             check = false;
         }
     } else {
-        check = false;
+        check = 2;
+        hp_user--;
+        checkHP(hp_user, 'user');
     }
 
     if (check) {
+        var city = (check === true) ? $('#city').val() : 'false';
+
         $.ajax ({
             url   : '/games/ajax?ajax',
             type  : "POST",
             cache : false,
             data  : {
-                'city' : $('#city').val(),
+                'city' : city,
                 'named_cities' : city_array
             },
             dataType : 'json',
             timeout : 15000,
             success : function(response) {
                 if (response.name !== undefined) {
-                    city_array[city_array.length] = $('#city').val().trim();
+                    if (response.absence === undefined) {
+                        city_array[city_array.length] = $('#city').val().trim();
+                        $('#user_cities').append('<p>' + $('#city').val() + '</p>');
+                        $('#user_cities').scrollTop('5000000');
+                    }
                     city_array[city_array.length] = response.name.trim();
                     letter = response.letter;
-                    $('#user_cities').append('<p>' + $('#city').val() + '</p>');
                     $('#server_cities').append('<p>' + response.name + '</p>');
-                    $('#user_cities').scrollTop('5000000');
                     $('#server_cities').scrollTop('5000000');
                     $('#city').val(response.letter.toUpperCase());
                     $('#city').focus();
                 } else if (response.status !== undefined) {
                     alert (response.cause);
                     if (response.status == 'win') {
-                        city_array[city_array.length] = $('#city').val().trim();
+                        if (response.absence === undefined) {
+                            city_array[city_array.length] = $('#city').val().trim();
+                            $('#user_cities').append('<p>' + $('#city').val() + '</p>');
+                            $('#user_cities').scrollTop('5000000');
+                        }
                         letter = response.letter;
-                        $('#user_cities').append('<p>' + $('#city').val() + '</p>');
-                        $('#user_cities').scrollTop('5000000');
                         $('#city').val(response.letter.toUpperCase());
                         hp_sever--;
-                        if (hp_sever == 2) {
-                            $("#first-heart-server").toggleClass("fa-heart fa-heart-o");
-                        } else if (hp_sever == 1) {
-                            $("#second-heart-server").toggleClass("fa-heart fa-heart-o");
-                        } else if (hp_sever == 0) {
-                            $("#third-heart-server").toggleClass("fa-heart fa-heart-o");
-                        }
-                        if (hp_sever < 0) {
-                            window.location.href = "/games/gameover/win";
-                        }
+                        checkHP(hp_sever, 'server');
                     } else {
                         hp_user--;
-                        if (hp_user == 2) {
-                            $("#first-heart-user").toggleClass("fa-heart fa-heart-o");
-                        } else if (hp_user == 1) {
-                            $("#second-heart-user").toggleClass("fa-heart fa-heart-o");
-                        } else if (hp_user == 0) {
-                            $("#third-heart-user").toggleClass("fa-heart fa-heart-o");
-                        }
-                        if (hp_user < 0) {
-                            window.location.href = "/games/gameover/lose";
-                        }
+                        checkHP(hp_user, 'user');
                     }
                     $('#city').focus();
                 }

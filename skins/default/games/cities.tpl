@@ -16,7 +16,7 @@
            <label for="city">Введите город</label>
            <input id="city" class="input_city" type="text" name="city" autofocus>
            <input class="submit" type="button" name="submit" value="ГОТОВО" onclick="return myAjax()">
-           <input class="submit" type="button" name="submit" value="ПРОПУСТИТЬ ХОД" onclick="">
+           <input class="submit" type="button" name="submit" value="ПРОПУСТИТЬ ХОД" onclick="return myAjax(true)">
        </div>
        <div class="aside_div left">
            <div id="health_user" class="health">
