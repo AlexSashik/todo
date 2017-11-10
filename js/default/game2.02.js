@@ -19,15 +19,19 @@ function checkHP (hp, role) {
             $("#third-heart-user").toggleClass("fa-heart fa-heart-o");
         }
     }
-    if (hp < 0) {
-        if (role == 'server') {
-            window.location.href = "/games/gameover/win";  // переадресация
-            throw new Error();
-        } else {
-            window.location.href = "/games/gameover/lose"; // переадресация
-            throw new Error();
-        }
-    }
+    // if (hp < 0) {
+    //     if (role == 'server') {
+    //         return 'win';
+    //         // window.location.href = "/games/gameover/win";  // переадресация
+    //         // throw new Error();
+    //     } else {
+    //         return 'lose';
+    //         // window.location.href = "/games/gameover/lose"; // переадресация
+    //         // throw new Error();
+    //     }
+    // } else {
+    //     return 'game';
+    // }
 }
 
 var city_array = [''],
@@ -51,6 +55,10 @@ function myAjax (absence) {
             } else if (letter !== false && $('#city').val()[0].toUpperCase() !== letter.toUpperCase()) {
                 alert ('Вы называете город не с той буквы!');
                 $('#city').val(letter.toUpperCase());
+                $('#city').focus();
+                check = false;
+            } else if ($('#city').val().search(/[a-z]/ui) != -1) {
+                alert ('Город вводится на русском языке');
                 $('#city').focus();
                 check = false;
             }
@@ -77,35 +85,39 @@ function myAjax (absence) {
             dataType : 'json',
             timeout : 15000,
             success : function(response) {
-                if (response.name !== undefined) {
-                    if (response.absence === undefined) {
-                        city_array[city_array.length] = $('#city').val().trim();
-                        $('#user_cities').append('<p>' + $('#city').val() + '</p>');
-                        $('#user_cities').scrollTop('5000000');
-                    }
-                    city_array[city_array.length] = response.name.trim();
-                    letter = response.letter;
-                    $('#server_cities').append('<p>' + response.name + '</p>');
-                    $('#server_cities').scrollTop('5000000');
-                    $('#city').val(response.letter.toUpperCase());
-                    $('#city').focus();
-                } else if (response.status !== undefined) {
-                    alert (response.cause);
-                    if (response.status == 'win') {
+                if (response.gameover !== undefined) {
+                    window.location.href = "/games/gameover";
+                } else {
+                    if (response.name !== undefined) {
                         if (response.absence === undefined) {
                             city_array[city_array.length] = $('#city').val().trim();
                             $('#user_cities').append('<p>' + $('#city').val() + '</p>');
                             $('#user_cities').scrollTop('5000000');
                         }
+                        city_array[city_array.length] = response.name.trim();
                         letter = response.letter;
+                        $('#server_cities').append('<p>' + response.name + '</p>');
+                        $('#server_cities').scrollTop('5000000');
                         $('#city').val(response.letter.toUpperCase());
-                        hp_sever--;
-                        checkHP(hp_sever, 'server');
-                    } else {
-                        hp_user--;
-                        checkHP(hp_user, 'user');
+                        $('#city').focus();
+                    } else if (response.status !== undefined) {
+                        alert (response.cause);
+                        if (response.status == 'win') {
+                            if (response.absence === undefined) {
+                                city_array[city_array.length] = $('#city').val().trim();
+                                $('#user_cities').append('<p>' + $('#city').val() + '</p>');
+                                $('#user_cities').scrollTop('5000000');
+                            }
+                            letter = response.letter;
+                            $('#city').val(response.letter.toUpperCase());
+                            hp_sever--;
+                            checkHP(hp_sever, 'server');
+                        } else {
+                            hp_user--;
+                            checkHP(hp_user, 'user');
+                        }
+                        $('#city').focus();
                     }
-                    $('#city').focus();
                 }
             },
             error   : function (x, t) {

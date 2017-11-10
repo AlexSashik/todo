@@ -33,6 +33,14 @@ if (isset($_POST['city'], $_POST['named_cities']) && is_array($_POST['named_citi
     }
 
     if ($_POST['city'] == 'false') {
+        $_SESSION['user_hp_cities']--;
+        if ($_SESSION['user_hp_cities'] < 0) {
+            $response = array (
+                'gameover' => 'lose'
+            );
+            echo json_encode($response);
+            exit;
+        }
         if (empty($_POST['named_cities'][count($_POST['named_cities'])-1])) {
             $letter = 'а';
             $probability = 100;
@@ -63,20 +71,38 @@ if (isset($_POST['city'], $_POST['named_cities']) && is_array($_POST['named_citi
                     'absence' => 1
                 );
             } else {
+                $_SESSION['server_hp_cities']--;
+                if ($_SESSION['server_hp_cities'] < 0) {
+                    $response = array (
+                        'gameover' => 'win'
+                    );
+                    echo json_encode($response);
+                    exit;
+                } else {
+                    $response = array (
+                        'status' => 'win',
+                        'cause'  => 'Компьютор в замешательстве',
+                        'letter' => $letter,
+                        'absence' => 1
+                    );
+                }
+            }
+        } else {
+            $_SESSION['server_hp_cities']--;
+            if ($_SESSION['server_hp_cities'] < 0) {
                 $response = array (
-                    'status' => 'win',
-                    'cause'  => 'Компьютор в замешательстве',
-                    'letter'    => $letter,
+                    'gameover' => 'win'
+                );
+                echo json_encode($response);
+                exit;
+            } else {
+                $response = array (
+                    'status'  => 'win',
+                    'cause'   => 'Компьютор в замешательстве',
+                    'letter'  => $letter,
                     'absence' => 1
                 );
             }
-        } else {
-            $response = array (
-                'status'  => 'win',
-                'cause'   => 'Компьютор в замешательстве',
-                'letter'  => $letter,
-                'absence' => 1
-            );
         }
     } else {
         $row = array();
@@ -114,24 +140,51 @@ if (isset($_POST['city'], $_POST['named_cities']) && is_array($_POST['named_citi
                         'letter' => htmlspecialchars($letter)
                     );
                 } else {
+                    $_SESSION['server_hp_cities']--;
+                    if ($_SESSION['server_hp_cities'] < 0) {
+                        $response = array (
+                            'gameover' => 'win'
+                        );
+                        echo json_encode($response);
+                        exit;
+                    } else {
+                        $response = array (
+                            'status' => 'win',
+                            'cause'  => 'Компьютор в замешательстве',
+                            'letter'    => $letter
+                        );
+                    }
+                }
+            } else {
+                $_SESSION['server_hp_cities']--;
+                if ($_SESSION['server_hp_cities'] < 0) {
+                    $response = array (
+                        'gameover' => 'win'
+                    );
+                    echo json_encode($response);
+                    exit;
+                } else {
                     $response = array (
                         'status' => 'win',
                         'cause'  => 'Компьютор в замешательстве',
                         'letter'    => $letter
                     );
                 }
-            } else {
-                $response = array (
-                    'status' => 'win',
-                    'cause'  => 'Компьютор в замешательстве',
-                    'letter'    => $letter
-                );
             }
         } else {
-            $response = array (
-                'status' => 'lose',
-                'cause'  => htmlspecialchars($_POST['city']).' - такого города не существует'
-            );
+            $_SESSION['user_hp_cities']--;
+            if ($_SESSION['user_hp_cities'] < 0) {
+                $response = array (
+                    'gameover' => 'lose'
+                );
+                echo json_encode($response);
+                exit;
+            } else {
+                $response = array (
+                    'status' => 'lose',
+                    'cause'  => htmlspecialchars($_POST['city']).' - такого города не существует'
+                );
+            }
         }
     }
     echo json_encode($response);
