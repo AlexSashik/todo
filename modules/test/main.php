@@ -17,10 +17,21 @@ if (isset($_FILES['file'])) {
 }
 
 
-
-
-
-
+// ==== перегонка значений без дубликатов из таблицы cities в таблицу cities2 ==========
+//
+//    $name = array();
+//    $res = q("
+//      SELECT DISTINCT `name_ru` FROM `cities`
+//    ");
+//    while ($row = $res->fetch_assoc()) {
+//        $name[] = "('".es(trim($row['name_ru']))."')";
+//    }
+//    $res->close();
+//    $query_string = implode(',', $name);
+//    $res = q("
+//        INSERT INTO `cities2` (`name_ru`)
+//        VALUES ".$query_string.";
+//    ");
 
 
 /*

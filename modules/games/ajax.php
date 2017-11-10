@@ -7,8 +7,10 @@ if (!isset($_GET['ajax'])) {
 
 if (isset($_POST['city'], $_POST['named_cities']) && is_array($_POST['named_cities'])) {
     $_POST = trimAll($_POST);
+    $probability = 97.3;
 
-    function lastLetterReplace ($string) {
+    // функция определения последней буквы слова, с которой может начинаться новый город
+    function lastLetterSearch ($string) {
         $city_arr = array_reverse(mbStringToArray(trim($string)));
         foreach ($city_arr as $v) {
             if ($v != 'ъ' && $v != 'ь'  && $v != 'ы') {
@@ -33,12 +35,12 @@ if (isset($_POST['city'], $_POST['named_cities']) && is_array($_POST['named_citi
     if ($_POST['city'] == 'false') {
         if (empty($_POST['named_cities'][count($_POST['named_cities'])-1])) {
             $letter = 'а';
+            $probability = 100;
         } else {
-            $letter = lastLetterReplace($_POST['named_cities'][count($_POST['named_cities'])-1]);
+            $letter = lastLetterSearch($_POST['named_cities'][count($_POST['named_cities'])-1]);
         }
-        $probability = rand(0,100);
 
-        if ($probability > 2.6) {
+        if (rand(0,100) <= $probability) {
             $row = array();
             foreach ($_POST['named_cities'] as $k => $v) {
                 $_POST['named_cities'][$k] = "'".es($v)."'";
@@ -54,7 +56,7 @@ if (isset($_POST['city'], $_POST['named_cities']) && is_array($_POST['named_citi
             if ($res->num_rows) {
                 $row = $res->fetch_assoc();
                 $res->close();
-                $letter = lastLetterReplace($row['name_ru']);
+                $letter = lastLetterSearch($row['name_ru']);
                 $response = array(
                     'name' => htmlspecialchars($row['name_ru']),
                     'letter' => htmlspecialchars($letter),
@@ -86,13 +88,11 @@ if (isset($_POST['city'], $_POST['named_cities']) && is_array($_POST['named_citi
         if ($res->num_rows) {
             $row = $res->fetch_assoc();
             $res->close();
-            $letter = lastLetterReplace($row['name_ru']);
+            $letter = lastLetterSearch($row['name_ru']);
 
             // ответ сервера
 
-            $probability = rand(0,100);
-
-            if ($probability > 2.6) {
+            if (rand(0,100) <= $probability) {
                 $row = array();
                 foreach ($_POST['named_cities'] as $k => $v) {
                     $_POST['named_cities'][$k] = "'".es($v)."'";
@@ -108,7 +108,7 @@ if (isset($_POST['city'], $_POST['named_cities']) && is_array($_POST['named_citi
                 if ($res->num_rows) {
                     $row = $res->fetch_assoc();
                     $res->close();
-                    $letter = lastLetterReplace($row['name_ru']);
+                    $letter = lastLetterSearch($row['name_ru']);
                     $response = array(
                         'name' => htmlspecialchars($row['name_ru']),
                         'letter' => htmlspecialchars($letter)
