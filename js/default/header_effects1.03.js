@@ -99,3 +99,4 @@ function anim_nav (nav, sub_nav) {
 }
 
 anim_nav('#game', '#game_nav');
+anim_nav('#demo', '#demo_nav');

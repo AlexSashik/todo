@@ -211,7 +211,7 @@ header nav>a {
 	color: #A3A3B6;
 }
 
-#second_layer input::-ms-input-placeholder {
+#second_layer input:-ms-input-placeholder {
 	color: #A3A3B6;
 }
 
@@ -234,6 +234,7 @@ nav div {
 	text-transform: uppercase;
 	font-size: 12px;
 	max-width: 150px;
+	min-width: 100px;
 	word-wrap: break-word;
 	border-top: 30px solid white;
 	opacity: 0;
@@ -252,6 +253,15 @@ nav div a:hover {
 #game_nav {
 	top: 53px;
 	left: 250px;
+}
+
+#demo:hover {
+	cursor: default;
+}
+
+#demo_nav {
+	top: 53px;
+	left: 740px;
 }
 
 
@@ -386,7 +396,7 @@ nav div a:hover {
 	color: #A3A3B6;
 }
 
-.email::-ms-input-placeholder {
+.email:-ms-input-placeholder {
 	color: #A3A3B6;
 }
 

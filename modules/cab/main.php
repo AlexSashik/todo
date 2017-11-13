@@ -1,6 +1,6 @@
 <?php
 CORE::$CSS[] = '<link href="/css/'.CORE::$STYLE.'/cab1.01.css" rel="stylesheet" type="text/css">';
-CORE::$JS[]  = '<script defer src="/js/'.CORE::$STYLE.'/cab1.03.js"></script>';
+CORE::$JS[]  = '<script defer src="/js/'.CORE::$STYLE.'/cab1.04.js"></script>';
 if (!isset($_SESSION['user'])) {
 	CORE::$META['title']  = 'Todo - enter';
 

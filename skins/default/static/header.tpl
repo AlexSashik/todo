@@ -27,10 +27,15 @@
 				<a href="/mvc" class="animate <?php if($_GET['module'] == 'mvc') echo 'active';?>">MVC</a> 
 				<a href="/comments" class="animate <?php  if($_GET['module'] == 'comments') echo 'active';?>">COMMENTS</a> 
 				<a href="/goods" class="animate <?php  if($_GET['module'] == 'goods') echo 'active';?>">GOODS</a>
-				<a href="/books" class="animate <?php  if($_GET['module'] == 'books') echo 'active';?>">BOOKS</a>
+                <a href="/books" class="animate <?php  if($_GET['module'] == 'books') echo 'active';?>">BOOKS</a>
+                <a href="#" id="demo" class="animate" onclick="return false;">DEMO</a>
                 <div id="game_nav">
                     <a href="/games/alcoholics" class="animate">buttle of alcoholics</a>
                     <a href="/games/cities" class="animate">the cities</a>
+                </div>
+                <div id="demo_nav">
+                    <a href="/demo" target="_blank" class="animate">agrolux</a>
+                    <a href="/vatel" target="_blank" class="animate">vatel</a>
                 </div>
 			</nav>
 		</div>

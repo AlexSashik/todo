@@ -41,6 +41,7 @@
 
 .first_line {
 	font-size: 20px;
+	position: relative;
 }
 
 .health {
@@ -132,16 +133,16 @@
 .input_city::-webkit-input-placeholder {
 	color: #A3A3B6;
 }
-
 .input_city::-moz-placeholder {
 	color: #A3A3B6;
 }
-
-.input_city::-moz-placeholder {
+.input_city:-moz-placeholder {
 	color: #A3A3B6;
 }
-
 .input_city:-ms-input-placeholder {
+	color: #A3A3B6;
+}
+.input_city::placeholder {
 	color: #A3A3B6;
 }
 
@@ -154,10 +155,45 @@
 	border: 1px solid #72AAD0;
 	border-radius: 5px;
 	background-color: #72AAD0;
+	-ms-transition: all.4s ease;
+	-o-transition: all.4s ease;
+	-moz-transition: all.4s ease;
+	-webkit-transition: all.4s ease;
 }
 
 .submit:hover {
 	cursor: pointer;
 	background-color: #3A3A50;
 	border: 1px solid #3A3A50;
+	-ms-transition: all.4s ease;
+	-o-transition: all.4s ease;
+	-moz-transition: all.4s ease;
+	-webkit-transition: all.4s ease;
+}
+
+.disable {
+	-ms-transition: all.4s ease;
+	-o-transition: all.4s ease;
+	-moz-transition: all.4s ease;
+	-webkit-transition: all.4s ease;
+	transition: all.4s ease;
+	opacity: 0.5
+}
+
+.disable:hover {
+	border: 1px solid #72AAD0;
+	cursor: auto;
+	background-color: #72AAD0;
+	-ms-transition: all.4s ease;
+	-o-transition: all.4s ease;
+	-moz-transition: all.4s ease;
+	-webkit-transition: all.4s ease;
+	transition: all.4s ease;
+}
+
+#spiner {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 210px;
 }

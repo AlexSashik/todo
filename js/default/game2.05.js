@@ -1,3 +1,10 @@
+// нажатие enter = нажатие кнопрки "ГОТОВО" (#ready)
+$(document).keypress(function (event) {
+    if ( event.which == 13 ) {
+        myAjax();
+    }
+});
+
 function checkHP (hp, role) {
     if (hp == 2) {
         if (role == 'server') {
@@ -19,19 +26,6 @@ function checkHP (hp, role) {
             $("#third-heart-user").toggleClass("fa-heart fa-heart-o");
         }
     }
-    // if (hp < 0) {
-    //     if (role == 'server') {
-    //         return 'win';
-    //         // window.location.href = "/games/gameover/win";  // переадресация
-    //         // throw new Error();
-    //     } else {
-    //         return 'lose';
-    //         // window.location.href = "/games/gameover/lose"; // переадресация
-    //         // throw new Error();
-    //     }
-    // } else {
-    //     return 'game';
-    // }
 }
 
 var city_array = [''],
@@ -57,7 +51,7 @@ function myAjax (absence) {
                 $('#city').val(letter.toUpperCase());
                 $('#city').focus();
                 check = false;
-            } else if ($('#city').val().search(/[a-z]/ui) != -1) {
+            } else if ($('#city').val().search(/[a-z]/gi) != -1) {
                 alert ('Город вводится на русском языке');
                 $('#city').focus();
                 check = false;
@@ -84,6 +78,13 @@ function myAjax (absence) {
             },
             dataType : 'json',
             timeout : 15000,
+            beforeSend : function () {
+                $("#ready").prop( "disabled", true );
+                $("#absence").prop( "disabled", true );
+                $("#ready").addClass( "disable" );
+                $("#absence").addClass( "disable" );
+                $('#spiner').css('display', 'block');
+            },
             success : function(response) {
                 if (response.gameover !== undefined) {
                     window.location.href = "/games/gameover";
@@ -119,6 +120,11 @@ function myAjax (absence) {
                         $('#city').focus();
                     }
                 }
+                $("#ready").prop( "disabled", false );
+                $("#absence").prop( "disabled", false );
+                $("#ready").removeClass( "disable" );
+                $("#absence").removeClass( "disable" );
+                $('#spiner').css('display', 'none');
             },
             error   : function (x, t) {
                 if (t === "timeout") {
@@ -126,7 +132,13 @@ function myAjax (absence) {
                 } else {
                     alert ('При отправке запроса возникли какие-то проблемы');
                 }
+                $("#ready").prop( "disabled", false );
+                $("#absence").prop( "disabled", false );
+                $("#ready").removeClass( "disable" );
+                $("#absence").removeClass( "disable" );
+                $('#spiner').css('display', 'none');
             }
         });
     }
+    return false;
 }

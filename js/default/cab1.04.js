@@ -26,14 +26,14 @@ function checkRegForm () {
 	var flag = true;
 
 	// проверка логина
-	if ($('#login').val().match(/^\s*$/ui)) {
+	if ($('#login').val().match(/^\s*$/gi)) {
         if ($('#log_err').val() == undefined) {
             $('<div id="log_err" class="info_err"><i class="fa fa-times" aria-hidden="true"></i>Вы не ввели логин</div>' ).insertAfter( "#login" );
         } else {
             $('#log_err').html('<i class="fa fa-times" aria-hidden="true"></i>Вы не ввели логин');
         }
         flag = false;
-	} else if ($('#login').val().match(/^\s*.\s*$/ui) ) {
+	} else if ($('#login').val().match(/^\s*.\s*$/gi) ) {
     	if ($('#log_err').val() == undefined) {
             $('<div id="log_err" class="info_err"><i class="fa fa-times" aria-hidden="true"></i>Cлишком короткий логин</div>' ).insertAfter( "#login" );
 		} else {
@@ -68,14 +68,14 @@ function checkRegForm () {
 	}
 
 	// проверка пароля
-    if ($('#pass').val().match(/^\s*$/ui)) {
+    if ($('#pass').val().match(/^\s*$/gi)) {
         if ($('#pass_err').val() == undefined) {
             $('<div id="pass_err" class="info_err"><i class="fa fa-times" aria-hidden="true"></i>Вы не ввели пароль</div>' ).insertAfter( "#pass" );
         } else {
             $('#pass_err').html('<i class="fa fa-times" aria-hidden="true"></i>Вы не ввели пароль');
         }
         flag = false;
-    } else if ($('#pass').val().match(/^\s*.(.)?\s*$/ui) ) {
+    } else if ($('#pass').val().match(/^\s*.(.)?\s*$/gi) ) {
         if ($('#pass_err').val() == undefined) {
             $('<div id="pass_err" class="info_err"><i class="fa fa-times" aria-hidden="true"></i>Cлишком короткий пароль</div>' ).insertAfter( "#pass" );
         } else {
@@ -96,8 +96,8 @@ function checkRegForm () {
     }
 
     // проверка возраста
-    if (!$('#age').val().match(/^\s*$/ui)) {
-		if (!$('#age').val().match(/^([1-9]\d?|[1]\d\d)$/ui)) {
+    if (!$('#age').val().match(/^\s*$/gi)) {
+		if (!$('#age').val().match(/^([1-9]\d?|[1]\d\d)$/gi)) {
             if ($('#age_err').val() == undefined) {
                 $('<div id="age_err" class="info_err"><i class="fa fa-times" aria-hidden="true"></i>Некорректрный возраст</div>' ).insertAfter( "#age" );
             } else {
