@@ -43,7 +43,7 @@
     <link rel="stylesheet" href="/bower/bootstrap/dist/css/bootstrap-theme.min.css" type = "text/css">
     <?php if(isset(CORE::$CSS) ) echo implode("\n", CORE::$CSS);?>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="/vendor/public/jquery/dist/jquery.min.js"></script>
     <script src="/bower/bootstrap/dist/js/bootstrap.min.js" defer></script>
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js" defer></script>

@@ -16,6 +16,7 @@ RewriteCond %{REQUEST_URI} !^/css
 RewriteCond %{REQUEST_URI} !^/js
 RewriteCond %{REQUEST_URI} !^/fonts
 RewriteCond %{REQUEST_URI} !^/bower
+RewriteCond %{REQUEST_URI} !^/vendor
 RewriteCond %{REQUEST_URI} !-f
 RewriteCond %{REQUEST_URI} !-d
 
