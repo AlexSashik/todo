@@ -1,5 +1,5 @@
 <main>
-    <article class="container">
+    <section class="container">
         <div class="center text-center">
             <h2>ПРОФЕССИОНАЛЬНЫЙ ВОКАЛЬНЫЙ ДУЭТ</h2>
             <h3 itemprop="member">Светлана Чумакова и Константин Бовсуновский</h3>
@@ -43,9 +43,9 @@
                 <p><input id="aside-application" type="submit" value="оставить заявку"></p>
             </form>
         </aside>
-    </article>
+    </section>
 
-    <article class="partners">
+    <section class="partners">
         <div class="container">
             <h4 class="h4">С нами работают</h4>
             <div class="logo first">
@@ -74,7 +74,7 @@
                 <meta itemprop="sponsor" content="United panel group">
             </div>
         </div>
-    </article>
+    </section>
 
     <article class="container why">
         <div class="center">
@@ -183,7 +183,7 @@
         </aside>
     </article>
 
-    <article class="how">
+    <section class="how">
         <div class="container">
             <h4 class="h4">Как мы работаем? быстро и максимально удобно для вас!</h4>
             <div class="content">
@@ -218,9 +218,9 @@
                 </div>
             </div>
         </div>
-    </article>
+    </section>
 
-    <article class="container video-aricle">
+    <section class="container video-aricle">
         <h4 class="h2">
             мы провели более 300 частных и корпоративных мероприятий,
             выступлений на городских площадках и концертах
@@ -280,5 +280,5 @@
                 <p><input id="footer-application" type="submit" value="оставить заявку"></p>
             </form>
         </div>
-    </article>
+    </section>
 </main>
