@@ -28,6 +28,7 @@
 				<a href="/comments" class="animate <?php  if($_GET['module'] == 'comments') echo 'active';?>">COMMENTS</a> 
 				<a href="/goods" class="animate <?php  if($_GET['module'] == 'goods') echo 'active';?>">GOODS</a>
                 <a href="/books" class="animate <?php  if($_GET['module'] == 'books') echo 'active';?>">BOOKS</a>
+                <a href="/chat" class="animate <?php  if($_GET['module'] == 'chat') echo 'active';?>">CHAT</a>
                 <a href="#" id="demo" class="animate" onclick="return false;">DEMO</a>
                 <div id="game_nav">
                     <a href="/games/alcoholics" class="animate">buttle of alcoholics</a>

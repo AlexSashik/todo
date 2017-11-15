@@ -81,7 +81,8 @@ if (CORE::$STYLE == 'admin') {
 		'books'      => array ('main', 'authors'),
 		'cab'        => array ('main', 'reg', 'exit'),
 		'errors'     => array ('400', '403', '404', '500'),
-        'test'       => array ('main')
+        'test'       => array ('main'),
+        'chat'       => array ('main')
 	);
 }
 	
