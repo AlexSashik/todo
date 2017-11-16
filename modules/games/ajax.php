@@ -8,7 +8,7 @@ if (!isset($_GET['ajax'])) {
 if (isset($_POST['city'], $_POST['named_cities']) && is_array($_POST['named_cities'])) {
     $_POST = trimAll($_POST);
     $response = array();
-    $probability = 97.3;
+    $probability = 90;
 
     // функция определения последней буквы слова, с которой может начинаться новый город
     function lastLetterSearch ($string) {
