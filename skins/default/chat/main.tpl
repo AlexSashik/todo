@@ -1,7 +1,7 @@
 <main>
     <div class="chat">
         <div class="header">TodoChat</div>
-        <div class="main-chat">
+        <div id="chatSpace" class="main-chat">
             <span class="welcome">Добро пожаловать в чат!</span>
 <!--        <p>Текст</p>-->
         </div>

@@ -187,4 +187,39 @@ QUERY: INSERT INTO `users` SET
 DATE:2017-11-10 14:14:24
 ========================================================================
 
+QUERY: 
+            INSERT INTO `chat`
+            `login` = 'admin',
+            `date`  = NOW()
+        
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`login` = 'admin',
+            `date`  = NOW()' at line 2
+FILE: D:\OSPanel\domains\todo\modules\chat\ajax.php
+LINE: approximately 18
+DATE:2017-11-17 13:41:15
+========================================================================
+
+QUERY: 
+            INSERT INTO `chat` SET
+            `login` = 'admin',
+            `date`  = NOW()
+        
+ Field 'color' doesn't have a default value
+FILE: D:\OSPanel\domains\todo\modules\chat\ajax.php
+LINE: approximately 18
+DATE:2017-11-17 13:42:29
+========================================================================
+
+QUERY: 
+            INSERT INTO `chat` SET
+            `login` = 'admin',
+            `text`  = '123'
+            `date`  = NOW()
+        
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '`date`  = NOW()' at line 4
+FILE: D:\OSPanel\domains\todo\modules\chat\ajax.php
+LINE: approximately 39
+DATE:2017-11-17 23:31:23
+========================================================================
+
 

@@ -127,6 +127,9 @@ function myAjax () {
             success : function(response) {
 
                 if (response.err !== undefined) {
+                    if (response.err.access !== undefined) {
+                        alert(response.err.access);
+                    }
                     if (response.err.login !== undefined) {
                         $('#login_err').text(response.err.login);
                     } else {

@@ -11,7 +11,7 @@ if (isset($_SESSION['user'])) {
         }
     } else {
 		$_SESSION['user'] = $res->fetch_assoc();
-		if (($_SESSION['user']['access'] == 0 || $_SESSION['user']['active'] == 0) && !($_GET['module'] == 'cab' && $_GET['page'] == 'exit')) {
+		if (($_SESSION['user']['active'] == 0) && !($_GET['module'] == 'cab' && $_GET['page'] == 'exit')) {
 			header ('Location: /cab/exit');
 			exit;
 		}

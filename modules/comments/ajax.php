@@ -51,6 +51,12 @@ if (!isset($_SESSION['user'])) {
 } else {
     // добавление комментария
     if (isset($_POST['text']))  {
+        if ($_SESSION['user']['access'] == 0) {
+            $response['err']['access'] = 'Вы забанены администратором сайта и не можете оставлять комментарии.';
+            echo json_encode($response);
+            exit;
+        }
+
         $_POST = trimAll ($_POST);
         $img_name = (empty($_SESSION['user']['avatar'])) ? 'noavatar.png' : $_SESSION['user']['avatar'];
         $status   = ( $_SESSION['user']['access'] == 5 ) ? 'администратор' : 'пользователь';

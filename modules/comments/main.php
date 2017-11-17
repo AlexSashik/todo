@@ -1,6 +1,6 @@
 <?php
 CORE::$CSS[] = '<link href="/css/'.CORE::$STYLE.'/comments1.06.css" rel="stylesheet" type="text/css">';
-CORE::$JS[]  = '<script defer src="/js/'.CORE::$STYLE.'/comments1.05.js"></script>';
+CORE::$JS[]  = '<script defer src="/js/'.CORE::$STYLE.'/comments1.06.js"></script>';
 CORE::$META['title']  = 'Todo - comments';
 
 if (isset($_GET['action'], $_GET['id'], $_SESSION['user']) &&  $_GET['action'] == 'delete' && $_SESSION['user']['access'] == 5) {

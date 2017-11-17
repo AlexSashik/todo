@@ -64,11 +64,11 @@ if (!isset($_SESSION['user'])) {
 					$errors['active_err']['header'] = 'Активация аккаунта';
 					$errors['active_err']['img']    = '/img/admin/goods/attantion.png';
 					$errors['active_err']['text']   = 'Ваш аккаунт не активирован. Для его активации перейдите по ссылке, указанной в письме, отправленном на email, который Вы указали при регистрации';
-				} elseif ($row['access'] == 0) {
-					unset ($errors['login_err']);
-					$errors['active_err']['header'] = 'Вход не выполнен';
-					$errors['active_err']['img']    = '/img/admin/goods/error.png';
-					$errors['active_err']['text']   = 'Приносим наши извинения, но Вы были забанены администратором сайта.';
+//				} elseif ($row['access'] == 0) {
+//					unset ($errors['login_err']);
+//					$errors['active_err']['header'] = 'Вход не выполнен';
+//					$errors['active_err']['img']    = '/img/admin/goods/error.png';
+//					$errors['active_err']['text']   = 'Приносим наши извинения, но Вы были забанены администратором сайта.';
 				} else {
 					$_SESSION['info']['success_autoriz'] = true;
 					$_SESSION['user'] = $row;
