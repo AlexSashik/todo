@@ -2,6 +2,32 @@ $(document).ready (function () {
     $('.main-chat').niceScroll();
 });
 
+// по нажатию на enter происходит отправка, на shift+enter - перенос на новую строку
+pressShift = false;
+$(document).keyup(function(event){
+    if (event.which == 16) {
+        pressShift = false;
+    }
+});
+
+$(document).keydown(function(event){
+    if (event.which == 16) {
+        pressShift = true;
+    } else if (event.which == 13 && pressShift === false) {
+        // очищаем textarea от enter-ов
+        if(event.preventDefault) {
+            event.preventDefault();
+        }
+        myAjax ();
+    }
+});
+
+// Именная преставка
+$('#chatSpace').on('click', 'em', function() {
+    $('#text').val($(this).text() + ', ');
+    $('#text').focus();
+});
+
 function myAjax () {
     var text = $("#text").val();
     if (text !== undefined) {
@@ -9,6 +35,11 @@ function myAjax () {
             $('#text').focus();
             alert('Вы не ввели сообщение');
         } else {
+            $('#text').val('');
+            // очищаем textarea от enter-ов
+            if(event.preventDefault) {
+                event.preventDefault();
+            }
             $.ajax({
                 url: '/chat/ajax?ajax',
                 type: "POST",
@@ -31,7 +62,6 @@ function myAjax () {
                         chatSpace.appendChild(p);
                         //прокрутка скролла вниз
                         chatSpace.scrollTop = chatSpace.scrollHeight;
-                        $('#text').val('');
                     }
                 },
                 error: function (x, t) {
@@ -60,6 +90,9 @@ setInterval(function() {
             if (resp.login !== undefined && resp.login.length > 0) {
                 for (var i = 0; i < resp.login.length; i++) {
                     var p = document.createElement('p');
+                    if (resp.forme !== undefined) {
+                        p.className = "for-me";
+                    }
                     p.innerHTML = "<strong><em>" + resp.login[i] + "</em></strong>: " + resp.text[i];
                     chatSpace.appendChild(p);
                     //прокрутка скролла вниз

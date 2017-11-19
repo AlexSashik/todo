@@ -4,10 +4,13 @@ if (isset($_POST['query']) && $_POST['query'] == 'chat') {
     $response = array();
     $res = q("
         SELECT * FROM `chat`
-        WHERE `date` > NOW() - INTERVAL 3 SECOND
+        WHERE `date` > NOW() - INTERVAL 3.1 SECOND
     ");
     while($row = $res->fetch_assoc()) {
         if (!isset($_SESSION['user']) || $_SESSION['user']['login'] != $row['login']) {
+            if (preg_match('#^'.$_SESSION['user']['login'].',\s#u', $row['text'], $matches)) {
+                $response['forme'] = true;
+            }
             $response['login'][] = htmlspecialchars($row['login']);
             $response['text'][] = htmlspecialchars($row['text']);
         }
