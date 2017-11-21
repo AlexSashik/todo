@@ -46,3 +46,27 @@ if (isset($_POST['text'])) {
         exit;
     }
 }
+
+if (isset($_POST['query']) && $_POST['query'] == 'usersList') {
+    $res = q("
+      SELECT * FROM `users`
+      WHERE `access` >= 0
+    ");
+    $response = array();
+    while($row = $res->fetch_assoc()) {
+        if ($row['access'] > 0) {
+            if ($row['access'] == 5) {
+                $response['admin'][] = htmlspecialchars($row['login']);
+            } elseif ($row['online'] == 1 && (strtotime(date('Y-m-d H:i:s')) - strtotime($row['last_active_date'])) < 300) {
+                $response['online'][] = htmlspecialchars($row['login']);
+            } else {
+                $response['offline'][] = htmlspecialchars($row['login']);
+            }
+        } else {
+            $response['ban'][] = htmlspecialchars($row['login']);
+        }
+    }
+
+    echo json_encode($response);
+    exit;
+}

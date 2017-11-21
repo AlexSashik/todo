@@ -19,84 +19,135 @@ main {
     margin: auto;
     background-color: #FAF9FA;
     padding-bottom: 15px;
-    .header {
+    .header, .chat-list-header {
       text-align: center;
       border-bottom: 1px solid #DAD8DE;
       color: #19171c;
       padding: 20px 30px;
     }
-    .main-chat {
-      margin-bottom: 30px;
-      padding: 20px 30px 0 30px;
-      height: 170px;
-      word-wrap: break-word;
-      overflow-y: scroll;
-      p {
-        margin-top: 10px;
-        em:hover {
-          cursor: pointer;
+    #chat-body {
+      .main-chat {
+        margin-bottom: 30px;
+        padding: 20px 30px 0 30px;
+        height: 170px;
+        word-wrap: break-word;
+        overflow-y: scroll;
+        p {
+          margin-top: 10px;
+          em:hover {
+            cursor: pointer;
+          }
+        }
+        .for-me {
+          color: #FF4500;
+        }
+        .welcome {
+          color: #6E6779;
         }
       }
-      .for-me {
-        color: #FF4500;
-      }
-      .welcome {
-        color: #6E6779;
-      }
-    }
-    form {
-      display: block;
-      text-align: center;
-      textarea {
-        width: 420px;
-        resize: none;
-        padding: 10px;
-        font-family: Arial, sans-serif;
-        .transition(0.2s ease);
-        &:focus {
-          .box-shadow(0 0 1px #7d5bbe);
-          border: 1px solid #7d5bbe;
+      form {
+        display: block;
+        text-align: center;
+        height: 96px;
+        textarea {
+          width: 420px;
+          resize: none;
+          padding: 10px;
+          font-family: Arial, sans-serif;
           .transition(0.2s ease);
+          &:focus {
+            .box-shadow(0 0 1px #7d5bbe);
+            border: 1px solid #7d5bbe;
+            .transition(0.2s ease);
+          }
+        }
+        .send {
+          &:extend(.clearfix all);
+          width: 440px;
+          margin: 10px auto;
+          .settings, #users {
+            float: left;
+            width: 20px;
+            text-align: center;
+            padding: 7px;
+            color: #6441A4;
+            .transition(0.2s ease);
+            &:hover {
+              color: #2C2541;
+              background-color: #F2EFF5;
+              cursor: pointer;
+              .transition(0.2s ease);
+            }
+            &:active {
+              background-color: #FAF9FA;
+              .box-shadow(0 0 6px 0 #7d5bbe);
+            }
+          }
+          button {
+            float: right;
+            width: 80px;
+            height: 30px;
+            background-color: #6441A4;
+            border: none;
+            color: white;
+            .transition(0.2s ease);
+            &:hover {
+              .transition(0.2s ease);
+              background-color: #7d5bbe;
+              cursor: pointer;
+            }
+            &:active {
+              background-color: #6441a4;
+              .box-shadow(0 0 6px 0 #7d5bbe);
+            }
+          }
         }
       }
-      .send {
-        &:extend(.clearfix all);
-        width: 440px;
-        margin: 10px auto;
-        .settings, .users {
-          float: left;
-          width: 20px;
-          text-align: center;
-          padding: 7px;
+      //display: none;
+    }
+    #chat-list {
+      display: none;
+      .chat-list-header {
+        position: relative;
+        i {
+          display: block;
+          position: absolute;
+          top: 12px;
+          left: 20px;
           color: #6441A4;
+          padding: 10px;
           .transition(0.2s ease);
           &:hover {
-            color: #2C2541;
             background-color: #F2EFF5;
-            cursor: pointer;
+            color: #2C2541;
             .transition(0.2s ease);
+            cursor: pointer;
           }
           &:active {
             background-color: #FAF9FA;
             .box-shadow(0 0 6px 0 #7d5bbe);
           }
         }
-        button {
-          float: right;
-          width: 80px;
-          height: 30px;
-          background-color: #6441A4;
-          border: none;
-          color: white;
-          .transition(0.2s ease);
-          &:hover {
-            .transition(0.2s ease);
-            background-color: #7d5bbe;
-            cursor: pointer;
-          }
-          &:active {
-            background-color: #6441a4;
-            .box-shadow(0 0 6px 0 #7d5bbe);
+      }
+      .chat-list-main {
+        height: 219px;
+        padding: 20px;
+        #loading {
+          text-align: center;
+          display: none;
+        }
+        .group {
+          margin-top: 20px;
+          line-height: 1.5;
+          display: none;
+          p {
+            word-wrap: break-word;
+            text-decoration: underline;
+            color: #9441AC;
+            &:hover {
+              cursor: pointer;
+              text-decoration: none;
+            }
           }
         }
       }

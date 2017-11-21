@@ -15,7 +15,8 @@ if (isset($_SESSION['user'])) {
 		}
 		q ("
 			UPDATE `users` SET
-			`last_active_date` = NOW()
+			`last_active_date` = NOW(),
+			online = 1
 			WHERE `id` = ".(int)$_SESSION['user']['id']." 
 		");
 	}

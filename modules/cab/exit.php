@@ -6,6 +6,11 @@ if (isset($_COOKIE['hash'], $_COOKIE['id'])) {
 }
 
 if (isset($_SESSION['user'])) {
+    q ("
+	  UPDATE `users` SET
+	  `online` = 0
+	  WHERE `id` = ".(int)$_SESSION['user']['id']." 
+  	");
 	session_unset();
 	session_destroy();
 }

@@ -15,8 +15,9 @@ if (isset($_FILES['file'])) {
         $err = $info['err_text'];
     }
 }
-
-
+date_default_timezone_set('Europe/Kiev');
+echo date("Y-m-d H:i:s").'<br>';
+echo strtotime(date("Y-m-d H:i:s")) - strtotime('2017-11-20 23:48:40');
 // ==== перегонка значений без дубликатов из таблицы cities в таблицу cities2 ==========
 //
 //    $name = array();

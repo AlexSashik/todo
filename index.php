@@ -2,6 +2,7 @@
 	error_reporting(-1);
 	header ('Content-Type: text/html; charset=utf-8');
     mb_internal_encoding("UTF-8");
+    date_default_timezone_set('Europe/Kiev');
 	session_start();
 	
 	include_once "./config.php";
