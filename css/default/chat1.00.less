@@ -113,7 +113,6 @@ main {
           display: block;
           position: absolute;
           top: 12px;
-          left: 20px;
           color: #6441A4;
           padding: 10px;
           .transition(0.2s ease);
@@ -127,6 +126,12 @@ main {
             background-color: #FAF9FA;
             .box-shadow(0 0 6px 0 #7d5bbe);
           }
+        }
+        #backToChat {
+          left: 20px;
+        }
+        #refreshList {
+          right: 20px;
         }
       }
       .chat-list-main {
@@ -142,11 +147,20 @@ main {
           display: none;
           p {
             word-wrap: break-word;
-            text-decoration: underline;
-            color: #9441AC;
-            &:hover {
-              cursor: pointer;
-              text-decoration: none;
+            .span-for-ban {
+              color: silver;
+              &:hover {
+                cursor: pointer;
+                color: darken(silver, 20%);
+              }
+            }
+            .span-for-name {
+              text-decoration: underline;
+              color: #9441AC;
+              &:hover {
+                cursor: pointer;
+                text-decoration: none;
+              }
             }
           }
         }

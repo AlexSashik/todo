@@ -1,11 +1,11 @@
 <?php
 // Обновление чата
 if (isset($_POST['query']) && $_POST['query'] == 'chat') {
-    $response = array();
     $res = q("
         SELECT * FROM `chat`
-        WHERE `date` > NOW() - INTERVAL 3.1 SECOND
+        WHERE `date` > NOW() - INTERVAL 3.01 SECOND
     ");
+    $response = array();
     while($row = $res->fetch_assoc()) {
         if (!isset($_SESSION['user']) || $_SESSION['user']['login'] != $row['login']) {
             if (preg_match('#^'.$_SESSION['user']['login'].',\s#u', $row['text'], $matches)) {
@@ -47,26 +47,49 @@ if (isset($_POST['text'])) {
     }
 }
 
-if (isset($_POST['query']) && $_POST['query'] == 'usersList') {
+// вывод списка пользователей + их модерация
+if (isset($_POST['query'], $_POST['id']) && $_POST['query'] == 'usersList') {
+    $response = array();
+    if (isset($_SESSION['user']) && $_SESSION['user']['access'] == 5) {
+        $response['status'] = 'admin';
+        if ((int)$_POST['id'] >= 0) {
+            $res = q("
+              UPDATE `users` SET
+              `access` = 
+                CASE `access`
+                  WHEN 0 THEN 1
+                  WHEN 1 THEN 0
+                END 
+              WHERE `id` = ".(int)$_POST['id']."
+            ");
+        }
+    }
     $res = q("
       SELECT * FROM `users`
       WHERE `access` >= 0
     ");
-    $response = array();
     while($row = $res->fetch_assoc()) {
         if ($row['access'] > 0) {
             if ($row['access'] == 5) {
                 $response['admin'][] = htmlspecialchars($row['login']);
             } elseif ($row['online'] == 1 && (strtotime(date('Y-m-d H:i:s')) - strtotime($row['last_active_date'])) < 300) {
-                $response['online'][] = htmlspecialchars($row['login']);
+                $response['online'][] = array (
+                    'id' => $row['id'],
+                    'login' => htmlspecialchars($row['login'])
+                );
             } else {
-                $response['offline'][] = htmlspecialchars($row['login']);
+                $response['offline'][] = array (
+                    'id' => $row['id'],
+                    'login' => htmlspecialchars($row['login'])
+                );
             }
         } else {
-            $response['ban'][] = htmlspecialchars($row['login']);
+            $response['ban'][] = array (
+                'id' => $row['id'],
+                'login' => htmlspecialchars($row['login'])
+            );
         }
     }
-
     echo json_encode($response);
     exit;
 }

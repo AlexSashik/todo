@@ -46,45 +46,78 @@ function myAjax () {
     }
 }
 
-function usersList() {
+function usersList(id) {
+    if (id === undefined) id = -1;
     $.ajax({
         url: '/chat/ajax?ajax',
         type: "POST",
         cache: false,
         data: {
-            'query': 'usersList'
+            'query': 'usersList',
+            'id'   : id
         },
         dataType: 'json',
         timeout: 15000,
         beforeSend : function () {
             $('#backToChat').css('display', 'none');
+            $('#refreshList').css('display', 'none');
             $("#loading").css('display', 'block');
+            $(".group > p").remove();
+            $(".group").css('display', 'none');
         },
         success: function (resp) {
             $('#backToChat').css('display', 'block');
+            $('#refreshList').css('display', 'block');
             var i;
             $("#loading").css('display', 'none');
             if (resp.admin !== undefined) {
                 for (i = 0; i < resp.admin.length; i++) {
-                    $("#admins").append('<p>' + resp.admin[i] + '</p>');
+                    $("#admins").append('<p><span class="span-for-name">' + resp.admin[i] + '</span></p>');
                 }
                 $("#admins").css('display', 'block');
             }
             if (resp.online !== undefined) {
                 for (i = 0; i < resp.online.length; i++) {
-                    $("#online").append('<p>' + resp.online[i] + '</p>');
+                    if (resp.status !== undefined) {
+                        $("#online").append(
+                            '<p>' +
+                                '<span class="span-for-name">' + resp.online[i].login + '</span> ' +
+                                '<span class="span-for-ban" data-id="' + resp.online[i].id + '">(забанить)</span>' +
+                            '</p>'
+                        );
+                    } else {
+                        $("#online").append('<p><span class="span-for-name">' + resp.online[i].login + '</span></p>');
+                    }
                 }
                 $("#online").css('display', 'block');
             }
             if (resp.offline !== undefined) {
                 for (i = 0; i < resp.offline.length; i++) {
-                    $("#offline").append('<p>' + resp.offline[i] + '</p>');
+                    if (resp.status !== undefined) {
+                        $("#offline").append(
+                            '<p>' +
+                                '<span class="span-for-name">' + resp.offline[i].login + '</span> ' +
+                                '<span class="span-for-ban" data-id="' + resp.offline[i].id + '">(забанить)</span>' +
+                            '</p>'
+                        );
+                    } else {
+                        $("#offline").append('<p><span class="span-for-name">' + resp.offline[i].login + '</span></p>');
+                    }
                 }
                 $("#offline").css('display', 'block');
             }
             if (resp.ban !== undefined) {
                 for (i = 0; i < resp.ban.length; i++) {
-                    $("#ban").append('<p>' + resp.ban[i] + '</p>');
+                    if (resp.status !== undefined) {
+                        $("#ban").append(
+                            '<p>' +
+                                '<span class="span-for-name">' + resp.ban[i].login + '</span> ' +
+                                '<span class="span-for-ban" data-id="'+resp.ban[i].id+'">(разбанить)</span>' +
+                            '</p>'
+                        );
+                    } else {
+                        $("#ban").append('<p><span class="span-for-name">' + resp.ban[i].login + '</span></p>');
+                    }
                 }
                 $("#ban").css('display', 'block');
             }
@@ -128,7 +161,7 @@ $('#chatSpace').on('click', 'em', function() {
     $('#text').focus();
 });
 
-$('#online').on('click', 'p', function() {
+$('#online').on('click', '.span-for-name', function() {
     $(".group > p").remove();
     $(".group").css('display', 'none');
     $('#chat-list').css('display', 'none');
@@ -137,6 +170,19 @@ $('#online').on('click', 'p', function() {
     $('#text').focus();
 });
 
+// обновление списка пользователей
+$('#refreshList').on('click', function () {
+    usersList();
+});
+
+//модерация пользователей
+$('.group').on('click', '.span-for-ban', function() {
+    if ($(this).attr('data-id') !== undefined) {
+        usersList($(this).attr('data-id'));
+    }
+});
+
+//обновление чата
 setInterval(function() {
     $.ajax({
         url: '/chat/ajax?ajax',

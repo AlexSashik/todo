@@ -21,8 +21,9 @@
         </div>
         <div id="chat-list">
             <div class="chat-list-header">
-                <i id="backToChat" class="fa fa-times fa-lg" aria-hidden="true"></i>
-                Список зрителей
+                <i id="backToChat" class="fa fa-times fa-lg" aria-hidden="true" title="To chat"></i>
+                <i id="refreshList" class="fa fa-refresh fa-lg" aria-hidden="true" title="Refresh"></i>
+                Список участников
             </div>
             <div class="chat-list-main">
                 <div id="loading">
