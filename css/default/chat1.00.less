@@ -26,6 +26,7 @@ main {
       padding: 20px 30px;
     }
     #chat-body {
+      position: relative;
       .main-chat {
         margin-bottom: 30px;
         padding: 20px 30px 0 30px;
@@ -101,6 +102,57 @@ main {
               .box-shadow(0 0 6px 0 #7d5bbe);
             }
           }
+        }
+      }
+      .smiles {
+        &:extend(.clearfix all);
+        width: 90px;
+        border: 1px solid #C5D0DB;
+        .border-radius(5px);
+        position: absolute;
+        bottom: 28px;
+        left: -70px;
+        background-color: white;
+        //background: url('/img/default/chat/smiles.jpg') no-repeat;
+        .smile {
+          float: left;
+          width: 16px;
+          height: 17px;
+          margin: 4px;
+          padding: 2px 2px 1px 2px;
+          border: 1px solid #fff;
+          &:hover {
+            cursor: pointer;
+            border: 1px solid #C5D0DB;
+            .border-radius(2px);
+          }
+        }
+        #smile1 {
+          background: url('/img/default/chat/smiles.jpg') no-repeat 2px 1px;
+        }
+        #smile2 {
+          background: url('/img/default/chat/smiles.jpg') no-repeat -16px 1px;
+        }
+        #smile3 {
+          background: url('/img/default/chat/smiles.jpg') no-repeat -34px 1px;
+        }
+        #smile4 {
+          background: url('/img/default/chat/smiles.jpg') no-repeat -52px 1px;
+        }
+        #smile5 {
+          background: url('/img/default/chat/smiles.jpg') no-repeat -70px 1px;
+        }
+        #smile6 {
+          background: url('/img/default/chat/smiles.jpg') no-repeat -88px 1px;
+        }
+        #smile7 {
+          background: url('/img/default/chat/smiles.jpg') no-repeat -106px 1px;
+        }
+        #smile8 {
+          background: url('/img/default/chat/smiles.jpg') no-repeat -124px 1px;
+        }
+        #smile9 {
+          background: url('/img/default/chat/smiles.jpg') no-repeat -142px 1px;
         }
       }
       //display: none;

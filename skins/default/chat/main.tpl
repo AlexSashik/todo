@@ -10,7 +10,7 @@
                 <textarea placeholder="Отправить сообщение" id="text"></textarea>
                 <div class="send">
                     <div class="settings">
-                        <i class="fa fa-cog fa-lg" aria-hidden="true"></i>
+                        <i class="fa fa-smile-o fa-lg" aria-hidden="true"></i>
                     </div>
                     <div id="users" onclick="return usersList();">
                         <i class="fa fa-list fa-lg" aria-hidden="true"></i>
@@ -18,6 +18,17 @@
                     <button onclick="return myAjax();">Чат</button>
                 </div>
             </form>
+            <div class="smiles">
+                <div class="smile" id="smile1" data-smile=":D"></div>
+                <div class="smile" id="smile2" data-smile=":''("></div>
+                <div class="smile" id="smile3" data-smile="^_^"></div>
+                <div class="smile" id="smile4" data-smile=":-*"></div>
+                <div class="smile" id="smile5" data-smile=">:-("></div>
+                <div class="smile" id="smile6" data-smile=":'("></div>
+                <div class="smile" id="smile7" data-smile=";)"></div>
+                <div class="smile" id="smile8" data-smile=":)"></div>
+                <div class="smile" id="smile9" data-smile="B)"></div>
+            </div>
         </div>
         <div id="chat-list">
             <div class="chat-list-header">
