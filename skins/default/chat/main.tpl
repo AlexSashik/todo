@@ -4,7 +4,7 @@
         <div id="chat-body">
             <div id="chatSpace" class="main-chat">
                 <span class="welcome">Добро пожаловать в чат!</span>
-                <!--<p>Текст</p>-->
+<!--                <p>Текст <span class="smile9"></span> текст</p>-->
             </div>
             <form method="post" action="" onsubmit="return false;">
                 <textarea placeholder="Отправить сообщение" id="text"></textarea>
@@ -19,15 +19,15 @@
                 </div>
             </form>
             <div class="smiles">
-                <div class="smile" id="smile1" data-smile=":D"></div>
-                <div class="smile" id="smile2" data-smile=":''("></div>
-                <div class="smile" id="smile3" data-smile="^_^"></div>
-                <div class="smile" id="smile4" data-smile=":-*"></div>
-                <div class="smile" id="smile5" data-smile=">:-("></div>
-                <div class="smile" id="smile6" data-smile=":'("></div>
-                <div class="smile" id="smile7" data-smile=";)"></div>
-                <div class="smile" id="smile8" data-smile=":)"></div>
-                <div class="smile" id="smile9" data-smile="B)"></div>
+                <div class="smile smile1" data-smile=":D"></div>
+                <div class="smile smile2" data-smile=":''("></div>
+                <div class="smile smile3" data-smile="^_^"></div>
+                <div class="smile smile4" data-smile=":-*"></div>
+                <div class="smile smile5" data-smile=">:-("></div>
+                <div class="smile smile6" data-smile=":'("></div>
+                <div class="smile smile7" data-smile=";)"></div>
+                <div class="smile smile8" data-smile=":)"></div>
+                <div class="smile smile9" data-smile="B)"></div>
             </div>
         </div>
         <div id="chat-list">

@@ -6,10 +6,6 @@ function myAjax () {
             alert('Вы не ввели сообщение');
         } else {
             $('#text').val('');
-            // очищаем textarea от enter-ов
-            if(event.preventDefault) {
-                event.preventDefault();
-            }
             $.ajax({
                 url: '/chat/ajax?ajax',
                 type: "POST",
@@ -131,13 +127,15 @@ $(document).ready (function () {
     $('.chat-list-main').niceScroll();
 });
 
-// по нажатию на enter происходит отправка сообщения
+// по нажатию на enter происходит отправка сообщения (и скрытие панели смайликов)
 $(document).keydown(function(event){
     if (event.which == 13) {
         // очищаем textarea от enter-ов
         if(event.preventDefault) {
             event.preventDefault();
         }
+        $('.smiles').css('display', 'none');
+        $('#show-smiles').css('backgroundColor', '#FAF9FA');
         myAjax ();
     }
 });

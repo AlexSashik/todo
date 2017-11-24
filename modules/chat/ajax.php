@@ -1,4 +1,17 @@
 <?php
+function chars2smiles ($string) {
+    $string = preg_replace('#'.preg_quote(":D").'#i','<span class="smile1"></span>', $string);
+    $string = preg_replace('#'.preg_quote(":''(").'#i','<span class="smile2"></span>', $string);
+    $string = preg_replace('#'.preg_quote("^_^").'#i','<span class="smile3"></span>', $string);
+    $string = preg_replace('#'.preg_quote(":-*").'#i','<span class="smile4"></span>', $string);
+    $string = preg_replace('#'.preg_quote("&gt;:-(").'#i','<span class="smile5"></span>', $string);
+    $string = preg_replace('#'.preg_quote(":'(").'#i','<span class="smile6"></span>', $string);
+    $string = preg_replace('#'.preg_quote(";)").'#i','<span class="smile7"></span>', $string);
+    $string = preg_replace('#'.preg_quote(":)").'#i','<span class="smile8"></span>', $string);
+    $string = preg_replace('#'.preg_quote("B)").'#i','<span class="smile9"></span>', $string);
+    return $string;
+}
+
 // Обновление чата
 if (isset($_POST['query']) && $_POST['query'] == 'chat') {
     $res = q("
@@ -12,7 +25,8 @@ if (isset($_POST['query']) && $_POST['query'] == 'chat') {
                 $response['forme'] = true;
             }
             $response['login'][] = htmlspecialchars($row['login']);
-            $response['text'][] = htmlspecialchars($row['text']);
+            $row['text'] = chars2smiles(htmlspecialchars($row['text'], ENT_COMPAT));
+            $response['text'][] = $row['text'];
         }
     }
     echo json_encode($response);
@@ -41,7 +55,8 @@ if (isset($_POST['text'])) {
             `date`  = NOW()
         ");
         $response['login'] = htmlspecialchars($_SESSION['user']['login']);
-        $response['text']  = htmlspecialchars($_POST['text']);
+        $_POST['text'] = chars2smiles(htmlspecialchars($_POST['text'], ENT_COMPAT));
+        $response['text']  = $_POST['text'];
         echo json_encode($response);
         exit;
     }
