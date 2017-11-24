@@ -182,6 +182,29 @@ $('.group').on('click', '.span-for-ban', function() {
     }
 });
 
+// появление и скрытие панели смайликов
+$('#show-smiles').on('click', function () {
+   if ($('.smiles').css('display') == 'none') {
+       $('.smiles').css('display', 'block');
+       $(this).css('backgroundColor', '#F2EFF5');
+   } else {
+       $('.smiles').css('display', 'none');
+       $(this).css('backgroundColor', '#FAF9FA');
+   }
+});
+
+$(document).click(function(event) {
+    if ($(event.target).closest(".smiles").length || $(event.target).closest("#show-smiles").length || $(event.target).closest("#text").length) return;
+    $('.smiles').css('display', 'none');
+    $('#show-smiles').css('backgroundColor', '#FAF9FA');
+});
+
+//добавление смайла в текст
+$('.smile').on('click', function () {
+    $('#text').val($('#text').val() + $(this).attr('data-smile'));
+    $('#text').focus();
+});
+
 //обновление чата
 setInterval(function() {
     $.ajax({

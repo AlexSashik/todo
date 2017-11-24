@@ -9,10 +9,10 @@
             <form method="post" action="" onsubmit="return false;">
                 <textarea placeholder="Отправить сообщение" id="text"></textarea>
                 <div class="send">
-                    <div class="settings">
+                    <div class="settings" id="show-smiles">
                         <i class="fa fa-smile-o fa-lg" aria-hidden="true"></i>
                     </div>
-                    <div id="users" onclick="return usersList();">
+                    <div id="users" class="settings" onclick="return usersList();">
                         <i class="fa fa-list fa-lg" aria-hidden="true"></i>
                     </div>
                     <button onclick="return myAjax();">Чат</button>
