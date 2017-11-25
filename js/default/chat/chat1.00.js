@@ -22,12 +22,6 @@ function myAjax () {
                         } else {
                             alert('Вы забанены администратором сайта и не можете участвовать в чате.');
                         }
-                    } else {
-                        var p = document.createElement('p');
-                        p.innerHTML = "<strong><em>" + resp.login + "</em></strong>: " + resp.text;
-                        chatSpace.appendChild(p);
-                        //прокрутка скролла вниз
-                        chatSpace.scrollTop = chatSpace.scrollHeight;
                     }
                 },
                 error: function (x, t) {
@@ -204,18 +198,21 @@ $('.smile').on('click', function () {
 });
 
 //обновление чата
+last_id = 0;
 setInterval(function() {
     $.ajax({
         url: '/chat/ajax?ajax',
         type: "POST",
         cache: false,
         data: {
-            'query': 'chat'
+            'query'  : 'chat',
+            'lastId' : last_id
         },
         dataType: 'json',
         timeout: 15000,
         success: function (resp) {
             if (resp.login !== undefined && resp.login.length > 0) {
+                last_id = resp.id[resp.id.length-1];
                 for (var i = 0; i < resp.login.length; i++) {
                     var p = document.createElement('p');
                     if (resp.forme !== undefined) {
@@ -223,9 +220,9 @@ setInterval(function() {
                     }
                     p.innerHTML = "<strong><em>" + resp.login[i] + "</em></strong>: " + resp.text[i];
                     chatSpace.appendChild(p);
-                    //прокрутка скролла вниз
-                    chatSpace.scrollTop = chatSpace.scrollHeight;
                 }
+                //прокрутка скролла вниз
+                chatSpace.scrollTop = chatSpace.scrollHeight;
             }
         }
     });

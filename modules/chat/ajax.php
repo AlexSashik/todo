@@ -13,21 +13,20 @@ function chars2smiles ($string) {
 }
 
 // Обновление чата
-if (isset($_POST['query']) && $_POST['query'] == 'chat') {
+if (isset($_POST['query'], $_POST['lastId'])) {
     $res = q("
         SELECT * FROM `chat`
-        WHERE `date` > NOW() - INTERVAL 3.01 SECOND
+        WHERE `date` >= NOW() - INTERVAL 3 SECOND AND `id` > ".(int)$_POST['lastId']."
     ");
     $response = array();
     while($row = $res->fetch_assoc()) {
-        if (!isset($_SESSION['user']) || $_SESSION['user']['login'] != $row['login']) {
-            if (preg_match('#^'.$_SESSION['user']['login'].',\s#u', $row['text'], $matches)) {
-                $response['forme'] = true;
-            }
-            $response['login'][] = htmlspecialchars($row['login']);
-            $row['text'] = chars2smiles(htmlspecialchars($row['text'], ENT_COMPAT));
-            $response['text'][] = $row['text'];
+        if (preg_match('#^'.$_SESSION['user']['login'].',\s#u', $row['text'], $matches)) {
+            $response['forme'] = true;
         }
+        $response['id'][] = $row['id'];
+        $response['login'][] = htmlspecialchars($row['login']);
+        $row['text'] = chars2smiles(htmlspecialchars($row['text'], ENT_COMPAT));
+        $response['text'][] = $row['text'];
     }
     echo json_encode($response);
     exit;
