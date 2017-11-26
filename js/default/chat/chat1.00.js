@@ -199,7 +199,7 @@ $('.smile').on('click', function () {
 
 //обновление чата
 last_id = 0;
-setInterval(function() {
+setTimeout(function refresh() {
     $.ajax({
         url: '/chat/ajax?ajax',
         type: "POST",
@@ -226,4 +226,5 @@ setInterval(function() {
             }
         }
     });
-}, 3000);
+    setTimeout(refresh, 2000);
+}, 2000);

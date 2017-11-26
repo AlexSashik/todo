@@ -16,7 +16,7 @@ function chars2smiles ($string) {
 if (isset($_POST['query'], $_POST['lastId'])) {
     $res = q("
         SELECT * FROM `chat`
-        WHERE `date` >= NOW() - INTERVAL 3 SECOND AND `id` > ".(int)$_POST['lastId']."
+        WHERE `date` >= NOW() - INTERVAL 2 SECOND AND `id` > ".(int)$_POST['lastId']."
     ");
     $response = array();
     while($row = $res->fetch_assoc()) {
