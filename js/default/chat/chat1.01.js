@@ -1,3 +1,16 @@
+function chars2smiles (str) {
+    var result = str.replace(/:D/g, '<span class="smile1"></span>');
+    result = result.replace(/:''\(/g, '<span class="smile2"></span>');
+    result = result.replace(/\^_\^/g, '<span class="smile3"></span>');
+    result = result.replace(/:-\*/g, '<span class="smile4"></span>');
+    result = result.replace(/&gt;:-\(/g, '<span class="smile5"></span>');
+    result = result.replace(/:'\(/g, '<span class="smile6"></span>');
+    result = result.replace(/;\)/g, '<span class="smile7"></span>');
+    result = result.replace(/:\)/g, '<span class="smile8"></span>');
+    result = result.replace(/B\)/g, '<span class="smile9"></span>');
+    return result;
+}
+
 function myAjax () {
     var text = $("#text").val();
     if (text !== undefined) {
@@ -7,7 +20,7 @@ function myAjax () {
         } else {
             $('#text').val('');
             $.ajax({
-                url: '/chat/ajax?ajax',
+                url: '/chat/send?ajax',
                 type: "POST",
                 cache: false,
                 data: {
@@ -21,6 +34,14 @@ function myAjax () {
                             alert('Вы не авторизованы!');
                         } else {
                             alert('Вы забанены администратором сайта и не можете участвовать в чате.');
+                        }
+                    } else {
+                        if (resp.login !== undefined && resp.login.length > 0) {
+                            var p = document.createElement('p');
+                            p.innerHTML = "<strong><em>" + resp.login + "</em></strong>: " + chars2smiles(resp.text);
+                            chatSpace.appendChild(p);
+                            //прокрутка скролла вниз
+                            chatSpace.scrollTop = chatSpace.scrollHeight;
                         }
                     }
                 },
@@ -39,7 +60,7 @@ function myAjax () {
 function usersList(id) {
     if (id === undefined) id = -1;
     $.ajax({
-        url: '/chat/ajax?ajax',
+        url: '/chat/userlist?ajax',
         type: "POST",
         cache: false,
         data: {
@@ -201,24 +222,24 @@ $('.smile').on('click', function () {
 last_id = 0;
 setTimeout(function refresh() {
     $.ajax({
-        url: '/chat/ajax?ajax',
+        url: '/chat/refresh?ajax',
         type: "POST",
         cache: false,
         data: {
-            'query'  : 'chat',
-            'lastId' : last_id
+            'query': 'chat',
+            'lastId': last_id
         },
         dataType: 'json',
         timeout: 15000,
         success: function (resp) {
             if (resp.login !== undefined && resp.login.length > 0) {
-                last_id = resp.id[resp.id.length-1];
+                last_id = resp.id[resp.id.length - 1];
                 for (var i = 0; i < resp.login.length; i++) {
                     var p = document.createElement('p');
                     if (resp.forme !== undefined) {
                         p.className = "for-me";
                     }
-                    p.innerHTML = "<strong><em>" + resp.login[i] + "</em></strong>: " + resp.text[i];
+                    p.innerHTML = "<strong><em>" + resp.login[i] + "</em></strong>: " + chars2smiles(resp.text[i]);
                     chatSpace.appendChild(p);
                 }
                 //прокрутка скролла вниз
