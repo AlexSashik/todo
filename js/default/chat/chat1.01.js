@@ -1,3 +1,5 @@
+var last_id = $('#chatSpace').attr('data-firstid'), send = false, get = false;
+
 function chars2smiles (str) {
     var result = str.replace(/:D/g, '<span class="smile1"></span>');
     result = result.replace(/:''\(/g, '<span class="smile2"></span>');
@@ -11,7 +13,7 @@ function chars2smiles (str) {
     return result;
 }
 
-function myAjax () {
+function mySend () {
     var text = $("#text").val();
     if (text !== undefined) {
         if (text.trim() == '') {
@@ -19,40 +21,56 @@ function myAjax () {
             alert('Вы не ввели сообщение');
         } else {
             $('#text').val('');
-            $.ajax({
-                url: '/chat/send?ajax',
-                type: "POST",
-                cache: false,
-                data: {
-                    'text': text
-                },
-                dataType: 'json',
-                timeout: 15000,
-                success: function (resp) {
-                    if (resp.err !== undefined) {
-                        if (resp.err == 'NO') {
-                            alert('Вы не авторизованы!');
-                        } else {
-                            alert('Вы забанены администратором сайта и не можете участвовать в чате.');
+            (function () {
+                if (get) {
+                    setTimeout(arguments.callee, 200);
+                } else {
+                    send = true;
+                    $.ajax({
+                        url: '/chat/send?ajax',
+                        type: "POST",
+                        cache: false,
+                        data: {
+                            'text': text,
+                            'lastId' : last_id
+                        },
+                        dataType: 'json',
+                        timeout: 15000,
+                        success: function (resp) {
+                            send = false;
+                            if (resp.err !== undefined) {
+                                if (resp.err == 'NO') {
+                                    alert('Вы не авторизованы!');
+                                } else {
+                                    alert('Вы забанены администратором сайта и не можете участвовать в чате.');
+                                }
+                            } else {
+                                if (resp.login !== undefined && resp.login.length > 0) {
+                                    last_id = resp.id[resp.id.length - 1];
+                                    for (var i = 0; i < resp.login.length; i++) {
+                                        var p = document.createElement('p');
+                                        if (resp.forme !== undefined) {
+                                            p.className = "for-me";
+                                        }
+                                        p.innerHTML = "<strong><em>" + resp.login[i] + "</em></strong>: " + chars2smiles(resp.text[i]);
+                                        chatSpace.appendChild(p);
+                                    }
+                                    //прокрутка скролла вниз
+                                    chatSpace.scrollTop = chatSpace.scrollHeight;
+                                }
+                            }
+                        },
+                        error: function (x, t) {
+                            send = false;
+                            if (t === "timeout") {
+                                alert('Ожидание ответа с сервера слишком велико');
+                            } else {
+                                alert('При отправке запроса возникли какие-то проблемы');
+                            }
                         }
-                    } else {
-                        if (resp.login !== undefined && resp.login.length > 0) {
-                            var p = document.createElement('p');
-                            p.innerHTML = "<strong><em>" + resp.login + "</em></strong>: " + chars2smiles(resp.text);
-                            chatSpace.appendChild(p);
-                            //прокрутка скролла вниз
-                            chatSpace.scrollTop = chatSpace.scrollHeight;
-                        }
-                    }
-                },
-                error: function (x, t) {
-                    if (t === "timeout") {
-                        alert('Ожидание ответа с сервера слишком велико');
-                    } else {
-                        alert('При отправке запроса возникли какие-то проблемы');
-                    }
+                    });
                 }
-            });
+            }) ();
         }
     }
 }
@@ -151,7 +169,7 @@ $(document).keydown(function(event){
         }
         $('.smiles').css('display', 'none');
         $('#show-smiles').css('backgroundColor', '#FAF9FA');
-        myAjax ();
+        mySend();
     }
 });
 
@@ -219,33 +237,39 @@ $('.smile').on('click', function () {
 });
 
 //обновление чата
-last_id = 0;
 setTimeout(function refresh() {
-    $.ajax({
-        url: '/chat/refresh?ajax',
-        type: "POST",
-        cache: false,
-        data: {
-            'query': 'chat',
-            'lastId': last_id
-        },
-        dataType: 'json',
-        timeout: 15000,
-        success: function (resp) {
-            if (resp.login !== undefined && resp.login.length > 0) {
-                last_id = resp.id[resp.id.length - 1];
-                for (var i = 0; i < resp.login.length; i++) {
-                    var p = document.createElement('p');
-                    if (resp.forme !== undefined) {
-                        p.className = "for-me";
+    if (!send) {
+        get = true;
+        $.ajax({
+            url: '/chat/refresh?ajax',
+            type: "POST",
+            cache: false,
+            data: {
+                'query': 'chat',
+                'lastId': last_id
+            },
+            dataType: 'json',
+            timeout: 15000,
+            success: function (resp) {
+                get = false;
+                if (resp.login !== undefined && resp.login.length > 0) {
+                    last_id = resp.id[resp.id.length - 1];
+                    for (var i = 0; i < resp.login.length; i++) {
+                        var p = document.createElement('p');
+                        if (resp.forme !== undefined) {
+                            p.className = "for-me";
+                        }
+                        p.innerHTML = "<strong><em>" + resp.login[i] + "</em></strong>: " + chars2smiles(resp.text[i]);
+                        chatSpace.appendChild(p);
                     }
-                    p.innerHTML = "<strong><em>" + resp.login[i] + "</em></strong>: " + chars2smiles(resp.text[i]);
-                    chatSpace.appendChild(p);
+                    //прокрутка скролла вниз
+                    chatSpace.scrollTop = chatSpace.scrollHeight;
                 }
-                //прокрутка скролла вниз
-                chatSpace.scrollTop = chatSpace.scrollHeight;
+            },
+            error: function () {
+                get = false;
             }
-        }
-    });
+        });
+    }
     setTimeout(refresh, 2000);
 }, 2000);

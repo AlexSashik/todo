@@ -1,7 +1,7 @@
 <?php
 
 //Добавление сообщения
-if (isset($_POST['text'])) {
+if (isset($_POST['text'], $_POST['lastId'])) {
     $_POST = trimAll($_POST);
     $response = array();
     if (!isset($_SESSION['user']) || $_SESSION['user']['access'] < 0) {
@@ -21,9 +21,19 @@ if (isset($_POST['text'])) {
             `text`  = '".es($_POST['text'])."',
             `date`  = NOW()
         ");
-        $response['login'] = htmlspecialchars($_SESSION['user']['login']);
-        $response['text']  = htmlspecialchars($_POST['text']);
-        echo json_encode($response);
-        exit;
+        $res = q("
+            SELECT * FROM `chat`
+            WHERE `id` > ".(int)$_POST['lastId']."
+        ");
+        while($row = $res->fetch_assoc()) {
+            if (isset($_SESSION['user']) && preg_match('#^'.$_SESSION['user']['login'].',\s#u', $row['text'], $matches)) {
+                $response['forme'] = true;
+            }
+            $response['id'][] = $row['id'];
+            $response['login'][] = htmlspecialchars($row['login']);
+            $response['text'][] = htmlspecialchars($row['text']);
+        }
     }
+    echo json_encode($response);
+    exit;
 }

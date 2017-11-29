@@ -3,3 +3,9 @@ CORE::$CSS[] = '<link href="/css/'.CORE::$STYLE.'/chat1.00.css" rel="stylesheet"
 CORE::$JS[]  = '<script defer src="/js/'.CORE::$STYLE.'/chat/chat1.01.js"></script>';
 CORE::$JS[]  = '<script defer src="/js/'.CORE::$STYLE.'/chat/jquery.nicescroll.min.js"></script>';
 CORE::$META['title']  = 'Todo - chat';
+
+$res = q ("
+    SELECT * FROM `chat`
+    ORDER BY `id` DESC
+    LIMIT 1
+");

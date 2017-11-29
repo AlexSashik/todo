@@ -2,9 +2,15 @@
     <div class="chat">
         <div class="header">TodoChat</div>
         <div id="chat-body">
-            <div id="chatSpace" class="main-chat">
+            <div id="chatSpace" class="main-chat" data-firstid="<?php
+                if ($row = $res->fetch_assoc()) {
+                    echo $row['id'];
+                } else {
+                    echo 0;
+                } ?>">
                 <span class="welcome">Добро пожаловать в чат!</span>
 <!--                <p>Текст <span class="smile9"></span> текст</p>-->
+                <?php if ($row = $res->fetch_assoc()) echo $row['id'];?>
             </div>
             <form method="post" action="" onsubmit="return false;">
                 <textarea placeholder="Отправить сообщение" id="text"></textarea>
@@ -15,7 +21,7 @@
                     <div id="users" class="settings" onclick="return usersList();">
                         <i class="fa fa-list fa-lg" aria-hidden="true"></i>
                     </div>
-                    <button onclick="return myAjax();">Чат</button>
+                    <button onclick="return mySend();">Чат</button>
                 </div>
             </form>
             <div class="smiles">
