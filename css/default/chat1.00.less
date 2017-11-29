@@ -34,19 +34,33 @@ main {
         height: 170px;
         word-wrap: break-word;
         overflow-y: scroll;
-        p {
+        div {
+          &:extend(.clearfix all);
           margin-top: 10px;
-          em:hover {
-            cursor: pointer;
+          p {
+            float: left;
+            width: 400px;
+            em:hover {
+              cursor: pointer;
+            }
+            span {
+              display: inline-block;
+              width: 18px;
+              height: 18px;
+              margin-bottom: -3px;
+            }
           }
-          span {
-            display: inline-block;
-            width: 18px;
-            height: 18px;
-            margin-bottom: -3px;
+          i {
+            margin: 5px;
+            float:left;
+            color: #E08575;
+            &:hover {
+              cursor: pointer;
+              color: darken(#E08575, 20%);
+            }
           }
         }
-        .for-me {
+        .for-me>p {
           color: #FF4500;
         }
         .welcome {

@@ -82,7 +82,7 @@ if (CORE::$STYLE == 'admin') {
 		'cab'        => array ('main', 'reg', 'exit'),
 		'errors'     => array ('400', '403', '404', '500'),
         'test'       => array ('main'),
-        'chat'       => array ('main', 'userlist', 'send', 'refresh')
+        'chat'       => array ('main', 'userlist', 'send', 'refresh', 'delmess')
 	);
 }
 	

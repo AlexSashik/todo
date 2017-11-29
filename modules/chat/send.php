@@ -33,6 +33,9 @@ if (isset($_POST['text'], $_POST['lastId'])) {
             $response['login'][] = htmlspecialchars($row['login']);
             $response['text'][] = htmlspecialchars($row['text']);
         }
+        if (isset($_SESSION['user']) && $_SESSION['user']['access'] == 5) {
+            $response['status'] = 'admin';
+        }
     }
     echo json_encode($response);
     exit;
