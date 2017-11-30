@@ -9,10 +9,6 @@
                     echo 0;
                 } ?>">
                 <span class="welcome">Добро пожаловать в чат!</span>
-<!--                <div class="text" data-idBlock="5">-->
-<!--                    <p>Текст <span class="smile9"></span> текст</p>-->
-<!--                    <i class="fa fa-trash fa-lg" aria-hidden="true" data-id="5"></i>-->
-<!--                </div>-->
                 <?php if ($row = $res->fetch_assoc()) echo $row['id'];?>
             </div>
             <form method="post" action="" onsubmit="return false;">
