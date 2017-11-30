@@ -53,8 +53,8 @@ function mySend () {
                                             if (resp.forme !== undefined) {
                                                 div.className = "for-me";
                                             }
+                                            div.setAttribute('data-idBlock', resp.id[i]);
                                             if (resp.status !== undefined) {
-                                                div.setAttribute('data-idBlock', resp.id[i]);
                                                 div.innerHTML = '<p><strong><em>' + resp.login[i] + '</em></strong>: ' +
                                                     chars2smiles(resp.text[i]) + '</p><i class="fa fa-trash fa-lg" aria-hidden="true" data-id="' + resp.id[i] + '"></i>';
                                             } else {
@@ -116,12 +116,20 @@ function usersList(id) {
             if (resp.online !== undefined) {
                 for (i = 0; i < resp.online.length; i++) {
                     if (resp.status !== undefined) {
-                        $("#online").append(
-                            '<p>' +
+                        if (resp.online[i].isAdmin === undefined) {
+                            $("#online").append(
+                                '<p>' +
                                 '<span class="span-for-name">' + resp.online[i].login + '</span> ' +
                                 '<span class="span-for-ban" data-id="' + resp.online[i].id + '">(забанить)</span>' +
-                            '</p>'
-                        );
+                                '</p>'
+                            );
+                        } else {
+                            $("#online").append(
+                                '<p>' +
+                                '<span class="span-for-name">' + resp.online[i].login + '</span> ' +
+                                '</p>'
+                            );
+                        }
                     } else {
                         $("#online").append('<p><span class="span-for-name">' + resp.online[i].login + '</span></p>');
                     }
@@ -131,12 +139,20 @@ function usersList(id) {
             if (resp.offline !== undefined) {
                 for (i = 0; i < resp.offline.length; i++) {
                     if (resp.status !== undefined) {
-                        $("#offline").append(
-                            '<p>' +
+                        if (resp.offline[i].isAdmin === undefined) {
+                            $("#offline").append(
+                                '<p>' +
                                 '<span class="span-for-name">' + resp.offline[i].login + '</span> ' +
                                 '<span class="span-for-ban" data-id="' + resp.offline[i].id + '">(забанить)</span>' +
-                            '</p>'
-                        );
+                                '</p>'
+                            );
+                        } else {
+                            $("#offline").append(
+                                '<p>' +
+                                '<span class="span-for-name">' + resp.offline[i].login + '</span> ' +
+                                '</p>'
+                            );
+                        }
                     } else {
                         $("#offline").append('<p><span class="span-for-name">' + resp.offline[i].login + '</span></p>');
                     }
@@ -272,6 +288,7 @@ $('#chatSpace').on('click', '.fa-trash', function () {
         });
     }
 });
+
 //обновление чата
 setTimeout(function refresh() {
     if (!send) {
@@ -295,8 +312,8 @@ setTimeout(function refresh() {
                         if (resp.forme !== undefined) {
                             div.className = "for-me";
                         }
+                        div.setAttribute('data-idBlock', resp.id[i]);
                         if (resp.status !== undefined) {
-                            div.setAttribute('data-idBlock', resp.id[i]);
                             div.innerHTML = '<p><strong><em>' + resp.login[i] + '</em></strong>: ' +
                                 chars2smiles(resp.text[i]) + '</p><i class="fa fa-trash fa-lg" aria-hidden="true" data-id="' + resp.id[i] + '"></i>';
                         } else {
@@ -307,6 +324,12 @@ setTimeout(function refresh() {
                     //прокрутка скролла вниз
                     chatSpace.scrollTop = chatSpace.scrollHeight;
                 }
+                if (resp.delid !== undefined) {
+                    for (var j = 0; j < resp.delid.length; j++) {
+                        $('[data-idBlock = ' + resp.delid[j] + ']').remove();
+                    }
+                    //console.log(resp.delid);
+                }
             },
             error: function () {
                 get = false;
@@ -315,3 +338,11 @@ setTimeout(function refresh() {
     }
     setTimeout(refresh, 2000);
 }, 2000);
+
+//обновление списка пользователей
+setTimeout(function refreshUserList() {
+    if ($('#chat-list').css('display') == 'block' &&  $("#loading").css('display') == 'none') {
+        usersList();
+    }
+    setTimeout(refreshUserList, 30000);
+}, 30000);

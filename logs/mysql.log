@@ -222,4 +222,2520 @@ QUERY: INSERT INTO `users` SET
 DATE:2017-11-17 23:31:23
 ========================================================================
 
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 0 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:44:29
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 0 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:44:29
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 0 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:44:31
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 0 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:44:31
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 0 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:44:33
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 0 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:44:33
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 0 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:44:35
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 0 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:44:35
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 0 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:44:37
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 0 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:44:37
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 0 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:44:39
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 0 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:44:39
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 0 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:44:41
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 0 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:44:41
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 0 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:44:43
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 0 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:44:45
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:44:45
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 0 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:44:47
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:44:47
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:44:49
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 0 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:44:49
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 0 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:44:51
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:44:51
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:44:53
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:44:55
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:44:55
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:44:57
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:44:57
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:44:59
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:44:59
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:01
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:01
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:03
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:03
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:05
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:05
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:07
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:07
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:09
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:09
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:11
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:11
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:13
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:13
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:15
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:15
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:17
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:17
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:19
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:19
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:21
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:21
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:23
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:23
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:25
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:25
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:27
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:27
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:29
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:29
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:31
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:31
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:33
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:33
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:35
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:35
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:37
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:37
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:39
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:39
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:41
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:41
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:43
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:43
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:45
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:45
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:48
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:48
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:50
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:50
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:52
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:53
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:54
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:54
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:56
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:56
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:58
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:45:58
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:00
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:00
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:02
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:02
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:04
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:04
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:06
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:06
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:08
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:08
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:10
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:10
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:12
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:12
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:14
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:14
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:16
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:16
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:18
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 1 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:18
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:20
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:21
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:22
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:23
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:25
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:25
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:27
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:29
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 3 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:30
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:31
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 3 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:32
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:33
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 3 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:34
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:35
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 3 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:36
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:37
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 3 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:38
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:39
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 3 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:40
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:41
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 3 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:42
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:43
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 3 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:44
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:45
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 3 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:46
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:47
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 3 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:48
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:49
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 3 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:50
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:51
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 3 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:52
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:53
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 3 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:54
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:55
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 3 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:56
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:57
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 3 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:58
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:46:59
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 3 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:47:00
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:47:01
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 3 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:47:02
+========================================================================
+
+QUERY: 
+        SELECT * FROM `chat`
+        WHERE `id` &gt; 2 AND `delid` = 0
+    
+ Unknown column 'delid' in 'where clause'
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 9
+DATE:2017-11-30 21:47:03
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:24
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:24
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:26
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:26
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:28
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:28
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:30
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:30
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:32
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:32
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:34
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:34
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:36
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:36
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:38
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:38
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:40
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:40
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:42
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:42
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:44
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:44
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:46
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:46
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:48
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:48
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:50
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:50
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:52
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:53
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:54
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:56
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:56
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:58
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:56:59
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:00
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:02
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:02
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:04
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:05
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:07
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:08
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:08
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:10
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:11
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:12
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:13
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:14
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:15
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:16
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:17
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:18
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:19
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:20
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:21
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:22
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:23
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:24
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:25
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:26
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:27
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:28
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:29
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:30
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:31
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:32
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:33
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:34
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:35
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:36
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:37
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:38
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:39
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:40
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:41
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:42
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:43
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:44
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:45
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:46
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:47
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:48
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:49
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:50
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:51
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:52
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:53
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:54
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:55
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:57
+========================================================================
+
+QUERY: 
+        DELETE * FROM `chat`
+        WHERE `del` = 1
+    
+ You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM `chat`
+        WHERE `del` = 1' at line 1
+FILE: D:\OSPanel\domains\todo\modules\chat\refresh.php
+LINE: approximately 28
+DATE:2017-11-30 21:57:57
+========================================================================
+
+QUERY: 
+              UPDATE `users` SET
+              `access` = 
+                CASE `access`
+                  WHEN 0 THEN 1
+                  WHEN 1 THEN 0
+                END 
+              WHERE `id` = 64
+            
+ Column 'access' cannot be null
+FILE: D:\OSPanel\domains\todo\modules\chat\userlist.php
+LINE: approximately 17
+DATE:2017-11-30 22:12:08
+========================================================================
+
 

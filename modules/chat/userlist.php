@@ -13,7 +13,7 @@ if (isset($_POST['query'], $_POST['id']) && $_POST['query'] == 'usersList') {
                   WHEN 0 THEN 1
                   WHEN 1 THEN 0
                 END 
-              WHERE `id` = ".(int)$_POST['id']."
+              WHERE `id` = ".(int)$_POST['id']." AND `access` <> 5
             ");
         }
     }
@@ -25,6 +25,13 @@ if (isset($_POST['query'], $_POST['id']) && $_POST['query'] == 'usersList') {
         if ($row['access'] > 0) {
             if ($row['access'] == 5) {
                 $response['admin'][] = htmlspecialchars($row['login']);
+                if ($row['online'] == 1 && (strtotime(date('Y-m-d H:i:s')) - strtotime($row['last_active_date'])) < 300) {
+                    $response['online'][] = array (
+                        'id'      => $row['id'],
+                        'login'   => htmlspecialchars($row['login']),
+                        'isAdmin' => true
+                    );
+                }
             } elseif ($row['online'] == 1 && (strtotime(date('Y-m-d H:i:s')) - strtotime($row['last_active_date'])) < 300) {
                 $response['online'][] = array (
                     'id' => $row['id'],
