@@ -15,12 +15,21 @@ if (isset($_POST['query'], $_POST['lastId'])) {
         $response['login'][] = htmlspecialchars($row['login']);
         $response['text'][] = htmlspecialchars($row['text']);
     }
-    $res = q("
-        SELECT * FROM `chat`
-        WHERE `del` = 1
-    ");
+    if (isset($_SESSION['del_mess'])) {
+        $del_mess_ids = implode(', ', $_SESSION['del_mess']);
+        $res = q("
+            SELECT * FROM `chat`
+            WHERE `del` = 1 AND `id` NOT IN (".$del_mess_ids.")
+        ");
+    } else {
+        $res = q("
+            SELECT * FROM `chat`
+            WHERE `del` = 1
+        ");
+    }
     while($row = $res->fetch_assoc()) {
         $response['delid'][] = $row['id'];
+        $_SESSION['del_mess'][] = $row['id'];
     }
     if (isset($_SESSION['user']) && $_SESSION['user']['access'] == 5) {
         $response['status'] = 'admin';
